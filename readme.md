@@ -13,7 +13,13 @@ Once you have cloned the repository you need to install the dependencies. This i
 ```
 npm install
 ```
-Once the dependencies are installed you can run the project by running the following command in the terminal:
+
+You also need to edit the .env file with values for:
+- DB_CONNECTIONSTRING , this is the connectionstring to your database
+- DB_SSL, if runing localy this needs to be false
+
+
+Once the dependencies are installed and the database is runing you can run the project by running the following command in the terminal:
 ```
 node server.js
 ```

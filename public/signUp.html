@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Logg inn</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="./css/global_style.css" />
     <!-- Legg til CSS filer UNDER her-->
     <link rel="stylesheet" href="./css/login_signUp_style.css" />
@@ -38,11 +38,16 @@
       <div class="login-cont-raper">
         <div class="login-cont cont-xs">
           <div style="text-align: center">
-            <h1 class="txt-color">Welcome</h1>
-            <h3 style="font-weight: 200">
-              Login in to your account to continue
-            </h3>
+            <h1 class="txt-color">Sign Up</h1>
+            <h3 style="font-weight: 200">Hello, Crate Your Account</h3>
           </div>
+          <div style="height: 20px"></div>
+          <label style="padding-left: 15px">Username:</label>
+          <input
+            id="username"
+            type="Username"
+            placeholder="Username"
+            value="" />
           <div style="height: 20px"></div>
           <label style="padding-left: 15px">Email:</label>
           <input id="email" type="text" placeholder="Email" value="" />
@@ -64,29 +69,15 @@
             ">
             <div id="errorHandlerCont"></div>
             <button
-              id="loginButton"
+              id="createUserButton"
               class="global-btn"
               style="padding-left: 30px; padding-right: 30px; min-width: 35%">
-              Log in
+              Sign Up
             </button>
-            <div style="display: flex; flex-direction: row">
-              <span>Don`t have an account?</span>
-              <button
-                id="signInUserBtn"
-                style="
-                  background-color: transparent;
-                  border: none;
-                  border-bottom: 0.5px solid black;
-                  color: #0084ff;
-                  cursor: pointer;
-                ">
-                Sign up
-              </button>
-            </div>
           </div>
         </div>
       </div>
     </div>
-    <script type="module" src="scripts/login.mjs"></script>
+    <script type="module" src="scripts/signUp.mjs"></script>
   </body>
 </html>

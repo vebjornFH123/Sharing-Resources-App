@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+
+.logo-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (max-width: 756px) {
+  .logo-cont {
+    transform: scale(0.6) translateX(-60px);
+  }
+}
+
+.logo {
+  height: 34px;
+  margin-top: -6px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+.txt-color {
+  color: #3255ee;
+  text-align: center;
+  font-size: 3rem;
+}
+
+input {
+  border: none;
+  border-bottom: 4px solid #3255ee;
+  border-top: 1.5px solid #2443cc;
+  border-left: 1.5px solid #2443cc;
+  border-right: 1.5px solid #2443cc;
+  background-color: rgb(255, 255, 255);
+
+  font-size: 20px;
+  color: #000000;
+  border-radius: 30px;
+  padding-left: 10px;
+  padding: 10px;
+}
+
+input:focus {
+  outline: none;
+  filter: brightness(0.975);
+  border-bottom-width: 6px;
+}
+
+/* --- Globale input endring!!!!!!!!!!!!!!!!!!!!!!!!!!--- */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* --- Globale input endring!!!!!!!!!!!!!!!!!!!!!!!!!!--- */
+
+label {
+  color: #3255ee;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+textarea {
+  border: none;
+  border: 1px solid rgb(166, 213, 166);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom: 4px solid rgba(48, 117, 59, 0.493);
+  background-color: #edfff3;
+  font-size: 18px;
+  color: #000000;
+  padding: 6px 0px 0px 4px;
+  font-family: sans-serif;
+}
+
+form {
+  width: max-content;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.cont-lg {
+  width: 80%;
+  max-width: 992px;
+  margin: auto;
+}
+
+.cont-sm {
+  width: 80%;
+  max-width: 576px;
+  margin: auto;
+}
+
+.cont-xs {
+  width: 80%;
+  max-width: 400px;
+  margin: auto;
+}
+
+/* --- Globale Knapper --- */
+
+.global-btn {
+  padding: 10px;
+  background-color: #3255ee;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: all 0.2s;
+  white-space: nowrap;
+  border: none;
+  height: min-content;
+  font-weight: 100;
+  cursor: pointer;
+}

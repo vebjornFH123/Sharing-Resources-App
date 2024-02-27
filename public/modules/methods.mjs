@@ -8,15 +8,20 @@ async function postTo(url, data) {
   };
   const respon = await fetch(url, header);
   if (!respon.ok) {
-    throw new Error(`HTTP error! status: ${respon.status}`);
+    const errorResponse = await respon.text();
+
+    throw new Error(errorResponse);
   }
+
   return respon;
 }
 
 async function getData(url) {
   const respon = await fetch(url);
   if (!respon.ok) {
-    throw new Error(`HTTP error! status: ${respon.status}`);
+    const errorResponse = await respon.text();
+
+    throw new Error(errorResponse);
   }
   const data = await respon.json();
 
