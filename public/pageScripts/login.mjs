@@ -1,21 +1,27 @@
-import { getData } from "../modules/methods.mjs";
-import errorHandler from "../modules/errorHandling.mjs";
-import { createBasicAuthString } from "../modules/userAuth.mjs";
+import { postTo } from "../../modules/methods.mjs";
+import errorHandler from "../../modules/errorHandling.mjs";
+import { createBasicAuthString } from "../../modules/userAuth.mjs";
 
 const loginButton = document.getElementById("loginButton");
 const errorHandlerCont = document.getElementById("errorHandlerCont");
+const imgTest = document.getElementById("imgTest");
 
 loginButton.onclick = async (e) => {
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
-  const authString = createBasicAuthString(email, password);
+  const authString = email + password;
 
-  // make a function that check if user has put in email and a strong password;
+  const userData = { email, authString };
 
-  getData(`/user/token/${authString}`)
+  postTo("/user/logIn", userData, "JSON")
+    .then((response) => {
+      if (response.ok) {
+        return response.json();
+      }
+    })
     .then((data) => {
+      console.log(data);
       localStorage.setItem("userData", data);
-      // window.location.href = "index.html";  go to next page
     })
     .catch((error) => {
       errorHandler(errorHandlerCont, error);

@@ -135,3 +135,18 @@ form {
   font-weight: 100;
   cursor: pointer;
 }
+
+/* Define styles for the custom marker */
+.custom-marker {
+  width: 30px;
+  height: 30px;
+  border-radius: 50% 50% 50% 0;
+  background: #89849b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-marker-img {
+  transform: rotate(45deg);
+}

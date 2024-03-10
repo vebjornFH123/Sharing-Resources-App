@@ -9,7 +9,7 @@ class DBManager {
   constructor(connectionString) {
     this.#credentials = {
       connectionString,
-      ssl: process.env.DB_SSL === "true" ? process.env.DB_SSL : false,
+      ssl: process.env.DB_SSL === "true" ? true : false,
     };
   }
 
@@ -18,10 +18,20 @@ class DBManager {
 
     try {
       await client.connect();
-      const output = await client.query(
-        'Update "public"."Users" set "name" = $1, "email" = $2, "pswhash" = $3 where id = $4;',
-        [user.name, user.email, user.pswHash, user.id]
-      );
+      let output;
+      console.log(user.profilepic);
+      if (user.profilepic === null) {
+        output = await client.query(
+          'Update "public"."Users" set "name" = $1, "email" = $2, "pswhash" = $3 where id = $3;',
+          [user.name, user.email, user.pswHash, user.id]
+        );
+      } else {
+        output = await client.query(
+          'Update "public"."Users" set "name" = $1, "email" = $2, "pswhash" = $3 "profilepic" = $4 where id = $4;',
+          [user.name, user.email, user.pswHash, user.profilepic, user.id]
+        );
+      }
+
       // Client.Query returns an object of type pg.Result (https://node-postgres.com/apis/result)
       // Of special intrest is the rows and rowCount properties of this object.
 
@@ -41,14 +51,10 @@ class DBManager {
     try {
       await client.connect();
       const output = await client.query(
-        'Delete from "public"."Users"  where id = $1;',
-        [user.id]
+        'Update from "public"."Users" set "name" = $1, "email" =$2, "pswhash" = $3, where id = $4;',
+        [null, null, null, user.id]
       );
-
-      // Client.Query returns an object of type pg.Result (https://node-postgres.com/apis/result)
-      // Of special intrest is the rows and rowCount properties of this object.
-
-      //TODO: Did the user get deleted?
+      return output.rowCount;
     } catch (error) {
       //TODO : Error handling?? Remember that this is a module seperate from your server
     } finally {
@@ -64,8 +70,8 @@ class DBManager {
     try {
       await client.connect();
       const output = await client.query(
-        'INSERT INTO "public"."Users"("name", "email", "pswhash") VALUES($1::Text, $2::Text, $3::Text) RETURNING id;',
-        [user.name, user.email, user.pswHash]
+        'INSERT INTO "public"."Users"("name", "email", "pswhash", "profilepic") VALUES($1::Text, $2::Text, $3::Text, $4::Bytea) RETURNING id;',
+        [user.name, user.email, user.pswHash, user.profilepic]
       );
 
       // Client.Query returns an object of type pg.Result (https://node-postgres.com/apis/result)
@@ -85,18 +91,29 @@ class DBManager {
     return user;
   }
 
-  async getUser(key, pswHash) {
+  async getUser(key, user) {
     const client = new pg.Client(this.#credentials);
     try {
       await client.connect();
+      let params;
+      if (key === "email") {
+        params = [user.email];
+      } else if (key === "pswHash") {
+        params = [user.pswHash];
+      }
+
       const output = await client.query(
-        `Select * from "public"."Users" WHERE ${key} = $1`,
-        [pswHash]
+        `Select * from "public"."Users" WHERE ${key} = $1;`,
+        params
       );
-      return output.rows;
+      console.log(output.rows);
+      if (output.rowCount === 0) {
+        return false;
+      } else {
+        return true;
+      }
     } catch (error) {
       console.error(error);
-      //TODO : Error handling?? Remember that this is a module seperate from your server
     } finally {
       client.end(); // Always disconnect from the database
     }
@@ -112,16 +129,6 @@ let connectionString =
   process.env.ENVIORMENT == "local"
     ? process.env.DB_CONNECTIONSTRING_LOCAL
     : process.env.DB_CONNECTIONSTRING_PROD;
-
-// 2:
-connectionString = process.env.DB_CONNECTIONSTRING_LOCAL;
-if (process.env.ENVIORMENT != "local") {
-  connectionString = process.env.DB_CONNECTIONSTRING_PROD;
-}
-
-//3:
-connectionString =
-  process.env["DB_CONNECTIONSTRING_" + process.env.ENVIORMENT.toUpperCase()];
 
 // We are using an enviorment variable to get the db credentials
 if (connectionString == undefined) {

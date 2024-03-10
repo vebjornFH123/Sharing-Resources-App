@@ -3,90 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Logg inn</title>
+    <title>SHARELINK</title>
     <link rel="stylesheet" href="./css/global_style.css" />
-    <!-- Legg til CSS filer UNDER her-->
+    <link rel="stylesheet" href="./css/navbar_style.css" />
+    <link rel="stylesheet" href="./css/accounte_style.css" />
     <link rel="stylesheet" href="./css/login_signUp_style.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.css"
+      rel="stylesheet" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.js"></script>
   </head>
   <body>
-    <div class="login-cont-main">
-      <div
-        style="
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          width: 100vw;
-          min-height: 35vh;
-        ">
-        <img height="90px" src="./Assets/img//icons/Logo.svg" alt="" />
-        <div style="height: 10px"></div>
-        <h1 style="color: white; font-weight: 200">SHARELINK</h1>
-        <p
-          style="
-            text-align: center;
-            color: white;
-            font-weight: 200;
-            width: 90%;
-          ">
-          ShareLink is a platform for easy resource sharing and collaboration.
-          Whether you need physical items, digital content, or expertise, our
-          app connects you with others for seamless sharing. Join now and unlock
-          endless possibilities!
-        </p>
-      </div>
-      <div class="login-cont-raper">
-        <div class="login-cont cont-xs">
-          <div style="text-align: center">
-            <h1 class="txt-color">Welcome</h1>
-            <h3 style="font-weight: 200">
-              Login in to your account to continue
-            </h3>
-          </div>
-          <div style="height: 20px"></div>
-          <label style="padding-left: 15px">Email:</label>
-          <input id="email" type="text" placeholder="Email" value="" />
-          <div style="height: 25px"></div>
-          <label style="padding-left: 15px">Password:</label>
-          <input
-            id="password"
-            type="password"
-            placeholder="Password"
-            value="" />
-          <div style="height: 25px"></div>
-          <div
-            style="
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              align-items: center;
-              gap: 10px;
-            ">
-            <div id="errorHandlerCont"></div>
-            <button
-              id="loginButton"
-              class="global-btn"
-              style="padding-left: 30px; padding-right: 30px; min-width: 35%">
-              Log in
-            </button>
-            <div style="display: flex; flex-direction: row">
-              <span>Don`t have an account?</span>
-              <button
-                id="signInUserBtn"
-                style="
-                  background-color: transparent;
-                  border: none;
-                  border-bottom: 0.5px solid black;
-                  color: #0084ff;
-                  cursor: pointer;
-                ">
-                Sign up
-              </button>
-            </div>
-          </div>
+    <!--Navbar-->
+    <nav class="navbar">
+      <button id="mapBtn" class="navbar-link">
+        <a href="/map" onclick="route()">Map</a>
+      </button>
+      <button onclick="route()" id="homeBtn" class="navbar-link logo">
+        <div class="wrapper">
+          <img src="../Assets/img/icons/Logo.svg" alt="" />
         </div>
-      </div>
-    </div>
-    <script type="module" src="scripts/login.mjs"></script>
+      </button>
+      <button id="accountBtn" class="navbar-item">
+        <a href="/account" onclick="route()">Account</a>
+      </button>
+    </nav>
+    <!--Navbar-->
+    <!--Main-->
+    <main></main>
+    <script type="module" src="./app.js"></script>
+    <!--Main-->
   </body>
 </html>

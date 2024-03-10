@@ -1,0 +1,35 @@
+<div class="account-container">
+  <div class="account-profile-info">
+    <img id="profileImage" alt="Logo" class="profile-img" />
+    <h1 id="usernameHeader" class="profile-name"></h1>
+    <button id="logoutBtn" class="global-btn">Log Out</button>
+  </div>
+  <div class="account-form-container">
+    <div class="account-form">
+      <h1 class="form-title">Profile</h1>
+      <h3 class="form-subtitle">Her you can manage your profile details</h3>
+      <label for="username">Username:</label>
+      <input id="username" type="text" placeholder="Username" value="" />
+      <label for="Profile-picture">Profile-picture:</label>
+      <input id="profilePicture" type="file" name="image" accept="image/*" />
+      <label for="email">Email:</label>
+      <input id="email" type="text" placeholder="Email" value="" />
+      <label for="password">Password:</label>
+      <input id="password" type="password" placeholder="Password" value="" />
+      <div id="errorHandlerCont" class="error-handler"></div>
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          justify-content: center;
+          align-items: center;
+        ">
+        <button id="saveChangesBtn" class="form-button">Save Changes</button>
+        <button id="deleteAccountBtn" class="link-button">
+          Delete account
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
