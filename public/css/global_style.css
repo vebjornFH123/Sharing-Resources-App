@@ -82,15 +82,16 @@ label {
 
 textarea {
   border: none;
-  border: 1px solid rgb(166, 213, 166);
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  border-bottom: 4px solid rgba(48, 117, 59, 0.493);
-  background-color: #edfff3;
+  border: 1px solid #3255ee;
+  border-radius: 20px;
+  border-bottom: 2px solid #3255ee;
+  background-color: #ffffff;
   font-size: 18px;
   color: #000000;
   padding: 6px 0px 0px 4px;
   font-family: sans-serif;
+  max-width: 400px;
+  max-height: 100px;
 }
 
 form {

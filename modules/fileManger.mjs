@@ -4,9 +4,11 @@ import fs from "fs";
 import path from "path";
 
 const fileUploadMiddleware = (fileType) => {
-  return multer().array(fileType);
+  const storage = multer.memoryStorage();
+  const upload = multer({ storage: storage });
+  return upload.array(fileType);
 };
-function fileManger(fileType) {
+function imageManger(fileType) {
   return (req, res, next) => {
     fileUploadMiddleware(fileType)(req, res, async (err) => {
       if (err) {
@@ -39,13 +41,13 @@ function fileManger(fileType) {
           );
       }
       if (req.files.length === 0) {
-        req.reducedImage = null;
+        req.reducedImages = null;
       } else {
-        req.reducedImage = reducedImages;
+        req.reducedImages = reducedImages;
       }
       next();
     });
   };
 }
 
-export default fileManger;
+export default imageManger;

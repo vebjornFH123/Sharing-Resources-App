@@ -46,6 +46,12 @@ server.get("/login", (req, res) => {
 server.get("/signUp", (req, res) => {
   res.sendFile("index.html", { root: "public" });
 });
+server.get("/my_resource", (req, res) => {
+  res.sendFile("index.html", { root: "public" });
+});
+server.get("/edit_resource", (req, res) => {
+  res.sendFile("index.html", { root: "public" });
+});
 // Start the server
 server.listen(server.get("port"), function () {
   console.log("server running", server.get("port"));

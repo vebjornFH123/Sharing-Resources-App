@@ -19,7 +19,7 @@ class DBManager {
     try {
       await client.connect();
       let output;
-      console.log(user.profilepic);
+
       if (user.profilepic === null) {
         output = await client.query(
           'Update "public"."Users" set "name" = $1, "email" = $2, "pswhash" = $3 where id = $3;',
@@ -64,22 +64,30 @@ class DBManager {
     return user;
   }
 
-  async createUser(user) {
+  async create(tableName, data) {
     const client = new pg.Client(this.#credentials);
 
     try {
       await client.connect();
+      const columnNames = Object.keys(data);
+      const placeholders = columnNames
+        .map((_, index) => `$${index + 1}`)
+        .join(", ");
+      const values = Object.values(data);
+      console.log(values);
       const output = await client.query(
-        'INSERT INTO "public"."Users"("name", "email", "pswhash", "profilepic") VALUES($1::Text, $2::Text, $3::Text, $4::Bytea) RETURNING id;',
-        [user.name, user.email, user.pswHash, user.profilepic]
+        `
+        INSERT INTO "${tableName}" (${columnNames
+          .map((column) => `"${column}"`)
+          .join(", ")})
+        VALUES (${placeholders})
+        RETURNING id
+      `,
+        values
       );
-
-      // Client.Query returns an object of type pg.Result (https://node-postgres.com/apis/result)
-      // Of special intrest is the rows and rowCount properties of this object.
-
       if (output.rows.length == 1) {
         // We stored the user in the DB.
-        user.id = output.rows[0].id;
+        data.id = output.rows[0].id;
       }
     } catch (error) {
       console.error(error);
@@ -88,7 +96,7 @@ class DBManager {
       client.end(); // Always disconnect from the database.
     }
 
-    return user;
+    return data;
   }
 
   async getUser(key, user) {

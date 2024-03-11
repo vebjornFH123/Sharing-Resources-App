@@ -1,0 +1,39 @@
+<div class="resource-main-cont">
+  <div class="resource-cont">
+    <div class="input-rap">
+      <input
+        type="file"
+        id="imageUpload"
+        name="images[]"
+        accept="image/*"
+        multiple />
+    </div>
+    <div class="resource-details">
+      <h2>Name</h2>
+      <input id="name" type="text" placeholder="name" value="" />
+      <div style="height: 30px"></div>
+      <h2>Description</h2>
+      <textarea
+        class="description-input"
+        name="txtname"
+        rows="4"
+        cols="50"
+        maxlength="200">
+      </textarea>
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        ">
+        <div id="errorHandlerCont" class="error-handler"></div>
+
+        <button id="saveChangesBtn" class="form-button">Save Changes</button>
+        <button id="deleteAccountBtn" class="link-button">
+          Delete account
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

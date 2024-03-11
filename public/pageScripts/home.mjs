@@ -14,12 +14,12 @@ getData("/resource")
     resources.forEach((resource) => {
       const card = document.createElement("div");
       card.innerHTML = `
-              <img src="${resource.imageUrl}" alt="${resource.title}" />
-              <div id="info">
+              <img class="img" src="${resource.imageUrl}" alt="${resource.title}" />
+              <div class="info">
                   <h3>${resource.title}</h3>
                   <p>${resource.description}</p>
               </div>
-              <button><img src="button_icon.png" alt="Button Icon" /></button>
+              <button class="btn"><img src="../Assets/img/icons/arrow-right.svg" alt="" /></button>
           `;
       card.id = "resource";
       resourceList.appendChild(card);

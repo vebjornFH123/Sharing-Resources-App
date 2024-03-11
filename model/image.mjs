@@ -1,17 +1,17 @@
 import DBManager from "../modules/storageManager.mjs";
 
-class Resource {
+class ResourceImage {
   constructor() {
     this.id;
-    this.name;
-    this.description;
+    this.data;
+    this.resource_id;
   }
 
   async save() {
     /// TODO: What happens if the DBManager fails to complete its task?
     // We know that if a user object dos not have the ID, then it cant be in the DB.
     if (this.id == null) {
-      return await DBManager.create("Resources", this);
+      return await DBManager.create("Resources_images", this);
     } else {
       return await DBManager.updateUser(this);
     }
@@ -22,9 +22,9 @@ class Resource {
     return await DBManager.deleteUser(this);
   }
 
-  async getUser(key) {
+  async get(key) {
     return await DBManager.getUser(key, this);
   }
 }
 
-export default Resource;
+export default ResourceImage;

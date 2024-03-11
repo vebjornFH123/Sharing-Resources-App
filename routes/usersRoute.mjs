@@ -2,7 +2,7 @@ import express, { json } from "express";
 import User from "../model/user.mjs";
 import { HTTPCodes } from "../modules/httpConstants.mjs";
 import SuperLogger from "../modules/SuperLogger.mjs";
-import fileManger from "../modules/fileManger.mjs";
+import imageManger from "../modules/fileManger.mjs";
 import {
   checkIfUserExists,
   createHashPassword,
@@ -19,7 +19,7 @@ USER_API.get("/", (req, res, next) => {
 
 USER_API.post(
   "/signUp",
-  fileManger("profilePicture"),
+  imageManger("profilePicture"),
   checkIfUserExists,
   async (req, res, next) => {
     // Recomend reading up https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#syntax
@@ -29,8 +29,8 @@ USER_API.post(
       let user = new User();
       user.name = name;
       user.email = email;
-      user.profilepic = req.reducedImage[0];
-      user.pswHash = createHashPassword(authString);
+      user.profilepic = req.reducedImages[0];
+      user.pswhash = createHashPassword(authString);
       console.log(req.exists);
       if (req.exists === false) {
         user = await user.save();
@@ -57,14 +57,10 @@ USER_API.post("/logIn", async (req, res, next) => {
   // Recomend reading up https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#syntax
   // https://www.freecodecamp.org/news/javascript-object-destructuring-spread-operator-rest-parameter/
   const { email, authString } = req.body;
-  console.log(authString);
-
-  console.log(email);
   if (email != "" && authString != "") {
     let user = new User();
-    user.pswHash = createHashPassword(authString);
+    user.pswhash = createHashPassword(authString);
     user = await user.getUser("pswHash");
-    console.log(user);
     if (user) {
       res
         .status(HTTPCodes.SuccesfullRespons.Ok)
@@ -86,17 +82,16 @@ USER_API.post("/logIn", async (req, res, next) => {
 
 USER_API.post(
   "/update",
-  fileManger("profilePicture"),
+  imageManger("profilePicture"),
   async (req, res, next) => {
     const { name, email, authString, id } = req.body;
     console.log(req.reducedImage);
     if (name != "" && email != "" && authString != "") {
-      console.log(name, email, authString);
-      let user = new User(); //TODO: Actual user
+      let user = new User();
       user.name = name;
       user.email = email;
-      user.profilepic = req.reducedImage[0];
-      user.pswHash = createHashPassword(authString);
+      user.profilepic = req.reducedImages[0];
+      user.pswhash = createHashPassword(authString);
       user.id = id;
       if (!req.exists) {
         user = await user.save();
