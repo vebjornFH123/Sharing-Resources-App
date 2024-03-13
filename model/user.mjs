@@ -25,8 +25,8 @@ class User {
     return await DBManager.deleteUser(this);
   }
 
-  async getUser(key) {
-    return await DBManager.getUser(key, this);
+  async getUser(key, select) {
+    return await DBManager.getData("Users", select, key, this);
   }
 }
 

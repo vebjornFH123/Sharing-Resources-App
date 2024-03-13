@@ -23,10 +23,26 @@ function imageManger(fileType) {
             img.mimetype == "image/jpeg" ||
             img.mimetype == "image/png"
           ) {
-            const reducedImageBuffer = await sharp(img.buffer)
-              .resize(300, 300)
-              .jpeg({ quality: 50 })
-              .toBuffer();
+            let reducedImageBuffer;
+            if (fileType === "profilePicture") {
+              reducedImageBuffer = await sharp(img.buffer)
+                .resize({
+                  height: 200,
+                  width: 200,
+                  fit: "cover",
+                })
+                .jpeg({ quality: 50 })
+                .toBuffer();
+            } else {
+              reducedImageBuffer = await sharp(img.buffer)
+                .resize({
+                  height: 400,
+                  width: 400,
+                  fit: "cover",
+                })
+                .jpeg({ quality: 50 })
+                .toBuffer();
+            }
             reducedImages.push(reducedImageBuffer);
           } else {
             unsupportedFileTypeEncountered = true;

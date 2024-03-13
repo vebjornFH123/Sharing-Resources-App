@@ -23,7 +23,7 @@ class ResourceImage {
   }
 
   async get(key) {
-    return await DBManager.getUser(key, this);
+    return await DBManager.getData("Resources_images", key, this);
   }
 }
 

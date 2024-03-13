@@ -1,4 +1,5 @@
 import DBManager from "../modules/storageManager.mjs";
+import ResourceImage from "./image.mjs";
 
 class Resource {
   constructor() {
@@ -22,8 +23,8 @@ class Resource {
     return await DBManager.deleteUser(this);
   }
 
-  async getUser(key) {
-    return await DBManager.getUser(key, this);
+  async get(key, select) {
+    return await DBManager.getData("Resources", select, key, this);
   }
 }
 

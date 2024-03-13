@@ -20,19 +20,48 @@
         cols="50"
         maxlength="200">
       </textarea>
+      <h2>Access</h2>
       <div
         style="
           display: flex;
+          flex-direction: column;
           justify-content: center;
           align-items: center;
-          flex-direction: column;
+          gap: 20px;
         ">
-        <div id="errorHandlerCont" class="error-handler"></div>
-
-        <button id="saveChangesBtn" class="form-button">Save Changes</button>
-        <button id="deleteAccountBtn" class="link-button">
-          Delete account
-        </button>
+        <div style="display: flex; flex-direction: column">
+          <div style="display: flex; flex-direction: row; gap: 20px;">
+          <div style="display: flex; flex-direction: column">
+            <span>Add admins</span>
+            <div id="displayAdmins"></div>
+          </div>
+          <div style="display: flex; flex-direction: column">
+            <span>Add users</span>
+            <div id="displayUsers"></div>
+          </div>
+        </div>
+      </div>
+          <div style="display: flex; flex-direction: row; gap: 5px">
+            <select name="" id="selectUser">
+              <option value=""></option>
+            </select>
+            <button id="addAdminUsersBtn" class="global-btn">Add Admin</button>
+            <button id="addUsersBtn" class="global-btn">Add Users</button>
+          </div>
+        </div>
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+          ">
+          <div id="errorHandlerCont" class="error-handler"></div>
+          <button id="saveChangesBtn" class="form-button">Save Changes</button>
+          <button id="deleteAccountBtn" class="link-button">
+            Delete account
+          </button>
+        </div>
       </div>
     </div>
   </div>

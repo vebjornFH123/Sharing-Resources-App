@@ -12,9 +12,18 @@ const USER_API = express.Router();
 
 USER_API.use(express.json()); // This makes it so that express parses all incoming payloads as JSON for this route.
 
-USER_API.get("/", (req, res, next) => {
-  SuperLogger.log("Demo of logging tool");
-  SuperLogger.log("A important msg", SuperLogger.LOGGING_LEVELS.CRTICAL);
+USER_API.get("/all", async (req, res, next) => {
+  let user = new User();
+  user = await user.getUser(undefined, "email, id");
+  if (user) {
+    console.log(user);
+    res.status(HTTPCodes.SuccesfullRespons.Ok).json(JSON.stringify(user)).end();
+  } else {
+    res
+      .status(HTTPCodes.ClientSideErrorRespons.Conflict)
+      .send("Incorrect username or password.")
+      .end();
+  }
 });
 
 USER_API.post(
@@ -31,7 +40,6 @@ USER_API.post(
       user.email = email;
       user.profilepic = req.reducedImages[0];
       user.pswhash = createHashPassword(authString);
-      console.log(req.exists);
       if (req.exists === false) {
         user = await user.save();
         res
@@ -60,7 +68,7 @@ USER_API.post("/logIn", async (req, res, next) => {
   if (email != "" && authString != "") {
     let user = new User();
     user.pswhash = createHashPassword(authString);
-    user = await user.getUser("pswHash");
+    user = await user.getUser("pswHash", "*");
     if (user) {
       res
         .status(HTTPCodes.SuccesfullRespons.Ok)

@@ -99,27 +99,39 @@ class DBManager {
     return data;
   }
 
-  async getUser(key, user) {
+  async getData(tableName, select, key, data) {
     const client = new pg.Client(this.#credentials);
+    console.log(data);
+
+    const columnNames = data === undefined ? null : Object.keys(data);
+    const values = data === undefined ? null : Object.values(data);
     try {
       await client.connect();
-      let params;
-      if (key === "email") {
-        params = [user.email];
-      } else if (key === "pswHash") {
-        params = [user.pswHash];
-      }
-
-      const output = await client.query(
-        `Select * from "public"."Users" WHERE ${key} = $1;`,
-        params
-      );
-      console.log(output.rows);
-      if (output.rowCount === 0) {
-        return false;
+      let output;
+      if (tableName === "Users") {
+        if (key === undefined) {
+          console.log("hdfdjksfihdsjkfoipdshu", key);
+          output = await client.query(
+            `Select ${select} from "public"."${tableName}"`
+          );
+        } else {
+          console.log("fkshdufihdsjhopifds", values);
+          output = await client.query(
+            `Select ${select} from "public"."${tableName}" WHERE ${key} = $1;`,
+            values
+          );
+        }
       } else {
-        return true;
+        output = await client.query(
+          `SELECT r.id AS resource_id, r.name, r.description, array_agg(ri.img_data) AS images
+          FROM "Resources" r
+          JOIN "Resources_images" ri ON r.id = ri.resource_id
+          WHERE r.id = $1
+          GROUP BY r.id, r.name, r.description`,
+          values
+        );
       }
+      return output.rows;
     } catch (error) {
       console.error(error);
     } finally {
