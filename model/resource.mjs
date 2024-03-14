@@ -20,7 +20,7 @@ class Resource {
 
   async delete() {
     /// TODO: What happens if the DBManager fails to complete its task?
-    return await DBManager.deleteUser(this);
+    return await DBManager.delete("Resources", this);
   }
 
   async get(key, select) {

@@ -27,7 +27,7 @@ class DBManager {
         );
       } else {
         output = await client.query(
-          'Update "public"."Users" set "name" = $1, "email" = $2, "pswhash" = $3 "profilepic" = $4 where id = $4;',
+          'Update "public"."Users" set "name" = $1, "email" = $2, "pswhash" = $3 "profilepic" = $4 where id = $5;',
           [user.name, user.email, user.pswHash, user.profilepic, user.id]
         );
       }
@@ -45,23 +45,35 @@ class DBManager {
     return user;
   }
 
-  async deleteUser(user) {
+  async delete(tableName, data, deleteType) {
     const client = new pg.Client(this.#credentials);
-
     try {
       await client.connect();
-      const output = await client.query(
-        'Update from "public"."Users" set "name" = $1, "email" =$2, "pswhash" = $3, where id = $4;',
-        [null, null, null, user.id]
-      );
+      const columnNames = Object.keys(data).slice(0, -1);
+      const values = Object.values(data);
+      let output;
+      if (deleteType === null) {
+        output = await client.query(
+          `UPDATE "public"."${tableName}" SET ${columnNames
+            .map((column, index) => `"${column}" = $${index + 1}`)
+            .join(", ")} WHERE id = $${columnNames.length + 1}`,
+          values
+        );
+      } else {
+        output = await client.query(
+          `DELETE FROM "${tableName}" WHERE id = $1;`,
+          [data.id]
+        );
+      }
       return output.rowCount;
     } catch (error) {
       //TODO : Error handling?? Remember that this is a module seperate from your server
+      console.log("yes", error);
     } finally {
       client.end(); // Always disconnect from the database.
     }
 
-    return user;
+    return data;
   }
 
   async create(tableName, data) {
@@ -69,12 +81,12 @@ class DBManager {
 
     try {
       await client.connect();
+      console.log(data);
       const columnNames = Object.keys(data);
       const placeholders = columnNames
         .map((_, index) => `$${index + 1}`)
         .join(", ");
       const values = Object.values(data);
-      console.log(values);
       const output = await client.query(
         `
         INSERT INTO "${tableName}" (${columnNames

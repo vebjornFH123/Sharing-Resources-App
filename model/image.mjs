@@ -3,7 +3,7 @@ import DBManager from "../modules/storageManager.mjs";
 class ResourceImage {
   constructor() {
     this.id;
-    this.data;
+    this.img_data;
     this.resource_id;
   }
 

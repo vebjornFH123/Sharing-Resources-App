@@ -1,6 +1,7 @@
 import express, { json } from "express";
 import Resource from "../model/resource.mjs";
 import ResourceImage from "../model/image.mjs";
+import ResourceAccess from "../model/resourceAccess.mjs";
 import { HTTPCodes } from "../modules/httpConstants.mjs";
 import SuperLogger from "../modules/SuperLogger.mjs";
 import imageManger from "../modules/fileManger.mjs";
@@ -14,7 +15,6 @@ const RESOURCE_API = express.Router();
 RESOURCE_API.use(express.json()); // This makes it so that express parses all incoming payloads as JSON for this route.
 
 RESOURCE_API.get("/", async (req, res, next) => {
-  let image = new ResourceImage();
   let resource = new Resource();
   resource.id = 10;
   resource = await resource.get("id", "*");
@@ -31,17 +31,28 @@ RESOURCE_API.post(
   imageManger("resourceImages"),
   async (req, res, next) => {
     const { name, description } = req.body;
-    if (name != "" && description != "") {
+    const usersInfo = JSON.parse(req.body.usersInfo);
+    if (name != "" && description != "" && usersInfo.length > 0) {
       let resource = new Resource();
       resource.name = name;
       resource.description = description;
       resource = await resource.save();
       if (resource.id) {
+        console.log(usersInfo);
+        usersInfo.forEach(async (userInfo) => {
+          console.log(userInfo);
+          let resourceAccess = new ResourceAccess();
+          resourceAccess.userId = userInfo.id;
+          resourceAccess.resourceId = resource.id;
+          resourceAccess.isAdmin = userInfo.isAdmin;
+          resourceAccess = await resourceAccess.save();
+          console.log(resourceAccess);
+        });
         if (req.reducedImages !== null) {
           resource.images = req.reducedImages;
           req.reducedImages.forEach(async (img) => {
             let image = new ResourceImage();
-            image.data = img;
+            image.img_data = img;
             image.resource_id = resource.id;
             image = await image.save();
           });
@@ -67,6 +78,25 @@ RESOURCE_API.post(
 
 RESOURCE_API.post("/update", async (req, res, next) => {});
 
-RESOURCE_API.delete("/:id", async (req, res) => {});
+RESOURCE_API.delete("/:id", async (req, res) => {
+  /// TODO: Delete user.
+  const resource = new Resource(); //TODO: Actual user
+  resource.id = req.params.id;
+  const deleteUser = await resource.delete();
+
+  console.log(deleteUser);
+
+  if (deleteUser === 1) {
+    res
+      .status(HTTPCodes.SuccesfullRespons.Ok)
+      .send("Account deleted successfully")
+      .end();
+  } else {
+    res
+      .status(HTTPCodes.ClientSideErrorRespons.Conflict)
+      .send("Failed to delete user")
+      .end();
+  }
+});
 
 export default RESOURCE_API;

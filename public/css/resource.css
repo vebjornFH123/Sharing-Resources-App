@@ -94,6 +94,60 @@
   width: 250px;
 }
 
+select {
+  width: 150px;
+  border: none;
+  border-bottom: 4px solid #3255ee;
+  border-top: 1.5px solid #2443cc;
+  border-left: 1.5px solid #2443cc;
+  border-right: 1.5px solid #2443cc;
+  background-color: rgb(255, 255, 255);
+  font-size: 0.9rem;
+  color: #000000;
+  border-radius: 15px;
+  padding-left: 10px;
+  padding: 5px;
+}
+
+#displayUsers {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 10px;
+}
+#addAdminUsersBtn {
+  background-color: #8be6ac;
+}
+#addUsersBtn {
+  background-color: #8bd4e6;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 3px;
+  margin-bottom: 5px;
+  width: fit-content;
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-name {
+  font-weight: 200;
+}
+
+.close-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: rgb(235, 159, 159);
+}
+
 /* Responsive styles for desktop and phone */
 @media (max-width: 768px) {
   .-resource-container {

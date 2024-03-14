@@ -1,4 +1,4 @@
-import { postTo, getData } from "../../modules/methods.mjs";
+import { postTo, getData, deleteData } from "../../modules/methods.mjs";
 import errorHandler from "../../modules/errorHandling.mjs";
 
 const saveChangesBtn = document.getElementById("saveChangesBtn");
@@ -10,28 +10,33 @@ const selectUser = document.getElementById("selectUser");
 
 const addAdminUsersBtn = document.getElementById("addAdminUsersBtn");
 const addUsersBtn = document.getElementById("addUsersBtn");
+const deleteResourceBtn = document.getElementById("deleteResourceBtn");
 
-const displayAdmins = document.getElementById("displayAdmins");
 const displayUsers = document.getElementById("displayUsers");
 
-const adminUsers = [];
 const users = [];
 
 addAdminUsersBtn.addEventListener("click", () => {
-  addUser(adminUsers, displayAdmins);
+  addUser(users, displayUsers, true);
 });
 addUsersBtn.addEventListener("click", () => {
-  addUser(users, displayUsers);
+  addUser(users, displayUsers, false);
 });
 
-function addUser(usersArray, cont) {
+function addUser(usersArray, cont, admin) {
   const selectValues = selectUser.value.split(",");
   const values = {
     id: selectValues[0],
     email: selectValues[1],
+    isAdmin: admin,
   };
-  usersArray.push(values);
-  displayCard(usersArray, cont);
+  let checkIfUserExists = usersArray.some((user) => user.id === values.id);
+  if (checkIfUserExists === false) {
+    usersArray.push(values);
+    displayCard(usersArray, cont);
+  } else {
+    errorHandler(errorHandlerCont, `User ${values.email} already added`);
+  }
 }
 
 function removeUser(usersArray, cont, id) {
@@ -48,7 +53,9 @@ function displayCard(usersArray, cont) {
   cont.innerHTML = "";
   console.log(usersArray);
   usersArray.forEach((user) => {
-    const htmlCard = `<div class="card">
+    const htmlCard = `<div class="card" style="background-color:${
+      user.isAdmin === true ? "#8be6ac" : "#8bd4e6"
+    }">
   <div class="card-content">
     <span class="card-name">${user.email}</span>
     <button id="${user.id}" class="close-button">×</button>
@@ -108,7 +115,8 @@ saveChangesBtn.onclick = async (e) => {
   for (let i = 0; i < images.length; i++) {
     resourceData.append("resourceImages", images[i]);
   }
-
+  console.log(users);
+  resourceData.append("usersInfo", JSON.stringify(users));
   postTo(`/resource/add`, resourceData)
     .then((respon) => {
       if (respon.ok) {
@@ -118,6 +126,16 @@ saveChangesBtn.onclick = async (e) => {
     .then((data) => {
       console.log(data);
       localStorage.setItem("userData", data);
+    })
+    .catch((error) => {
+      errorHandler(errorHandlerCont, error);
+    });
+};
+
+deleteResourceBtn.onclick = async (e) => {
+  deleteData(`/resource/61`)
+    .then((respon) => {
+      console.log(respon);
     })
     .catch((error) => {
       errorHandler(errorHandlerCont, error);

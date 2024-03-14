@@ -125,6 +125,10 @@ USER_API.post(
 USER_API.delete("/:id", async (req, res) => {
   /// TODO: Delete user.
   const user = new User(); //TODO: Actual user
+  user.name = null;
+  user.email = null;
+  user.profilepic = null;
+  user.pswhash = null;
   user.id = req.params.id;
   const deleteUser = await user.delete();
 

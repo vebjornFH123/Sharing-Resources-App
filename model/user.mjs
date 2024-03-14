@@ -2,12 +2,11 @@ import DBManager from "../modules/storageManager.mjs";
 
 class User {
   constructor() {
-    ///TODO: Are these the correct fields for your project?
     this.email;
     this.pswhash;
     this.name;
-    this.id;
     this.profilepic;
+    this.id;
   }
 
   async save() {
@@ -22,7 +21,7 @@ class User {
 
   async delete() {
     /// TODO: What happens if the DBManager fails to complete its task?
-    return await DBManager.deleteUser(this);
+    return await DBManager.delete("Users", this, null);
   }
 
   async getUser(key, select) {

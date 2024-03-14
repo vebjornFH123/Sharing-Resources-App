@@ -41653,3 +41653,3032 @@ Database connection  postgresql://localhost:5432/ResourcesAppDB
 Database connection  postgresql://localhost:5432/ResourcesAppDB
 ####################
 Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+7:49:58 PM [32mGET[39m /edit_resource
+7:49:58 PM [32mGET[39m /css/global_style.css
+7:49:58 PM [32mGET[39m /css/navbar_style.css
+7:49:58 PM [32mGET[39m /css/accounte_style.css
+7:49:58 PM [32mGET[39m /css/login_signUp_style.css
+7:49:58 PM [32mGET[39m /css/home.css
+7:49:58 PM [32mGET[39m /app.js
+7:49:58 PM [32mGET[39m /css/resource.css
+7:49:58 PM [32mGET[39m /Assets/img/icons/Logo.svg
+7:49:59 PM [32mGET[39m /templates/edit_resource.html
+7:49:59 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2019:49:59%20GMT+0100%20(sentraleuropeisk%20normaltid)
+7:49:59 PM [32mGET[39m /modules/methods.mjs
+7:49:59 PM [32mGET[39m /modules/errorHandling.mjs
+7:49:59 PM [32mGET[39m /resource
+7:49:59 PM [32mGET[39m /user/all
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+7:50:30 PM [32mGET[39m /edit_resource
+7:50:30 PM [32mGET[39m /css/global_style.css
+7:50:30 PM [32mGET[39m /css/navbar_style.css
+7:50:30 PM [32mGET[39m /css/accounte_style.css
+7:50:30 PM [32mGET[39m /css/login_signUp_style.css
+7:50:30 PM [32mGET[39m /css/home.css
+7:50:30 PM [32mGET[39m /css/resource.css
+7:50:30 PM [32mGET[39m /app.js
+7:50:30 PM [32mGET[39m /Assets/img/icons/Logo.svg
+7:50:31 PM [32mGET[39m /templates/edit_resource.html
+7:50:31 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2019:50:31%20GMT+0100%20(sentraleuropeisk%20normaltid)
+7:50:31 PM [32mGET[39m /modules/methods.mjs
+7:50:31 PM [32mGET[39m /modules/errorHandling.mjs
+7:50:31 PM [32mGET[39m /resource
+7:50:31 PM [32mGET[39m /user/all
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+7:52:44 PM [32mGET[39m /edit_resource
+7:52:44 PM [32mGET[39m /css/global_style.css
+7:52:44 PM [32mGET[39m /css/navbar_style.css
+7:52:44 PM [32mGET[39m /css/accounte_style.css
+7:52:44 PM [32mGET[39m /css/login_signUp_style.css
+7:52:44 PM [32mGET[39m /css/home.css
+7:52:44 PM [32mGET[39m /css/resource.css
+7:52:44 PM [32mGET[39m /app.js
+7:52:44 PM [32mGET[39m /Assets/img/icons/Logo.svg
+7:52:44 PM [32mGET[39m /templates/edit_resource.html
+7:52:44 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2019:52:44%20GMT+0100%20(sentraleuropeisk%20normaltid)
+7:52:44 PM [32mGET[39m /modules/methods.mjs
+7:52:44 PM [32mGET[39m /modules/errorHandling.mjs
+7:52:44 PM [32mGET[39m /resource
+7:52:44 PM [32mGET[39m /user/all
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+7:53:21 PM [33mPOST[39m /resource/add
+7:53:21 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+7:53:23 PM [32mGET[39m /edit_resource
+7:53:23 PM [32mGET[39m /css/global_style.css
+7:53:23 PM [32mGET[39m /css/navbar_style.css
+7:53:23 PM [32mGET[39m /css/accounte_style.css
+7:53:23 PM [32mGET[39m /css/login_signUp_style.css
+7:53:23 PM [32mGET[39m /css/home.css
+7:53:23 PM [32mGET[39m /app.js
+7:53:23 PM [32mGET[39m /css/resource.css
+7:53:23 PM [32mGET[39m /Assets/img/icons/Logo.svg
+7:53:24 PM [32mGET[39m /templates/edit_resource.html
+7:53:24 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2019:53:24%20GMT+0100%20(sentraleuropeisk%20normaltid)
+7:53:24 PM [32mGET[39m /modules/methods.mjs
+7:53:24 PM [32mGET[39m /modules/errorHandling.mjs
+7:53:24 PM [32mGET[39m /resource
+7:53:24 PM [32mGET[39m /user/all
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+7:54:25 PM [32mGET[39m /edit_resource
+7:54:25 PM [32mGET[39m /css/global_style.css
+7:54:25 PM [32mGET[39m /css/navbar_style.css
+7:54:25 PM [32mGET[39m /css/accounte_style.css
+7:54:25 PM [32mGET[39m /css/home.css
+7:54:25 PM [32mGET[39m /css/login_signUp_style.css
+7:54:25 PM [32mGET[39m /css/resource.css
+7:54:25 PM [32mGET[39m /app.js
+7:54:25 PM [32mGET[39m /Assets/img/icons/Logo.svg
+7:54:25 PM [32mGET[39m /templates/edit_resource.html
+7:54:25 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2019:54:25%20GMT+0100%20(sentraleuropeisk%20normaltid)
+7:54:25 PM [32mGET[39m /modules/methods.mjs
+7:54:25 PM [32mGET[39m /modules/errorHandling.mjs
+7:54:25 PM [32mGET[39m /resource
+7:54:25 PM [32mGET[39m /user/all
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+7:56:07 PM [32mGET[39m /edit_resource
+7:56:07 PM [32mGET[39m /css/global_style.css
+7:56:07 PM [32mGET[39m /css/navbar_style.css
+7:56:07 PM [32mGET[39m /css/accounte_style.css
+7:56:07 PM [32mGET[39m /css/login_signUp_style.css
+7:56:07 PM [32mGET[39m /css/home.css
+7:56:07 PM [32mGET[39m /css/resource.css
+7:56:07 PM [32mGET[39m /app.js
+7:56:07 PM [32mGET[39m /Assets/img/icons/Logo.svg
+7:56:07 PM [32mGET[39m /templates/edit_resource.html
+7:56:07 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2019:56:07%20GMT+0100%20(sentraleuropeisk%20normaltid)
+7:56:07 PM [32mGET[39m /modules/methods.mjs
+7:56:07 PM [32mGET[39m /modules/errorHandling.mjs
+7:56:07 PM [32mGET[39m /resource
+7:56:07 PM [32mGET[39m /user/all
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+7:56:17 PM [32mGET[39m /edit_resource
+7:56:17 PM [32mGET[39m /css/global_style.css
+7:56:17 PM [32mGET[39m /css/navbar_style.css
+7:56:17 PM [32mGET[39m /css/accounte_style.css
+7:56:17 PM [32mGET[39m /css/login_signUp_style.css
+7:56:17 PM [32mGET[39m /css/home.css
+7:56:17 PM [32mGET[39m /css/resource.css
+7:56:17 PM [32mGET[39m /app.js
+7:56:17 PM [32mGET[39m /Assets/img/icons/Logo.svg
+7:56:17 PM [32mGET[39m /templates/edit_resource.html
+7:56:17 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2019:56:17%20GMT+0100%20(sentraleuropeisk%20normaltid)
+7:56:17 PM [32mGET[39m /modules/methods.mjs
+7:56:17 PM [32mGET[39m /modules/errorHandling.mjs
+7:56:17 PM [32mGET[39m /resource
+7:56:17 PM [32mGET[39m /user/all
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+7:58:18 PM [32mGET[39m /edit_resource
+7:58:18 PM [32mGET[39m /css/global_style.css
+7:58:18 PM [32mGET[39m /css/navbar_style.css
+7:58:18 PM [32mGET[39m /css/accounte_style.css
+7:58:18 PM [32mGET[39m /css/login_signUp_style.css
+7:58:18 PM [32mGET[39m /app.js
+7:58:18 PM [32mGET[39m /css/home.css
+7:58:18 PM [32mGET[39m /css/resource.css
+7:58:18 PM [32mGET[39m /Assets/img/icons/Logo.svg
+7:58:18 PM [32mGET[39m /templates/edit_resource.html
+7:58:18 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2019:58:18%20GMT+0100%20(sentraleuropeisk%20normaltid)
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+7:58:36 PM [32mGET[39m /edit_resource
+7:58:36 PM [32mGET[39m /css/global_style.css
+7:58:36 PM [32mGET[39m /css/navbar_style.css
+7:58:36 PM [32mGET[39m /css/accounte_style.css
+7:58:36 PM [32mGET[39m /css/login_signUp_style.css
+7:58:36 PM [32mGET[39m /css/home.css
+7:58:36 PM [32mGET[39m /css/resource.css
+7:58:36 PM [32mGET[39m /app.js
+7:58:36 PM [32mGET[39m /Assets/img/icons/Logo.svg
+7:58:36 PM [32mGET[39m /templates/edit_resource.html
+7:58:36 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2019:58:36%20GMT+0100%20(sentraleuropeisk%20normaltid)
+7:58:36 PM [32mGET[39m /modules/methods.mjs
+7:58:36 PM [32mGET[39m /modules/errorHandling.mjs
+7:58:36 PM [32mGET[39m /resource
+7:58:36 PM [32mGET[39m /user/all
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+8:00:27 PM [32mGET[39m /edit_resource
+8:00:27 PM [32mGET[39m /css/global_style.css
+8:00:27 PM [32mGET[39m /css/navbar_style.css
+8:00:27 PM [32mGET[39m /css/accounte_style.css
+8:00:27 PM [32mGET[39m /css/login_signUp_style.css
+8:00:27 PM [32mGET[39m /css/home.css
+8:00:27 PM [32mGET[39m /css/resource.css
+8:00:27 PM [32mGET[39m /app.js
+8:00:27 PM [32mGET[39m /Assets/img/icons/Logo.svg
+8:00:28 PM [32mGET[39m /templates/edit_resource.html
+8:00:28 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2020:00:28%20GMT+0100%20(sentraleuropeisk%20normaltid)
+8:00:28 PM [32mGET[39m /modules/methods.mjs
+8:00:28 PM [32mGET[39m /modules/errorHandling.mjs
+8:00:28 PM [32mGET[39m /resource
+8:00:28 PM [32mGET[39m /user/all
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+8:00:44 PM [32mGET[39m /edit_resource
+8:00:44 PM [32mGET[39m /css/global_style.css
+8:00:44 PM [32mGET[39m /css/navbar_style.css
+8:00:44 PM [32mGET[39m /css/home.css
+8:00:44 PM [32mGET[39m /css/accounte_style.css
+8:00:44 PM [32mGET[39m /css/resource.css
+8:00:44 PM [32mGET[39m /app.js
+8:00:44 PM [32mGET[39m /css/login_signUp_style.css
+8:00:44 PM [32mGET[39m /Assets/img/icons/Logo.svg
+8:00:45 PM [32mGET[39m /templates/edit_resource.html
+8:00:45 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2020:00:45%20GMT+0100%20(sentraleuropeisk%20normaltid)
+8:00:45 PM [32mGET[39m /modules/methods.mjs
+8:00:45 PM [32mGET[39m /modules/errorHandling.mjs
+8:00:45 PM [32mGET[39m /resource
+8:00:45 PM [32mGET[39m /user/all
+8:00:47 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+8:02:41 PM [32mGET[39m /edit_resource
+8:02:41 PM [32mGET[39m /css/global_style.css
+8:02:41 PM [32mGET[39m /css/navbar_style.css
+8:02:41 PM [32mGET[39m /css/accounte_style.css
+8:02:41 PM [32mGET[39m /css/login_signUp_style.css
+8:02:41 PM [32mGET[39m /css/home.css
+8:02:41 PM [32mGET[39m /css/resource.css
+8:02:41 PM [32mGET[39m /app.js
+8:02:41 PM [32mGET[39m /Assets/img/icons/Logo.svg
+8:02:41 PM [32mGET[39m /templates/edit_resource.html
+8:02:41 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2020:02:41%20GMT+0100%20(sentraleuropeisk%20normaltid)
+8:02:41 PM [32mGET[39m /modules/methods.mjs
+8:02:41 PM [32mGET[39m /modules/errorHandling.mjs
+8:02:41 PM [32mGET[39m /resource
+8:02:41 PM [32mGET[39m /user/all
+8:02:42 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+8:02:49 PM [33mPOST[39m /resource/add
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+8:03:27 PM [32mGET[39m /edit_resource
+8:03:27 PM [32mGET[39m /css/global_style.css
+8:03:27 PM [32mGET[39m /css/navbar_style.css
+8:03:27 PM [32mGET[39m /css/accounte_style.css
+8:03:27 PM [32mGET[39m /app.js
+8:03:27 PM [32mGET[39m /css/login_signUp_style.css
+8:03:27 PM [32mGET[39m /css/home.css
+8:03:27 PM [32mGET[39m /css/resource.css
+8:03:27 PM [32mGET[39m /Assets/img/icons/Logo.svg
+8:03:27 PM [32mGET[39m /templates/edit_resource.html
+8:03:27 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2020:03:27%20GMT+0100%20(sentraleuropeisk%20normaltid)
+8:03:27 PM [32mGET[39m /modules/methods.mjs
+8:03:27 PM [32mGET[39m /modules/errorHandling.mjs
+8:03:27 PM [32mGET[39m /resource
+8:03:27 PM [32mGET[39m /user/all
+8:03:28 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+8:03:49 PM [32mGET[39m /edit_resource
+8:03:49 PM [32mGET[39m /css/global_style.css
+8:03:49 PM [32mGET[39m /css/navbar_style.css
+8:03:49 PM [32mGET[39m /css/accounte_style.css
+8:03:49 PM [32mGET[39m /css/login_signUp_style.css
+8:03:49 PM [32mGET[39m /css/home.css
+8:03:49 PM [32mGET[39m /css/resource.css
+8:03:49 PM [32mGET[39m /app.js
+8:03:49 PM [32mGET[39m /Assets/img/icons/Logo.svg
+8:03:49 PM [32mGET[39m /templates/edit_resource.html
+8:03:49 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2020:03:49%20GMT+0100%20(sentraleuropeisk%20normaltid)
+8:03:49 PM [32mGET[39m /modules/methods.mjs
+8:03:49 PM [32mGET[39m /modules/errorHandling.mjs
+8:03:49 PM [32mGET[39m /resource
+8:03:49 PM [32mGET[39m /user/all
+8:03:50 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+8:04:11 PM [32mGET[39m /edit_resource
+8:04:11 PM [32mGET[39m /css/global_style.css
+8:04:11 PM [32mGET[39m /css/navbar_style.css
+8:04:11 PM [32mGET[39m /css/login_signUp_style.css
+8:04:11 PM [32mGET[39m /app.js
+8:04:11 PM [32mGET[39m /css/accounte_style.css
+8:04:11 PM [32mGET[39m /css/resource.css
+8:04:11 PM [32mGET[39m /Assets/img/icons/Logo.svg
+8:04:11 PM [32mGET[39m /css/home.css
+8:04:11 PM [32mGET[39m /templates/edit_resource.html
+8:04:11 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2020:04:11%20GMT+0100%20(sentraleuropeisk%20normaltid)
+8:04:11 PM [32mGET[39m /modules/methods.mjs
+8:04:11 PM [32mGET[39m /modules/errorHandling.mjs
+8:04:11 PM [32mGET[39m /resource
+8:04:11 PM [32mGET[39m /user/all
+8:04:14 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+8:05:59 PM [32mGET[39m /edit_resource
+8:05:59 PM [32mGET[39m /css/global_style.css
+8:05:59 PM [32mGET[39m /css/navbar_style.css
+8:05:59 PM [32mGET[39m /css/accounte_style.css
+8:05:59 PM [32mGET[39m /css/login_signUp_style.css
+8:05:59 PM [32mGET[39m /css/home.css
+8:05:59 PM [32mGET[39m /css/resource.css
+8:05:59 PM [32mGET[39m /app.js
+8:05:59 PM [32mGET[39m /Assets/img/icons/Logo.svg
+8:05:59 PM [32mGET[39m /templates/edit_resource.html
+8:05:59 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2020:05:59%20GMT+0100%20(sentraleuropeisk%20normaltid)
+8:05:59 PM [32mGET[39m /modules/methods.mjs
+8:05:59 PM [32mGET[39m /modules/errorHandling.mjs
+8:05:59 PM [32mGET[39m /resource
+8:05:59 PM [32mGET[39m /user/all
+8:06:01 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+8:06:27 PM [32mGET[39m /edit_resource
+8:06:27 PM [32mGET[39m /css/global_style.css
+8:06:27 PM [32mGET[39m /css/navbar_style.css
+8:06:27 PM [32mGET[39m /css/accounte_style.css
+8:06:27 PM [32mGET[39m /css/login_signUp_style.css
+8:06:27 PM [32mGET[39m /app.js
+8:06:27 PM [32mGET[39m /css/home.css
+8:06:27 PM [32mGET[39m /css/resource.css
+8:06:27 PM [32mGET[39m /Assets/img/icons/Logo.svg
+8:06:27 PM [32mGET[39m /templates/edit_resource.html
+8:06:27 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2020:06:27%20GMT+0100%20(sentraleuropeisk%20normaltid)
+8:06:27 PM [32mGET[39m /modules/methods.mjs
+8:06:27 PM [32mGET[39m /modules/errorHandling.mjs
+8:06:27 PM [32mGET[39m /resource
+8:06:27 PM [32mGET[39m /user/all
+8:06:29 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+8:07:18 PM [32mGET[39m /edit_resource
+8:07:18 PM [32mGET[39m /css/global_style.css
+8:07:18 PM [32mGET[39m /css/navbar_style.css
+8:07:18 PM [32mGET[39m /css/accounte_style.css
+8:07:18 PM [32mGET[39m /css/login_signUp_style.css
+8:07:18 PM [32mGET[39m /css/home.css
+8:07:18 PM [32mGET[39m /css/resource.css
+8:07:18 PM [32mGET[39m /app.js
+8:07:18 PM [32mGET[39m /Assets/img/icons/Logo.svg
+8:07:18 PM [32mGET[39m /templates/edit_resource.html
+8:07:18 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2020:07:18%20GMT+0100%20(sentraleuropeisk%20normaltid)
+8:07:18 PM [32mGET[39m /modules/methods.mjs
+8:07:18 PM [32mGET[39m /modules/errorHandling.mjs
+8:07:18 PM [32mGET[39m /resource
+8:07:18 PM [32mGET[39m /user/all
+8:07:22 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+8:10:01 PM [32mGET[39m /edit_resource
+8:10:01 PM [32mGET[39m /css/global_style.css
+8:10:01 PM [32mGET[39m /css/navbar_style.css
+8:10:01 PM [32mGET[39m /css/accounte_style.css
+8:10:01 PM [32mGET[39m /css/login_signUp_style.css
+8:10:01 PM [32mGET[39m /css/home.css
+8:10:01 PM [32mGET[39m /css/resource.css
+8:10:01 PM [32mGET[39m /app.js
+8:10:01 PM [32mGET[39m /Assets/img/icons/Logo.svg
+8:10:02 PM [32mGET[39m /templates/edit_resource.html
+8:10:02 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2020:10:02%20GMT+0100%20(sentraleuropeisk%20normaltid)
+8:10:02 PM [32mGET[39m /modules/methods.mjs
+8:10:02 PM [32mGET[39m /modules/errorHandling.mjs
+8:10:02 PM [32mGET[39m /resource
+8:10:02 PM [32mGET[39m /user/all
+8:10:02 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+8:11:44 PM [32mGET[39m /edit_resource
+8:11:44 PM [32mGET[39m /css/global_style.css
+8:11:44 PM [32mGET[39m /css/navbar_style.css
+8:11:44 PM [32mGET[39m /css/accounte_style.css
+8:11:44 PM [32mGET[39m /css/login_signUp_style.css
+8:11:44 PM [32mGET[39m /app.js
+8:11:44 PM [32mGET[39m /css/home.css
+8:11:44 PM [32mGET[39m /css/resource.css
+8:11:44 PM [32mGET[39m /Assets/img/icons/Logo.svg
+8:11:45 PM [32mGET[39m /templates/edit_resource.html
+8:11:45 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2020:11:45%20GMT+0100%20(sentraleuropeisk%20normaltid)
+8:11:45 PM [32mGET[39m /modules/methods.mjs
+8:11:45 PM [32mGET[39m /modules/errorHandling.mjs
+8:11:45 PM [32mGET[39m /resource
+8:11:45 PM [32mGET[39m /user/all
+8:11:45 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+Server enviorment local
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+8:12:03 PM [32mGET[39m /edit_resource
+8:12:03 PM [32mGET[39m /css/navbar_style.css
+8:12:03 PM [32mGET[39m /css/global_style.css
+8:12:03 PM [32mGET[39m /css/login_signUp_style.css
+8:12:03 PM [32mGET[39m /css/resource.css
+8:12:03 PM [32mGET[39m /app.js
+8:12:03 PM [32mGET[39m /css/accounte_style.css
+8:12:03 PM [32mGET[39m /css/home.css
+8:12:03 PM [32mGET[39m /Assets/img/icons/Logo.svg
+8:12:03 PM [32mGET[39m /templates/edit_resource.html
+8:12:03 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2020:12:03%20GMT+0100%20(sentraleuropeisk%20normaltid)
+8:12:03 PM [32mGET[39m /modules/methods.mjs
+8:12:03 PM [32mGET[39m /modules/errorHandling.mjs
+8:12:03 PM [32mGET[39m /resource
+8:12:03 PM [32mGET[39m /user/all
+8:12:04 PM [33mPOST[39m /resource/add
+8:12:04 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+8:12:27 PM [32mGET[39m /edit_resource
+8:12:27 PM [32mGET[39m /css/global_style.css
+8:12:27 PM [32mGET[39m /css/navbar_style.css
+8:12:27 PM [32mGET[39m /css/accounte_style.css
+8:12:27 PM [32mGET[39m /css/login_signUp_style.css
+8:12:27 PM [32mGET[39m /css/home.css
+8:12:27 PM [32mGET[39m /css/resource.css
+8:12:27 PM [32mGET[39m /app.js
+8:12:27 PM [32mGET[39m /Assets/img/icons/Logo.svg
+8:12:28 PM [32mGET[39m /templates/edit_resource.html
+8:12:28 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2020:12:28%20GMT+0100%20(sentraleuropeisk%20normaltid)
+8:12:28 PM [32mGET[39m /modules/methods.mjs
+8:12:28 PM [32mGET[39m /modules/errorHandling.mjs
+8:12:28 PM [32mGET[39m /resource
+8:12:28 PM [32mGET[39m /user/all
+8:12:29 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+8:14:31 PM [32mGET[39m /edit_resource
+8:14:31 PM [32mGET[39m /css/global_style.css
+8:14:31 PM [32mGET[39m /css/navbar_style.css
+8:14:31 PM [32mGET[39m /css/accounte_style.css
+8:14:31 PM [32mGET[39m /css/login_signUp_style.css
+8:14:31 PM [32mGET[39m /css/home.css
+8:14:31 PM [32mGET[39m /css/resource.css
+8:14:31 PM [32mGET[39m /app.js
+8:14:31 PM [32mGET[39m /Assets/img/icons/Logo.svg
+8:14:31 PM [32mGET[39m /templates/edit_resource.html
+8:14:32 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2020:14:32%20GMT+0100%20(sentraleuropeisk%20normaltid)
+8:14:32 PM [32mGET[39m /modules/methods.mjs
+8:14:32 PM [32mGET[39m /modules/errorHandling.mjs
+8:14:32 PM [32mGET[39m /resource
+8:14:32 PM [32mGET[39m /user/all
+8:14:33 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+8:14:43 PM [32mGET[39m /edit_resource
+8:14:43 PM [32mGET[39m /css/global_style.css
+8:14:43 PM [32mGET[39m /css/navbar_style.css
+8:14:43 PM [32mGET[39m /app.js
+8:14:43 PM [32mGET[39m /css/accounte_style.css
+8:14:43 PM [32mGET[39m /css/login_signUp_style.css
+8:14:43 PM [32mGET[39m /css/home.css
+8:14:43 PM [32mGET[39m /Assets/img/icons/Logo.svg
+8:14:43 PM [32mGET[39m /css/resource.css
+8:14:43 PM [32mGET[39m /templates/edit_resource.html
+8:14:43 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2020:14:43%20GMT+0100%20(sentraleuropeisk%20normaltid)
+8:14:43 PM [32mGET[39m /modules/methods.mjs
+8:14:43 PM [32mGET[39m /modules/errorHandling.mjs
+8:14:43 PM [32mGET[39m /resource
+8:14:43 PM [32mGET[39m /user/all
+8:14:45 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+9:03:36 PM [32mGET[39m /edit_resource
+9:03:36 PM [32mGET[39m /css/global_style.css
+9:03:36 PM [32mGET[39m /css/navbar_style.css
+9:03:36 PM [32mGET[39m /css/accounte_style.css
+9:03:36 PM [32mGET[39m /css/login_signUp_style.css
+9:03:36 PM [32mGET[39m /css/home.css
+9:03:36 PM [32mGET[39m /css/resource.css
+9:03:36 PM [32mGET[39m /app.js
+9:03:36 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:03:37 PM [32mGET[39m /templates/edit_resource.html
+9:03:37 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:03:37%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:03:37 PM [32mGET[39m /modules/methods.mjs
+9:03:37 PM [32mGET[39m /modules/errorHandling.mjs
+9:03:37 PM [32mGET[39m /resource
+9:03:37 PM [32mGET[39m /user/all
+9:03:54 PM [32mGET[39m /edit_resource
+9:03:54 PM [32mGET[39m /css/global_style.css
+9:03:54 PM [32mGET[39m /css/navbar_style.css
+9:03:54 PM [32mGET[39m /css/accounte_style.css
+9:03:54 PM [32mGET[39m /css/login_signUp_style.css
+9:03:54 PM [32mGET[39m /app.js
+9:03:54 PM [32mGET[39m /css/home.css
+9:03:54 PM [32mGET[39m /css/resource.css
+9:03:54 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:03:54 PM [32mGET[39m /templates/edit_resource.html
+9:03:54 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:03:54%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:03:54 PM [32mGET[39m /modules/methods.mjs
+9:03:54 PM [32mGET[39m /modules/errorHandling.mjs
+9:03:54 PM [32mGET[39m /resource
+9:03:54 PM [32mGET[39m /user/all
+9:04:32 PM [32mGET[39m /edit_resource
+9:04:32 PM [32mGET[39m /css/global_style.css
+9:04:32 PM [32mGET[39m /css/home.css
+9:04:32 PM [32mGET[39m /css/navbar_style.css
+9:04:32 PM [32mGET[39m /css/accounte_style.css
+9:04:32 PM [32mGET[39m /css/login_signUp_style.css
+9:04:32 PM [32mGET[39m /css/resource.css
+9:04:32 PM [32mGET[39m /app.js
+9:04:32 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:04:32 PM [32mGET[39m /templates/edit_resource.html
+9:04:32 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:04:32%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:04:32 PM [32mGET[39m /modules/methods.mjs
+9:04:32 PM [32mGET[39m /modules/errorHandling.mjs
+9:04:32 PM [32mGET[39m /resource
+9:04:32 PM [32mGET[39m /user/all
+9:04:40 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+9:04:44 PM [32mGET[39m /edit_resource
+9:04:44 PM [32mGET[39m /css/global_style.css
+9:04:44 PM [32mGET[39m /css/navbar_style.css
+9:04:44 PM [32mGET[39m /css/accounte_style.css
+9:04:44 PM [32mGET[39m /css/login_signUp_style.css
+9:04:44 PM [32mGET[39m /css/home.css
+9:04:44 PM [32mGET[39m /css/resource.css
+9:04:44 PM [32mGET[39m /app.js
+9:04:44 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:04:44 PM [32mGET[39m /templates/edit_resource.html
+9:04:44 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:04:44%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:04:44 PM [32mGET[39m /modules/methods.mjs
+9:04:44 PM [32mGET[39m /modules/errorHandling.mjs
+9:04:44 PM [32mGET[39m /user/all
+9:04:44 PM [32mGET[39m /resource
+9:05:04 PM [32mGET[39m /edit_resource
+9:05:04 PM [32mGET[39m /css/global_style.css
+9:05:04 PM [32mGET[39m /css/navbar_style.css
+9:05:04 PM [32mGET[39m /css/accounte_style.css
+9:05:04 PM [32mGET[39m /css/login_signUp_style.css
+9:05:04 PM [32mGET[39m /css/resource.css
+9:05:04 PM [32mGET[39m /app.js
+9:05:04 PM [32mGET[39m /css/home.css
+9:05:04 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:05:05 PM [32mGET[39m /templates/edit_resource.html
+9:05:05 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:05:05%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:05:05 PM [32mGET[39m /modules/methods.mjs
+9:05:05 PM [32mGET[39m /modules/errorHandling.mjs
+9:05:05 PM [32mGET[39m /resource
+9:05:05 PM [32mGET[39m /user/all
+9:05:38 PM [32mGET[39m /edit_resource
+9:05:38 PM [32mGET[39m /css/global_style.css
+9:05:38 PM [32mGET[39m /css/navbar_style.css
+9:05:38 PM [32mGET[39m /css/accounte_style.css
+9:05:38 PM [32mGET[39m /css/login_signUp_style.css
+9:05:38 PM [32mGET[39m /css/home.css
+9:05:38 PM [32mGET[39m /app.js
+9:05:38 PM [32mGET[39m /css/resource.css
+9:05:38 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:05:38 PM [32mGET[39m /templates/edit_resource.html
+9:05:38 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:05:38%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:05:38 PM [32mGET[39m /modules/methods.mjs
+9:05:38 PM [32mGET[39m /modules/errorHandling.mjs
+9:05:38 PM [32mGET[39m /resource
+9:05:38 PM [32mGET[39m /user/all
+9:05:48 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+9:05:50 PM [33mPOST[39m /resource/add
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+9:11:15 PM [32mGET[39m /edit_resource
+9:11:15 PM [32mGET[39m /css/global_style.css
+9:11:15 PM [32mGET[39m /css/navbar_style.css
+9:11:15 PM [32mGET[39m /css/accounte_style.css
+9:11:15 PM [32mGET[39m /css/login_signUp_style.css
+9:11:15 PM [32mGET[39m /css/home.css
+9:11:15 PM [32mGET[39m /css/resource.css
+9:11:15 PM [32mGET[39m /app.js
+9:11:15 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:11:16 PM [32mGET[39m /templates/edit_resource.html
+9:11:16 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:11:16%20GMT+0100%20(sentraleuropeisk%20normaltid)
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+9:11:26 PM [32mGET[39m /edit_resource
+9:11:26 PM [32mGET[39m /css/global_style.css
+9:11:26 PM [32mGET[39m /css/navbar_style.css
+9:11:26 PM [32mGET[39m /css/accounte_style.css
+9:11:26 PM [32mGET[39m /app.js
+9:11:26 PM [32mGET[39m /css/login_signUp_style.css
+9:11:26 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:11:26 PM [32mGET[39m /css/home.css
+9:11:26 PM [32mGET[39m /css/resource.css
+9:11:26 PM [32mGET[39m /templates/edit_resource.html
+9:11:27 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:11:27%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:11:27 PM [32mGET[39m /modules/methods.mjs
+9:11:27 PM [32mGET[39m /modules/errorHandling.mjs
+9:11:27 PM [32mGET[39m /resource
+9:11:27 PM [32mGET[39m /user/all
+9:11:29 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+9:11:49 PM [32mGET[39m /edit_resource
+9:11:49 PM [32mGET[39m /css/global_style.css
+9:11:49 PM [32mGET[39m /css/navbar_style.css
+9:11:49 PM [32mGET[39m /css/accounte_style.css
+9:11:49 PM [32mGET[39m /css/login_signUp_style.css
+9:11:49 PM [32mGET[39m /css/home.css
+9:11:49 PM [32mGET[39m /css/resource.css
+9:11:49 PM [32mGET[39m /app.js
+9:11:49 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:11:49 PM [32mGET[39m /templates/edit_resource.html
+9:11:50 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:11:49%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:11:50 PM [32mGET[39m /modules/errorHandling.mjs
+9:11:50 PM [32mGET[39m /modules/methods.mjs
+9:11:50 PM [32mGET[39m /resource
+9:11:50 PM [32mGET[39m /user/all
+9:11:50 PM [33mPOST[39m /resource/add
+9:11:50 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+9:11:55 PM [33mPOST[39m /resource/add
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+9:12:17 PM [32mGET[39m /edit_resource
+9:12:17 PM [32mGET[39m /css/global_style.css
+9:12:17 PM [32mGET[39m /css/navbar_style.css
+9:12:17 PM [32mGET[39m /css/accounte_style.css
+9:12:17 PM [32mGET[39m /app.js
+9:12:17 PM [32mGET[39m /css/login_signUp_style.css
+9:12:17 PM [32mGET[39m /css/resource.css
+9:12:17 PM [32mGET[39m /css/home.css
+9:12:17 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:12:17 PM [32mGET[39m /templates/edit_resource.html
+9:12:17 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:12:17%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:12:18 PM [32mGET[39m /modules/methods.mjs
+9:12:18 PM [32mGET[39m /modules/errorHandling.mjs
+9:12:18 PM [32mGET[39m /resource
+9:12:18 PM [32mGET[39m /user/all
+9:12:19 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+9:13:23 PM [32mGET[39m /edit_resource
+9:13:23 PM [32mGET[39m /css/global_style.css
+9:13:23 PM [32mGET[39m /css/navbar_style.css
+9:13:23 PM [32mGET[39m /css/accounte_style.css
+9:13:23 PM [32mGET[39m /css/login_signUp_style.css
+9:13:23 PM [32mGET[39m /app.js
+9:13:23 PM [32mGET[39m /css/home.css
+9:13:23 PM [32mGET[39m /css/resource.css
+9:13:23 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:13:23 PM [32mGET[39m /templates/edit_resource.html
+9:13:23 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:13:23%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:13:23 PM [32mGET[39m /modules/methods.mjs
+9:13:23 PM [32mGET[39m /modules/errorHandling.mjs
+9:13:23 PM [32mGET[39m /resource
+9:13:23 PM [32mGET[39m /user/all
+9:13:24 PM [33mPOST[39m /resource/add
+9:13:24 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+9:15:42 PM [32mGET[39m /edit_resource
+9:15:42 PM [32mGET[39m /css/global_style.css
+9:15:42 PM [32mGET[39m /css/navbar_style.css
+9:15:42 PM [32mGET[39m /css/accounte_style.css
+9:15:42 PM [32mGET[39m /css/login_signUp_style.css
+9:15:42 PM [32mGET[39m /css/home.css
+9:15:42 PM [32mGET[39m /css/resource.css
+9:15:42 PM [32mGET[39m /app.js
+9:15:42 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:15:42 PM [32mGET[39m /templates/edit_resource.html
+9:15:42 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:15:42%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:15:42 PM [32mGET[39m /modules/methods.mjs
+9:15:42 PM [32mGET[39m /modules/errorHandling.mjs
+9:15:42 PM [32mGET[39m /resource
+9:15:42 PM [32mGET[39m /user/all
+9:15:57 PM [32mGET[39m /edit_resource
+9:15:57 PM [32mGET[39m /css/global_style.css
+9:15:58 PM [32mGET[39m /css/navbar_style.css
+9:15:58 PM [32mGET[39m /css/accounte_style.css
+9:15:58 PM [32mGET[39m /css/login_signUp_style.css
+9:15:58 PM [32mGET[39m /css/home.css
+9:15:58 PM [32mGET[39m /css/resource.css
+9:15:58 PM [32mGET[39m /app.js
+9:15:58 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:15:58 PM [32mGET[39m /templates/edit_resource.html
+9:15:58 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:15:58%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:15:58 PM [32mGET[39m /modules/methods.mjs
+9:15:58 PM [32mGET[39m /modules/errorHandling.mjs
+9:15:58 PM [32mGET[39m /resource
+9:15:58 PM [32mGET[39m /user/all
+9:16:01 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+9:16:17 PM [32mGET[39m /edit_resource
+9:16:17 PM [32mGET[39m /css/global_style.css
+9:16:17 PM [32mGET[39m /css/navbar_style.css
+9:16:17 PM [32mGET[39m /css/accounte_style.css
+9:16:17 PM [32mGET[39m /css/login_signUp_style.css
+9:16:17 PM [32mGET[39m /css/resource.css
+9:16:17 PM [32mGET[39m /css/home.css
+9:16:17 PM [32mGET[39m /app.js
+9:16:17 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:16:18 PM [32mGET[39m /templates/edit_resource.html
+9:16:18 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:16:18%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:16:18 PM [32mGET[39m /modules/methods.mjs
+9:16:18 PM [32mGET[39m /modules/errorHandling.mjs
+9:16:18 PM [32mGET[39m /resource
+9:16:18 PM [32mGET[39m /user/all
+9:16:28 PM [32mGET[39m /edit_resource
+9:16:28 PM [32mGET[39m /css/resource.css
+9:16:28 PM [32mGET[39m /app.js
+9:16:28 PM [32mGET[39m /css/global_style.css
+9:16:28 PM [32mGET[39m /css/login_signUp_style.css
+9:16:28 PM [32mGET[39m /css/navbar_style.css
+9:16:28 PM [32mGET[39m /css/accounte_style.css
+9:16:28 PM [32mGET[39m /css/home.css
+9:16:28 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:16:28 PM [32mGET[39m /templates/edit_resource.html
+9:16:28 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:16:28%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:16:28 PM [32mGET[39m /modules/methods.mjs
+9:16:28 PM [32mGET[39m /modules/errorHandling.mjs
+9:16:28 PM [32mGET[39m /resource
+9:16:28 PM [32mGET[39m /user/all
+9:16:32 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+9:17:37 PM [32mGET[39m /edit_resource
+9:17:37 PM [32mGET[39m /css/global_style.css
+9:17:37 PM [32mGET[39m /css/navbar_style.css
+9:17:37 PM [32mGET[39m /css/accounte_style.css
+9:17:37 PM [32mGET[39m /app.js
+9:17:37 PM [32mGET[39m /css/login_signUp_style.css
+9:17:37 PM [32mGET[39m /css/home.css
+9:17:37 PM [32mGET[39m /css/resource.css
+9:17:37 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:17:37 PM [32mGET[39m /templates/edit_resource.html
+9:17:38 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:17:38%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:17:38 PM [32mGET[39m /modules/methods.mjs
+9:17:38 PM [32mGET[39m /modules/errorHandling.mjs
+9:17:38 PM [32mGET[39m /resource
+9:17:38 PM [32mGET[39m /user/all
+9:20:47 PM [32mGET[39m /edit_resource
+9:20:47 PM [32mGET[39m /css/global_style.css
+9:20:47 PM [32mGET[39m /css/navbar_style.css
+9:20:47 PM [32mGET[39m /css/accounte_style.css
+9:20:47 PM [32mGET[39m /css/login_signUp_style.css
+9:20:47 PM [32mGET[39m /css/home.css
+9:20:47 PM [32mGET[39m /css/resource.css
+9:20:47 PM [32mGET[39m /app.js
+9:20:47 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:20:48 PM [32mGET[39m /templates/edit_resource.html
+9:20:48 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:20:48%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:20:48 PM [32mGET[39m /modules/methods.mjs
+9:20:48 PM [32mGET[39m /modules/errorHandling.mjs
+9:20:48 PM [32mGET[39m /resource
+9:20:48 PM [32mGET[39m /user/all
+9:21:03 PM [32mGET[39m /edit_resource
+9:21:04 PM [32mGET[39m /css/global_style.css
+9:21:04 PM [32mGET[39m /css/navbar_style.css
+9:21:04 PM [32mGET[39m /css/accounte_style.css
+9:21:04 PM [32mGET[39m /css/login_signUp_style.css
+9:21:04 PM [32mGET[39m /css/home.css
+9:21:04 PM [32mGET[39m /css/resource.css
+9:21:04 PM [32mGET[39m /app.js
+9:21:04 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:21:04 PM [32mGET[39m /templates/edit_resource.html
+9:21:04 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:21:04%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:21:04 PM [32mGET[39m /modules/methods.mjs
+9:21:04 PM [32mGET[39m /modules/errorHandling.mjs
+9:21:04 PM [32mGET[39m /resource
+9:21:04 PM [32mGET[39m /user/all
+9:21:05 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+9:21:34 PM [32mGET[39m /edit_resource
+9:21:34 PM [32mGET[39m /css/global_style.css
+9:21:34 PM [32mGET[39m /css/login_signUp_style.css
+9:21:34 PM [32mGET[39m /css/accounte_style.css
+9:21:34 PM [32mGET[39m /css/home.css
+9:21:34 PM [32mGET[39m /css/resource.css
+9:21:34 PM [32mGET[39m /css/navbar_style.css
+9:21:34 PM [32mGET[39m /app.js
+9:21:34 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:21:34 PM [32mGET[39m /templates/edit_resource.html
+9:21:34 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:21:34%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:21:35 PM [32mGET[39m /modules/methods.mjs
+9:21:35 PM [32mGET[39m /modules/errorHandling.mjs
+9:21:35 PM [32mGET[39m /resource
+9:21:35 PM [32mGET[39m /user/all
+9:21:36 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+9:21:48 PM [32mGET[39m /edit_resource
+9:21:49 PM [32mGET[39m /css/global_style.css
+9:21:49 PM [32mGET[39m /css/accounte_style.css
+9:21:49 PM [32mGET[39m /css/login_signUp_style.css
+9:21:49 PM [32mGET[39m /app.js
+9:21:49 PM [32mGET[39m /css/home.css
+9:21:49 PM [32mGET[39m /css/resource.css
+9:21:49 PM [32mGET[39m /css/navbar_style.css
+9:21:49 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:21:49 PM [32mGET[39m /templates/edit_resource.html
+9:21:49 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:21:49%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:21:49 PM [32mGET[39m /modules/methods.mjs
+9:21:49 PM [32mGET[39m /modules/errorHandling.mjs
+9:21:49 PM [32mGET[39m /resource
+9:21:49 PM [32mGET[39m /user/all
+9:21:51 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+9:22:00 PM [32mGET[39m /edit_resource
+9:22:00 PM [32mGET[39m /css/global_style.css
+9:22:00 PM [32mGET[39m /css/navbar_style.css
+9:22:00 PM [32mGET[39m /css/accounte_style.css
+9:22:00 PM [32mGET[39m /css/login_signUp_style.css
+9:22:00 PM [32mGET[39m /css/home.css
+9:22:00 PM [32mGET[39m /css/resource.css
+9:22:00 PM [32mGET[39m /app.js
+9:22:00 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:22:00 PM [32mGET[39m /templates/edit_resource.html
+9:22:00 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:22:00%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:22:00 PM [32mGET[39m /modules/methods.mjs
+9:22:00 PM [32mGET[39m /modules/errorHandling.mjs
+9:22:00 PM [32mGET[39m /resource
+9:22:00 PM [32mGET[39m /user/all
+9:22:59 PM [32mGET[39m /edit_resource
+9:22:59 PM [32mGET[39m /css/global_style.css
+9:22:59 PM [32mGET[39m /css/navbar_style.css
+9:22:59 PM [32mGET[39m /css/accounte_style.css
+9:22:59 PM [32mGET[39m /css/login_signUp_style.css
+9:22:59 PM [32mGET[39m /css/home.css
+9:22:59 PM [32mGET[39m /css/resource.css
+9:22:59 PM [32mGET[39m /app.js
+9:22:59 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:22:59 PM [32mGET[39m /templates/edit_resource.html
+9:22:59 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:22:59%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:22:59 PM [32mGET[39m /modules/methods.mjs
+9:22:59 PM [32mGET[39m /modules/errorHandling.mjs
+9:22:59 PM [32mGET[39m /resource
+9:22:59 PM [32mGET[39m /user/all
+9:23:01 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+9:23:24 PM [32mGET[39m /edit_resource
+9:23:24 PM [32mGET[39m /css/global_style.css
+9:23:24 PM [32mGET[39m /css/navbar_style.css
+9:23:24 PM [32mGET[39m /css/accounte_style.css
+9:23:24 PM [32mGET[39m /css/login_signUp_style.css
+9:23:24 PM [32mGET[39m /css/home.css
+9:23:24 PM [32mGET[39m /css/resource.css
+9:23:24 PM [32mGET[39m /app.js
+9:23:24 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:23:24 PM [32mGET[39m /templates/edit_resource.html
+9:23:24 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:23:24%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:23:24 PM [32mGET[39m /modules/methods.mjs
+9:23:24 PM [32mGET[39m /modules/errorHandling.mjs
+9:23:24 PM [32mGET[39m /resource
+9:23:24 PM [32mGET[39m /user/all
+9:23:25 PM [32mGET[39m /edit_resource
+9:23:25 PM [32mGET[39m /css/global_style.css
+9:23:25 PM [32mGET[39m /css/navbar_style.css
+9:23:25 PM [32mGET[39m /css/accounte_style.css
+9:23:25 PM [32mGET[39m /css/login_signUp_style.css
+9:23:25 PM [32mGET[39m /css/home.css
+9:23:25 PM [32mGET[39m /css/resource.css
+9:23:25 PM [32mGET[39m /app.js
+9:23:25 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:23:25 PM [32mGET[39m /templates/edit_resource.html
+9:23:25 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:23:25%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:23:25 PM [32mGET[39m /modules/methods.mjs
+9:23:25 PM [32mGET[39m /modules/errorHandling.mjs
+9:23:25 PM [32mGET[39m /resource
+9:23:25 PM [32mGET[39m /user/all
+9:23:27 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+9:24:19 PM [32mGET[39m /edit_resource
+9:24:19 PM [32mGET[39m /css/global_style.css
+9:24:19 PM [32mGET[39m /css/navbar_style.css
+9:24:19 PM [32mGET[39m /css/accounte_style.css
+9:24:19 PM [32mGET[39m /css/login_signUp_style.css
+9:24:19 PM [32mGET[39m /css/home.css
+9:24:19 PM [32mGET[39m /css/resource.css
+9:24:19 PM [32mGET[39m /app.js
+9:24:19 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:24:20 PM [32mGET[39m /templates/edit_resource.html
+9:24:20 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:24:20%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:24:20 PM [32mGET[39m /modules/methods.mjs
+9:24:20 PM [32mGET[39m /modules/errorHandling.mjs
+9:24:20 PM [32mGET[39m /resource
+9:24:20 PM [32mGET[39m /user/all
+9:24:21 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+9:24:40 PM [32mGET[39m /edit_resource
+9:24:40 PM [32mGET[39m /css/global_style.css
+9:24:40 PM [32mGET[39m /css/navbar_style.css
+9:24:40 PM [32mGET[39m /css/accounte_style.css
+9:24:40 PM [32mGET[39m /css/login_signUp_style.css
+9:24:40 PM [32mGET[39m /css/home.css
+9:24:40 PM [32mGET[39m /css/resource.css
+9:24:40 PM [32mGET[39m /app.js
+9:24:40 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:24:41 PM [32mGET[39m /templates/edit_resource.html
+9:24:41 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:24:41%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:24:41 PM [32mGET[39m /modules/methods.mjs
+9:24:41 PM [32mGET[39m /modules/errorHandling.mjs
+9:24:41 PM [32mGET[39m /resource
+9:24:41 PM [32mGET[39m /user/all
+9:24:42 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+9:25:44 PM [32mGET[39m /edit_resource
+9:25:44 PM [32mGET[39m /css/global_style.css
+9:25:44 PM [32mGET[39m /css/navbar_style.css
+9:25:44 PM [32mGET[39m /css/accounte_style.css
+9:25:44 PM [32mGET[39m /css/home.css
+9:25:44 PM [32mGET[39m /css/login_signUp_style.css
+9:25:44 PM [32mGET[39m /css/resource.css
+9:25:44 PM [32mGET[39m /app.js
+9:25:44 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:25:44 PM [32mGET[39m /templates/edit_resource.html
+9:25:44 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:25:44%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:25:44 PM [32mGET[39m /modules/errorHandling.mjs
+9:25:44 PM [32mGET[39m /modules/methods.mjs
+9:25:44 PM [32mGET[39m /resource
+9:25:44 PM [32mGET[39m /user/all
+9:25:46 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+9:26:17 PM [32mGET[39m /edit_resource
+9:26:17 PM [32mGET[39m /css/global_style.css
+9:26:17 PM [32mGET[39m /css/navbar_style.css
+9:26:17 PM [32mGET[39m /css/accounte_style.css
+9:26:17 PM [32mGET[39m /css/login_signUp_style.css
+9:26:17 PM [32mGET[39m /css/home.css
+9:26:17 PM [32mGET[39m /css/resource.css
+9:26:17 PM [32mGET[39m /app.js
+9:26:17 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:26:17 PM [32mGET[39m /templates/edit_resource.html
+9:26:17 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:26:17%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:26:17 PM [32mGET[39m /modules/methods.mjs
+9:26:17 PM [32mGET[39m /modules/errorHandling.mjs
+9:26:17 PM [32mGET[39m /resource
+9:26:17 PM [32mGET[39m /user/all
+9:26:55 PM [32mGET[39m /edit_resource
+9:26:55 PM [32mGET[39m /css/global_style.css
+9:26:55 PM [32mGET[39m /css/navbar_style.css
+9:26:55 PM [32mGET[39m /css/accounte_style.css
+9:26:55 PM [32mGET[39m /css/login_signUp_style.css
+9:26:55 PM [32mGET[39m /css/home.css
+9:26:55 PM [32mGET[39m /css/resource.css
+9:26:55 PM [32mGET[39m /app.js
+9:26:55 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:26:55 PM [32mGET[39m /templates/edit_resource.html
+9:26:56 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:26:56%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:26:56 PM [32mGET[39m /modules/methods.mjs
+9:26:56 PM [32mGET[39m /modules/errorHandling.mjs
+9:26:56 PM [32mGET[39m /resource
+9:26:56 PM [32mGET[39m /user/all
+9:27:07 PM [32mGET[39m /edit_resource
+9:27:08 PM [32mGET[39m /css/global_style.css
+9:27:08 PM [32mGET[39m /css/navbar_style.css
+9:27:08 PM [32mGET[39m /css/accounte_style.css
+9:27:08 PM [32mGET[39m /css/login_signUp_style.css
+9:27:08 PM [32mGET[39m /css/home.css
+9:27:08 PM [32mGET[39m /css/resource.css
+9:27:08 PM [32mGET[39m /app.js
+9:27:08 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:27:08 PM [32mGET[39m /templates/edit_resource.html
+9:27:08 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:27:08%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:27:08 PM [32mGET[39m /modules/methods.mjs
+9:27:08 PM [32mGET[39m /modules/errorHandling.mjs
+9:27:08 PM [32mGET[39m /resource
+9:27:08 PM [32mGET[39m /user/all
+9:27:10 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+9:28:02 PM [32mGET[39m /edit_resource
+9:28:02 PM [32mGET[39m /css/global_style.css
+9:28:02 PM [32mGET[39m /css/navbar_style.css
+9:28:02 PM [32mGET[39m /css/accounte_style.css
+9:28:02 PM [32mGET[39m /css/login_signUp_style.css
+9:28:02 PM [32mGET[39m /css/home.css
+9:28:02 PM [32mGET[39m /app.js
+9:28:02 PM [32mGET[39m /css/resource.css
+9:28:02 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:28:02 PM [32mGET[39m /templates/edit_resource.html
+9:28:03 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:28:03%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:28:03 PM [32mGET[39m /modules/methods.mjs
+9:28:03 PM [32mGET[39m /modules/errorHandling.mjs
+9:28:03 PM [32mGET[39m /resource
+9:28:03 PM [32mGET[39m /user/all
+9:28:05 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+9:28:29 PM [32mGET[39m /edit_resource
+9:28:29 PM [32mGET[39m /css/global_style.css
+9:28:29 PM [32mGET[39m /css/accounte_style.css
+9:28:29 PM [32mGET[39m /css/navbar_style.css
+9:28:29 PM [32mGET[39m /css/login_signUp_style.css
+9:28:29 PM [32mGET[39m /css/home.css
+9:28:29 PM [32mGET[39m /css/resource.css
+9:28:29 PM [32mGET[39m /app.js
+9:28:29 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:28:29 PM [32mGET[39m /templates/edit_resource.html
+9:28:29 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:28:29%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:28:29 PM [32mGET[39m /modules/methods.mjs
+9:28:29 PM [32mGET[39m /modules/errorHandling.mjs
+9:28:30 PM [32mGET[39m /resource
+9:28:30 PM [32mGET[39m /user/all
+9:28:32 PM [33mPOST[39m /resource/add
+9:28:32 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+9:30:54 PM [32mGET[39m /edit_resource
+9:30:54 PM [32mGET[39m /css/global_style.css
+9:30:54 PM [32mGET[39m /css/navbar_style.css
+9:30:54 PM [32mGET[39m /css/accounte_style.css
+9:30:54 PM [32mGET[39m /css/login_signUp_style.css
+9:30:54 PM [32mGET[39m /css/resource.css
+9:30:54 PM [32mGET[39m /css/home.css
+9:30:54 PM [32mGET[39m /app.js
+9:30:54 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:30:54 PM [32mGET[39m /templates/edit_resource.html
+9:30:54 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:30:54%20GMT+0100%20(sentraleuropeisk%20normaltid)
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+9:33:01 PM [32mGET[39m /edit_resource
+9:33:01 PM [32mGET[39m /css/global_style.css
+9:33:01 PM [32mGET[39m /css/navbar_style.css
+9:33:01 PM [32mGET[39m /css/accounte_style.css
+9:33:01 PM [32mGET[39m /css/login_signUp_style.css
+9:33:01 PM [32mGET[39m /css/home.css
+9:33:01 PM [32mGET[39m /css/resource.css
+9:33:01 PM [32mGET[39m /app.js
+9:33:01 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:33:01 PM [32mGET[39m /templates/edit_resource.html
+9:33:01 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:33:01%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:33:01 PM [32mGET[39m /modules/methods.mjs
+9:33:01 PM [32mGET[39m /modules/errorHandling.mjs
+9:33:01 PM [32mGET[39m /resource
+9:33:01 PM [32mGET[39m /user/all
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+9:33:34 PM [32mGET[39m /edit_resource
+9:33:34 PM [32mGET[39m /css/global_style.css
+9:33:34 PM [32mGET[39m /css/navbar_style.css
+9:33:34 PM [32mGET[39m /css/accounte_style.css
+9:33:34 PM [32mGET[39m /css/login_signUp_style.css
+9:33:34 PM [32mGET[39m /app.js
+9:33:34 PM [32mGET[39m /css/home.css
+9:33:34 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:33:34 PM [32mGET[39m /css/resource.css
+9:33:34 PM [32mGET[39m /templates/edit_resource.html
+9:33:34 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:33:34%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:33:35 PM [32mGET[39m /modules/methods.mjs
+9:33:35 PM [32mGET[39m /modules/errorHandling.mjs
+9:33:35 PM [32mGET[39m /resource
+9:33:35 PM [32mGET[39m /user/all
+9:33:36 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+9:34:24 PM [32mGET[39m /edit_resource
+9:34:25 PM [32mGET[39m /css/global_style.css
+9:34:25 PM [32mGET[39m /css/navbar_style.css
+9:34:25 PM [32mGET[39m /css/accounte_style.css
+9:34:25 PM [32mGET[39m /app.js
+9:34:25 PM [32mGET[39m /css/login_signUp_style.css
+9:34:25 PM [32mGET[39m /css/home.css
+9:34:25 PM [32mGET[39m /css/resource.css
+9:34:25 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:34:25 PM [32mGET[39m /templates/edit_resource.html
+9:34:25 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:34:25%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:34:25 PM [32mGET[39m /modules/methods.mjs
+9:34:25 PM [32mGET[39m /modules/errorHandling.mjs
+9:34:25 PM [32mGET[39m /resource
+9:34:25 PM [32mGET[39m /user/all
+9:34:52 PM [32mGET[39m /edit_resource
+9:34:52 PM [32mGET[39m /css/global_style.css
+9:34:52 PM [32mGET[39m /css/navbar_style.css
+9:34:52 PM [32mGET[39m /css/home.css
+9:34:52 PM [32mGET[39m /css/login_signUp_style.css
+9:34:52 PM [32mGET[39m /css/accounte_style.css
+9:34:52 PM [32mGET[39m /css/resource.css
+9:34:52 PM [32mGET[39m /app.js
+9:34:52 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:34:52 PM [32mGET[39m /templates/edit_resource.html
+9:34:53 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:34:53%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:34:53 PM [32mGET[39m /modules/methods.mjs
+9:34:53 PM [32mGET[39m /modules/errorHandling.mjs
+9:34:53 PM [32mGET[39m /user/all
+9:34:53 PM [32mGET[39m /resource
+9:34:55 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+9:35:44 PM [32mGET[39m /edit_resource
+9:35:44 PM [32mGET[39m /css/global_style.css
+9:35:44 PM [32mGET[39m /css/navbar_style.css
+9:35:44 PM [32mGET[39m /css/accounte_style.css
+9:35:44 PM [32mGET[39m /css/login_signUp_style.css
+9:35:44 PM [32mGET[39m /css/home.css
+9:35:44 PM [32mGET[39m /app.js
+9:35:44 PM [32mGET[39m /css/resource.css
+9:35:44 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:35:44 PM [32mGET[39m /templates/edit_resource.html
+9:35:44 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:35:44%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:35:44 PM [32mGET[39m /modules/methods.mjs
+9:35:44 PM [32mGET[39m /modules/errorHandling.mjs
+9:35:44 PM [32mGET[39m /resource
+9:35:44 PM [32mGET[39m /user/all
+9:35:48 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+9:36:09 PM [32mGET[39m /edit_resource
+9:36:09 PM [32mGET[39m /css/global_style.css
+9:36:09 PM [32mGET[39m /css/navbar_style.css
+9:36:09 PM [32mGET[39m /css/login_signUp_style.css
+9:36:09 PM [32mGET[39m /css/resource.css
+9:36:09 PM [32mGET[39m /app.js
+9:36:09 PM [32mGET[39m /css/home.css
+9:36:09 PM [32mGET[39m /css/accounte_style.css
+9:36:09 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:36:09 PM [32mGET[39m /templates/edit_resource.html
+9:36:09 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:36:09%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:36:09 PM [32mGET[39m /modules/methods.mjs
+9:36:09 PM [32mGET[39m /modules/errorHandling.mjs
+9:36:09 PM [32mGET[39m /resource
+9:36:09 PM [32mGET[39m /user/all
+9:36:12 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+9:36:58 PM [32mGET[39m /edit_resource
+9:36:58 PM [32mGET[39m /css/navbar_style.css
+9:36:58 PM [32mGET[39m /css/global_style.css
+9:36:58 PM [32mGET[39m /css/accounte_style.css
+9:36:58 PM [32mGET[39m /css/login_signUp_style.css
+9:36:58 PM [32mGET[39m /css/home.css
+9:36:58 PM [32mGET[39m /css/resource.css
+9:36:58 PM [32mGET[39m /app.js
+9:36:58 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:36:59 PM [32mGET[39m /templates/edit_resource.html
+9:36:59 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:36:59%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:36:59 PM [32mGET[39m /modules/methods.mjs
+9:36:59 PM [32mGET[39m /modules/errorHandling.mjs
+9:36:59 PM [32mGET[39m /resource
+9:36:59 PM [32mGET[39m /user/all
+9:37:18 PM [32mGET[39m /edit_resource
+9:37:18 PM [32mGET[39m /css/global_style.css
+9:37:18 PM [32mGET[39m /css/navbar_style.css
+9:37:18 PM [32mGET[39m /css/accounte_style.css
+9:37:18 PM [32mGET[39m /css/login_signUp_style.css
+9:37:18 PM [32mGET[39m /app.js
+9:37:18 PM [32mGET[39m /css/home.css
+9:37:18 PM [32mGET[39m /css/resource.css
+9:37:18 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:37:18 PM [32mGET[39m /templates/edit_resource.html
+9:37:19 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:37:19%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:37:19 PM [32mGET[39m /modules/methods.mjs
+9:37:19 PM [32mGET[39m /modules/errorHandling.mjs
+9:37:19 PM [32mGET[39m /resource
+9:37:19 PM [32mGET[39m /user/all
+9:37:40 PM [32mGET[39m /edit_resource
+9:37:40 PM [32mGET[39m /css/global_style.css
+9:37:40 PM [32mGET[39m /css/navbar_style.css
+9:37:40 PM [32mGET[39m /css/accounte_style.css
+9:37:40 PM [32mGET[39m /css/login_signUp_style.css
+9:37:40 PM [32mGET[39m /css/home.css
+9:37:40 PM [32mGET[39m /app.js
+9:37:40 PM [32mGET[39m /css/resource.css
+9:37:40 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:37:41 PM [32mGET[39m /templates/edit_resource.html
+9:37:41 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:37:41%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:37:41 PM [32mGET[39m /modules/methods.mjs
+9:37:41 PM [32mGET[39m /modules/errorHandling.mjs
+9:37:41 PM [32mGET[39m /user/all
+9:37:41 PM [32mGET[39m /resource
+9:37:56 PM [32mGET[39m /edit_resource
+9:37:56 PM [32mGET[39m /css/global_style.css
+9:37:56 PM [32mGET[39m /css/navbar_style.css
+9:37:56 PM [32mGET[39m /css/accounte_style.css
+9:37:56 PM [32mGET[39m /css/login_signUp_style.css
+9:37:56 PM [32mGET[39m /css/home.css
+9:37:56 PM [32mGET[39m /css/resource.css
+9:37:56 PM [32mGET[39m /app.js
+9:37:56 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:37:56 PM [32mGET[39m /templates/edit_resource.html
+9:37:56 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:37:56%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:37:56 PM [32mGET[39m /modules/methods.mjs
+9:37:56 PM [32mGET[39m /modules/errorHandling.mjs
+9:37:57 PM [32mGET[39m /resource
+9:37:57 PM [32mGET[39m /user/all
+9:38:17 PM [32mGET[39m /edit_resource
+9:38:17 PM [32mGET[39m /css/global_style.css
+9:38:17 PM [32mGET[39m /css/navbar_style.css
+9:38:17 PM [32mGET[39m /css/accounte_style.css
+9:38:17 PM [32mGET[39m /css/login_signUp_style.css
+9:38:17 PM [32mGET[39m /css/home.css
+9:38:17 PM [32mGET[39m /css/resource.css
+9:38:17 PM [32mGET[39m /app.js
+9:38:17 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:38:17 PM [32mGET[39m /templates/edit_resource.html
+9:38:17 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:38:17%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:38:17 PM [32mGET[39m /modules/methods.mjs
+9:38:17 PM [32mGET[39m /modules/errorHandling.mjs
+9:38:17 PM [32mGET[39m /resource
+9:38:17 PM [32mGET[39m /user/all
+9:38:32 PM [32mGET[39m /edit_resource
+9:38:32 PM [32mGET[39m /css/global_style.css
+9:38:32 PM [32mGET[39m /css/navbar_style.css
+9:38:32 PM [32mGET[39m /css/accounte_style.css
+9:38:32 PM [32mGET[39m /css/login_signUp_style.css
+9:38:32 PM [32mGET[39m /css/home.css
+9:38:32 PM [32mGET[39m /css/resource.css
+9:38:32 PM [32mGET[39m /app.js
+9:38:32 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:38:33 PM [32mGET[39m /templates/edit_resource.html
+9:38:33 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:38:33%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:38:33 PM [32mGET[39m /modules/methods.mjs
+9:38:33 PM [32mGET[39m /modules/errorHandling.mjs
+9:38:33 PM [32mGET[39m /resource
+9:38:33 PM [32mGET[39m /user/all
+9:38:46 PM [32mGET[39m /edit_resource
+9:38:46 PM [32mGET[39m /css/global_style.css
+9:38:46 PM [32mGET[39m /css/accounte_style.css
+9:38:46 PM [32mGET[39m /css/login_signUp_style.css
+9:38:46 PM [32mGET[39m /css/home.css
+9:38:46 PM [32mGET[39m /css/resource.css
+9:38:46 PM [32mGET[39m /css/navbar_style.css
+9:38:46 PM [32mGET[39m /app.js
+9:38:46 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:38:46 PM [32mGET[39m /templates/edit_resource.html
+9:38:46 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:38:46%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:38:46 PM [32mGET[39m /modules/methods.mjs
+9:38:46 PM [32mGET[39m /modules/errorHandling.mjs
+9:38:46 PM [32mGET[39m /resource
+9:38:46 PM [32mGET[39m /user/all
+9:38:51 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+9:41:00 PM [33mPOST[39m /resource/add
+9:41:04 PM [33mPOST[39m /resource/add
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+9:41:45 PM [33mPOST[39m /resource/add
+9:41:45 PM [33mPOST[39m /resource/add
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+9:42:12 PM [33mPOST[39m /resource/add
+9:42:12 PM [33mPOST[39m /resource/add
+9:42:45 PM [33mPOST[39m /resource/add
+9:42:46 PM [33mPOST[39m /resource/add
+9:42:47 PM [33mPOST[39m /resource/add
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+9:42:54 PM [33mPOST[39m /resource/add
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+9:43:43 PM [33mPOST[39m /resource/add
+9:43:45 PM [32mGET[39m /edit_resource
+9:43:45 PM [32mGET[39m /css/global_style.css
+9:43:45 PM [32mGET[39m /css/navbar_style.css
+9:43:45 PM [32mGET[39m /css/accounte_style.css
+9:43:45 PM [32mGET[39m /css/login_signUp_style.css
+9:43:45 PM [32mGET[39m /css/resource.css
+9:43:45 PM [32mGET[39m /css/home.css
+9:43:45 PM [32mGET[39m /app.js
+9:43:45 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:43:45 PM [32mGET[39m /templates/edit_resource.html
+9:43:45 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:43:45%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:43:45 PM [32mGET[39m /modules/methods.mjs
+9:43:45 PM [32mGET[39m /modules/errorHandling.mjs
+9:43:45 PM [32mGET[39m /resource
+9:43:45 PM [32mGET[39m /user/all
+9:43:48 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+9:43:51 PM [33mPOST[39m /resource/add
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+9:44:53 PM [32mGET[39m /edit_resource
+9:44:53 PM [32mGET[39m /css/global_style.css
+9:44:53 PM [32mGET[39m /css/navbar_style.css
+9:44:53 PM [32mGET[39m /css/home.css
+9:44:53 PM [32mGET[39m /css/accounte_style.css
+9:44:53 PM [32mGET[39m /css/login_signUp_style.css
+9:44:53 PM [32mGET[39m /css/resource.css
+9:44:53 PM [32mGET[39m /app.js
+9:44:53 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:44:53 PM [32mGET[39m /templates/edit_resource.html
+9:44:54 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:44:54%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:44:54 PM [32mGET[39m /modules/methods.mjs
+9:44:54 PM [32mGET[39m /modules/errorHandling.mjs
+9:44:54 PM [32mGET[39m /resource
+9:44:54 PM [32mGET[39m /user/all
+9:44:57 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+9:45:02 PM [33mPOST[39m /resource/add
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+9:48:49 PM [33mPOST[39m /resource/add
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+9:51:22 PM [32mGET[39m /edit_resource
+9:51:22 PM [32mGET[39m /css/global_style.css
+9:51:22 PM [32mGET[39m /css/navbar_style.css
+9:51:22 PM [32mGET[39m /css/accounte_style.css
+9:51:22 PM [32mGET[39m /css/login_signUp_style.css
+9:51:22 PM [32mGET[39m /css/resource.css
+9:51:22 PM [32mGET[39m /css/home.css
+9:51:22 PM [32mGET[39m /app.js
+9:51:22 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:51:23 PM [32mGET[39m /templates/edit_resource.html
+9:51:23 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:51:23%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:51:23 PM [32mGET[39m /modules/methods.mjs
+9:51:23 PM [32mGET[39m /modules/errorHandling.mjs
+9:51:23 PM [32mGET[39m /resource
+9:51:23 PM [32mGET[39m /user/all
+9:51:33 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+9:51:36 PM [33mPOST[39m /resource/add
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+9:52:05 PM [32mGET[39m /edit_resource
+9:52:05 PM [32mGET[39m /css/global_style.css
+9:52:05 PM [32mGET[39m /css/navbar_style.css
+9:52:05 PM [32mGET[39m /css/accounte_style.css
+9:52:05 PM [32mGET[39m /css/login_signUp_style.css
+9:52:05 PM [32mGET[39m /css/home.css
+9:52:05 PM [32mGET[39m /css/resource.css
+9:52:06 PM [32mGET[39m /app.js
+9:52:06 PM [32mGET[39m /Assets/img/icons/Logo.svg
+9:52:06 PM [32mGET[39m /templates/edit_resource.html
+9:52:06 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2021:52:06%20GMT+0100%20(sentraleuropeisk%20normaltid)
+9:52:06 PM [32mGET[39m /modules/methods.mjs
+9:52:06 PM [32mGET[39m /modules/errorHandling.mjs
+9:52:06 PM [32mGET[39m /resource
+9:52:06 PM [32mGET[39m /user/all
+9:52:07 PM [33mPOST[39m /resource/add
+9:52:07 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+9:52:15 PM [33mPOST[39m /resource/add
+9:55:02 PM [33mPOST[39m /resource/add
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+9:55:13 PM [33mPOST[39m /resource/add
+9:55:36 PM [33mPOST[39m /resource/add
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+9:56:23 PM [33mPOST[39m /resource/add
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+9:57:19 PM [33mPOST[39m /resource/add
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+10:04:19 PM [33mPOST[39m /resource/add
+10:04:19 PM [33mPOST[39m /resource/add
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+10:04:37 PM [33mPOST[39m /resource/add
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+10:13:08 PM [32mGET[39m /edit_resource
+10:13:08 PM [32mGET[39m /css/global_style.css
+10:13:08 PM [32mGET[39m /css/navbar_style.css
+10:13:08 PM [32mGET[39m /css/accounte_style.css
+10:13:08 PM [32mGET[39m /css/login_signUp_style.css
+10:13:08 PM [32mGET[39m /css/home.css
+10:13:08 PM [32mGET[39m /css/resource.css
+10:13:08 PM [32mGET[39m /app.js
+10:13:08 PM [32mGET[39m /Assets/img/icons/Logo.svg
+10:13:08 PM [32mGET[39m /templates/edit_resource.html
+10:13:08 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2022:13:08%20GMT+0100%20(sentraleuropeisk%20normaltid)
+10:13:08 PM [32mGET[39m /modules/methods.mjs
+10:13:08 PM [32mGET[39m /modules/errorHandling.mjs
+10:13:08 PM [32mGET[39m /resource
+10:13:08 PM [32mGET[39m /user/all
+10:13:12 PM [33mPOST[39m /resource/add
+10:13:12 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+10:13:17 PM [33mPOST[39m /resource/add
+10:13:23 PM [33mPOST[39m /resource/add
+10:13:42 PM [33mPOST[39m /resource/add
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+10:27:15 PM [33mPOST[39m /resource/add
+10:27:30 PM [33mPOST[39m /resource/add
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+10:28:49 PM [33mPOST[39m /resource/add
+10:28:49 PM [33mPOST[39m /resource/add
+10:28:53 PM [33mPOST[39m /resource/add
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+10:29:08 PM [33mPOST[39m /resource/add
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+10:29:18 PM [33mPOST[39m /resource/add
+10:29:18 PM [33mPOST[39m /resource/add
+10:29:19 PM [33mPOST[39m /resource/add
+10:29:22 PM [33mPOST[39m /resource/add
+10:29:25 PM [33mPOST[39m /resource/add
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+10:42:28 PM [33mPOST[39m /resource/add
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+10:44:56 PM [32mGET[39m /edit_resource
+10:44:56 PM [32mGET[39m /css/global_style.css
+10:44:56 PM [32mGET[39m /css/navbar_style.css
+10:44:56 PM [32mGET[39m /css/accounte_style.css
+10:44:56 PM [32mGET[39m /css/login_signUp_style.css
+10:44:56 PM [32mGET[39m /css/home.css
+10:44:56 PM [32mGET[39m /css/resource.css
+10:44:56 PM [32mGET[39m /Assets/img/icons/Logo.svg
+10:44:56 PM [32mGET[39m /app.js
+10:44:57 PM [32mGET[39m /templates/edit_resource.html
+10:44:57 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2022:44:57%20GMT+0100%20(sentraleuropeisk%20normaltid)
+10:44:57 PM [32mGET[39m /modules/methods.mjs
+10:44:57 PM [32mGET[39m /modules/errorHandling.mjs
+10:44:57 PM [32mGET[39m /resource
+10:44:57 PM [32mGET[39m /user/all
+10:45:07 PM [33mPOST[39m /resource/add
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+10:45:19 PM [33mPOST[39m /resource/add
+10:45:19 PM [33mPOST[39m /resource/add
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+10:45:26 PM [33mPOST[39m /resource/add
+10:45:26 PM [33mPOST[39m /resource/add
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+10:46:47 PM [33mPOST[39m /resource/add
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+10:47:21 PM [33mPOST[39m /resource/add
+10:47:21 PM [33mPOST[39m /resource/add
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+10:47:53 PM [33mPOST[39m /resource/add
+10:47:53 PM [33mPOST[39m /resource/add
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+10:49:44 PM [33mPOST[39m /resource/add
+10:49:44 PM [33mPOST[39m /resource/add
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+10:50:43 PM [33mPOST[39m /resource/add
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+10:51:28 PM [32mGET[39m /edit_resource
+10:51:28 PM [32mGET[39m /css/navbar_style.css
+10:51:28 PM [32mGET[39m /css/global_style.css
+10:51:28 PM [32mGET[39m /css/accounte_style.css
+10:51:28 PM [32mGET[39m /css/home.css
+10:51:28 PM [32mGET[39m /app.js
+10:51:28 PM [32mGET[39m /css/login_signUp_style.css
+10:51:28 PM [32mGET[39m /css/resource.css
+10:51:28 PM [32mGET[39m /Assets/img/icons/Logo.svg
+10:51:28 PM [32mGET[39m /templates/edit_resource.html
+10:51:28 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2022:51:28%20GMT+0100%20(sentraleuropeisk%20normaltid)
+10:51:29 PM [32mGET[39m /modules/errorHandling.mjs
+10:51:29 PM [32mGET[39m /modules/methods.mjs
+10:51:29 PM [32mGET[39m /resource
+10:51:29 PM [32mGET[39m /user/all
+10:51:30 PM [33mPOST[39m /resource/add
+10:51:30 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+10:51:40 PM [33mPOST[39m /resource/add
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+10:52:15 PM [33mPOST[39m /resource/add
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+10:52:49 PM [33mPOST[39m /resource/add
+10:52:49 PM [33mPOST[39m /resource/add
+10:53:18 PM [33mPOST[39m /resource/add
+10:53:18 PM [33mPOST[39m /resource/add
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+10:54:08 PM [33mPOST[39m /resource/add
+10:54:24 PM [33mPOST[39m /resource/add
+10:54:29 PM [33mPOST[39m /resource/add
+10:54:34 PM [33mPOST[39m /resource/add
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+11:18:08 PM [32mGET[39m /edit_resource
+11:18:08 PM [32mGET[39m /css/navbar_style.css
+11:18:08 PM [32mGET[39m /css/home.css
+11:18:08 PM [32mGET[39m /css/login_signUp_style.css
+11:18:08 PM [32mGET[39m /app.js
+11:18:08 PM [32mGET[39m /css/global_style.css
+11:18:08 PM [32mGET[39m /Assets/img/icons/Logo.svg
+11:18:08 PM [32mGET[39m /css/accounte_style.css
+11:18:08 PM [32mGET[39m /css/resource.css
+11:18:08 PM [32mGET[39m /templates/edit_resource.html
+11:18:08 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2023:18:08%20GMT+0100%20(sentraleuropeisk%20normaltid)
+11:18:09 PM [32mGET[39m /modules/methods.mjs
+11:18:09 PM [32mGET[39m /modules/errorHandling.mjs
+11:18:09 PM [32mGET[39m /resource
+11:18:09 PM [32mGET[39m /user/all
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+11:18:57 PM [32mGET[39m /edit_resource
+11:18:57 PM [32mGET[39m /css/global_style.css
+11:18:57 PM [32mGET[39m /css/navbar_style.css
+11:18:57 PM [32mGET[39m /css/login_signUp_style.css
+11:18:57 PM [32mGET[39m /css/home.css
+11:18:57 PM [32mGET[39m /css/resource.css
+11:18:57 PM [32mGET[39m /css/accounte_style.css
+11:18:57 PM [32mGET[39m /app.js
+11:18:57 PM [32mGET[39m /Assets/img/icons/Logo.svg
+11:18:57 PM [32mGET[39m /templates/edit_resource.html
+11:18:57 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2023:18:57%20GMT+0100%20(sentraleuropeisk%20normaltid)
+11:18:57 PM [32mGET[39m /modules/methods.mjs
+11:18:57 PM [32mGET[39m /modules/errorHandling.mjs
+11:18:57 PM [32mGET[39m /resource
+11:18:57 PM [32mGET[39m /user/all
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+11:19:14 PM [32mGET[39m /edit_resource
+11:19:14 PM [32mGET[39m /css/global_style.css
+11:19:14 PM [32mGET[39m /css/navbar_style.css
+11:19:14 PM [32mGET[39m /css/accounte_style.css
+11:19:14 PM [32mGET[39m /css/login_signUp_style.css
+11:19:14 PM [32mGET[39m /css/home.css
+11:19:14 PM [32mGET[39m /css/resource.css
+11:19:14 PM [32mGET[39m /app.js
+11:19:14 PM [32mGET[39m /Assets/img/icons/Logo.svg
+11:19:14 PM [32mGET[39m /templates/edit_resource.html
+11:19:14 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2023:19:14%20GMT+0100%20(sentraleuropeisk%20normaltid)
+11:19:15 PM [32mGET[39m /modules/methods.mjs
+11:19:15 PM [32mGET[39m /modules/errorHandling.mjs
+11:19:15 PM [32mGET[39m /resource
+11:19:15 PM [32mGET[39m /user/all
+11:19:16 PM [31mDELETE[39m /resource
+11:19:16 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+11:20:14 PM [33mPOST[39m /resource/add
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+11:20:24 PM [32mGET[39m /edit_resource
+11:20:24 PM [32mGET[39m /css/global_style.css
+11:20:24 PM [32mGET[39m /css/navbar_style.css
+11:20:24 PM [32mGET[39m /app.js
+11:20:24 PM [32mGET[39m /css/accounte_style.css
+11:20:24 PM [32mGET[39m /css/login_signUp_style.css
+11:20:24 PM [32mGET[39m /css/home.css
+11:20:24 PM [32mGET[39m /css/resource.css
+11:20:24 PM [32mGET[39m /Assets/img/icons/Logo.svg
+11:20:25 PM [32mGET[39m /templates/edit_resource.html
+11:20:25 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2023:20:25%20GMT+0100%20(sentraleuropeisk%20normaltid)
+11:20:25 PM [32mGET[39m /modules/methods.mjs
+11:20:25 PM [32mGET[39m /modules/errorHandling.mjs
+11:20:25 PM [32mGET[39m /resource
+11:20:25 PM [32mGET[39m /user/all
+11:20:26 PM [31mDELETE[39m /resource
+11:20:26 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+11:20:43 PM [33mPOST[39m /resource/add
+11:20:46 PM [31mDELETE[39m /resource
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+11:21:27 PM [33mPOST[39m /resource/add
+11:21:27 PM [33mPOST[39m /resource/add
+11:21:29 PM [31mDELETE[39m /resource
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+11:21:32 PM [32mGET[39m /edit_resource
+11:21:32 PM [32mGET[39m /css/home.css
+11:21:32 PM [32mGET[39m /css/navbar_style.css
+11:21:32 PM [32mGET[39m /css/resource.css
+11:21:32 PM [32mGET[39m /css/global_style.css
+11:21:32 PM [32mGET[39m /css/accounte_style.css
+11:21:32 PM [32mGET[39m /app.js
+11:21:32 PM [32mGET[39m /css/login_signUp_style.css
+11:21:32 PM [32mGET[39m /Assets/img/icons/Logo.svg
+11:21:32 PM [32mGET[39m /templates/edit_resource.html
+11:21:32 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionWed%20Mar%2013%202024%2023:21:32%20GMT+0100%20(sentraleuropeisk%20normaltid)
+11:21:33 PM [32mGET[39m /modules/methods.mjs
+11:21:33 PM [32mGET[39m /modules/errorHandling.mjs
+11:21:33 PM [32mGET[39m /resource
+11:21:33 PM [32mGET[39m /user/all
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+11:21:53 PM [31mDELETE[39m /resource/69
+11:21:53 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+12:18:49 AM [33mPOST[39m /resource/add
+12:18:55 AM [33mPOST[39m /resource/add
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+12:20:58 AM [31mDELETE[39m /resource/69
+12:20:58 AM [31mDELETE[39m /resource/69
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+12:22:27 AM [31mDELETE[39m /resource/69
+12:22:27 AM [31mDELETE[39m /resource/69
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+12:22:53 AM [33mPOST[39m /resource/add
+12:23:31 AM [31mDELETE[39m /resource/69
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+####################
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+12:25:34 AM [31mDELETE[39m /resource/69
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+12:26:11 AM [31mDELETE[39m /resource/69
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+12:26:55 AM [31mDELETE[39m /resource/69
+12:26:55 AM [31mDELETE[39m /resource/69
+12:27:03 AM [32mGET[39m /edit_resource
+12:27:03 AM [32mGET[39m /css/global_style.css
+12:27:03 AM [32mGET[39m /css/navbar_style.css
+12:27:03 AM [32mGET[39m /css/accounte_style.css
+12:27:03 AM [32mGET[39m /css/login_signUp_style.css
+12:27:03 AM [32mGET[39m /css/resource.css
+12:27:03 AM [32mGET[39m /app.js
+12:27:03 AM [32mGET[39m /css/home.css
+12:27:03 AM [32mGET[39m /Assets/img/icons/Logo.svg
+12:27:04 AM [32mGET[39m /templates/edit_resource.html
+12:27:04 AM [32mGET[39m /pageScripts//edit_resource.mjs?versionThu%20Mar%2014%202024%2000:27:04%20GMT+0100%20(sentraleuropeisk%20normaltid)
+12:27:04 AM [32mGET[39m /modules/methods.mjs
+12:27:04 AM [32mGET[39m /modules/errorHandling.mjs
+12:27:04 AM [32mGET[39m /resource
+12:27:04 AM [32mGET[39m /user/all
+12:27:06 AM [31mDELETE[39m /resource/69
+12:27:06 AM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+12:28:07 AM [31mDELETE[39m /resource/69
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+12:28:30 AM [31mDELETE[39m /resource/69
+12:28:30 AM [31mDELETE[39m /resource/69
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+12:28:45 AM [31mDELETE[39m /resource/69
+12:28:47 AM [31mDELETE[39m /resource/69
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+12:29:09 AM [31mDELETE[39m /resource/69
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+12:30:34 AM [31mDELETE[39m /resource/69
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+12:30:50 AM [31mDELETE[39m /resource/69
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+12:30:57 AM [31mDELETE[39m /resource/69
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+12:31:45 AM [31mDELETE[39m /resource/69
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+12:35:24 AM [31mDELETE[39m /resource/69
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+12:37:23 AM [31mDELETE[39m /resource/69
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+12:38:54 AM [31mDELETE[39m /resource/69
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+12:40:59 AM [31mDELETE[39m /resource/69
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+12:41:28 AM [31mDELETE[39m /resource/69
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+12:41:53 AM [31mDELETE[39m /resource/69
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+12:43:07 AM [31mDELETE[39m /resource/69
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+12:43:17 AM [31mDELETE[39m /resource/69
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+12:44:12 AM [31mDELETE[39m /resource/69
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+12:45:38 AM [32mGET[39m /edit_resource
+12:45:38 AM [32mGET[39m /css/global_style.css
+12:45:38 AM [32mGET[39m /css/navbar_style.css
+12:45:38 AM [32mGET[39m /css/accounte_style.css
+12:45:38 AM [32mGET[39m /css/home.css
+12:45:38 AM [32mGET[39m /css/resource.css
+12:45:38 AM [32mGET[39m /css/login_signUp_style.css
+12:45:38 AM [32mGET[39m /app.js
+12:45:38 AM [32mGET[39m /Assets/img/icons/Logo.svg
+12:45:38 AM [32mGET[39m /templates/edit_resource.html
+12:45:39 AM [32mGET[39m /pageScripts//edit_resource.mjs?versionThu%20Mar%2014%202024%2000:45:39%20GMT+0100%20(sentraleuropeisk%20normaltid)
+12:45:39 AM [32mGET[39m /modules/methods.mjs
+12:45:39 AM [32mGET[39m /modules/errorHandling.mjs
+12:45:39 AM [32mGET[39m /resource
+12:45:39 AM [32mGET[39m /user/all
+12:45:45 AM [31mDELETE[39m /resource/70
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+12:46:06 AM [32mGET[39m /edit_resource
+12:46:07 AM [32mGET[39m /css/global_style.css
+12:46:07 AM [32mGET[39m /css/navbar_style.css
+12:46:07 AM [32mGET[39m /css/accounte_style.css
+12:46:07 AM [32mGET[39m /css/login_signUp_style.css
+12:46:07 AM [32mGET[39m /app.js
+12:46:07 AM [32mGET[39m /css/home.css
+12:46:07 AM [32mGET[39m /css/resource.css
+12:46:07 AM [32mGET[39m /Assets/img/icons/Logo.svg
+12:46:07 AM [32mGET[39m /templates/edit_resource.html
+12:46:07 AM [32mGET[39m /pageScripts//edit_resource.mjs?versionThu%20Mar%2014%202024%2000:46:07%20GMT+0100%20(sentraleuropeisk%20normaltid)
+12:46:07 AM [32mGET[39m /modules/methods.mjs
+12:46:07 AM [32mGET[39m /modules/errorHandling.mjs
+12:46:07 AM [32mGET[39m /user/all
+12:46:07 AM [32mGET[39m /resource
+12:46:08 AM [31mDELETE[39m /resource/7
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+12:52:21 AM [31mDELETE[39m /resource/7
+12:52:21 AM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+12:52:41 AM [31mDELETE[39m /resource/7
+12:53:32 AM [32mGET[39m /templates/account.html
+12:53:32 AM [32mGET[39m /pageScripts//account.mjs?versionThu%20Mar%2014%202024%2000:53:32%20GMT+0100%20(sentraleuropeisk%20normaltid)
+12:53:32 AM [32mGET[39m /modules/userAuth.mjs
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+12:54:05 AM [31mDELETE[39m /user/71
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+12:56:40 AM [31mDELETE[39m /user/71
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+12:57:31 AM [31mDELETE[39m /user/71
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+12:58:38 AM [31mDELETE[39m /user/71
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+1:00:30 AM [31mDELETE[39m /user/71
+1:01:16 AM [32mGET[39m /account
+1:01:17 AM [32mGET[39m /css/global_style.css
+1:01:17 AM [32mGET[39m /css/navbar_style.css
+1:01:17 AM [32mGET[39m /css/accounte_style.css
+1:01:17 AM [32mGET[39m /css/login_signUp_style.css
+1:01:17 AM [32mGET[39m /app.js
+1:01:17 AM [32mGET[39m /css/home.css
+1:01:17 AM [32mGET[39m /Assets/img/icons/Logo.svg
+1:01:17 AM [32mGET[39m /css/resource.css
+1:01:17 AM [32mGET[39m /templates/account.html
+1:01:17 AM [32mGET[39m /pageScripts//account.mjs?versionThu%20Mar%2014%202024%2001:01:17%20GMT+0100%20(sentraleuropeisk%20normaltid)
+1:01:17 AM [32mGET[39m /modules/methods.mjs
+1:01:17 AM [32mGET[39m /modules/errorHandling.mjs
+1:01:17 AM [32mGET[39m /modules/userAuth.mjs
+1:01:18 AM [31mDELETE[39m /user/71
+1:01:18 AM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+1:01:34 AM [31mDELETE[39m /user/71
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+1:03:42 AM [31mDELETE[39m /user/71
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+1:04:23 AM [31mDELETE[39m /user/71
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+1:04:51 AM [31mDELETE[39m /user/71
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+1:05:07 AM [31mDELETE[39m /user/71
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+1:05:52 AM [31mDELETE[39m /user/71
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+1:08:32 AM [31mDELETE[39m /user/71
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+1:09:17 AM [32mGET[39m /edit_resource
+1:09:17 AM [32mGET[39m /css/global_style.css
+1:09:17 AM [32mGET[39m /css/navbar_style.css
+1:09:17 AM [32mGET[39m /css/accounte_style.css
+1:09:17 AM [32mGET[39m /css/login_signUp_style.css
+1:09:17 AM [32mGET[39m /css/home.css
+1:09:17 AM [32mGET[39m /css/resource.css
+1:09:18 AM [32mGET[39m /app.js
+1:09:18 AM [32mGET[39m /Assets/img/icons/Logo.svg
+1:09:18 AM [32mGET[39m /templates/edit_resource.html
+1:09:18 AM [32mGET[39m /pageScripts//edit_resource.mjs?versionThu%20Mar%2014%202024%2001:09:18%20GMT+0100%20(sentraleuropeisk%20normaltid)
+1:09:18 AM [32mGET[39m /modules/methods.mjs
+1:09:18 AM [32mGET[39m /modules/errorHandling.mjs
+1:09:18 AM [32mGET[39m /user/all
+1:09:18 AM [32mGET[39m /resource
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+####################
+####################
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+1:09:48 AM [31mDELETE[39m /resource/7
+1:09:48 AM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+1:09:56 AM [31mDELETE[39m /resource/7
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+1:10:18 AM [31mDELETE[39m /resource/7
+1:10:27 AM [32mGET[39m /edit_resource
+1:10:27 AM [32mGET[39m /css/global_style.css
+1:10:27 AM [32mGET[39m /css/navbar_style.css
+1:10:27 AM [32mGET[39m /css/accounte_style.css
+1:10:27 AM [32mGET[39m /css/login_signUp_style.css
+1:10:27 AM [32mGET[39m /css/home.css
+1:10:27 AM [32mGET[39m /css/resource.css
+1:10:27 AM [32mGET[39m /app.js
+1:10:27 AM [32mGET[39m /Assets/img/icons/Logo.svg
+1:10:27 AM [32mGET[39m /templates/edit_resource.html
+1:10:27 AM [32mGET[39m /pageScripts//edit_resource.mjs?versionThu%20Mar%2014%202024%2001:10:27%20GMT+0100%20(sentraleuropeisk%20normaltid)
+1:10:28 AM [32mGET[39m /modules/methods.mjs
+1:10:28 AM [32mGET[39m /modules/errorHandling.mjs
+1:10:28 AM [32mGET[39m /user/all
+1:10:28 AM [32mGET[39m /resource
+1:10:35 AM [31mDELETE[39m /resource/8
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
+1:11:23 AM [32mGET[39m /edit_resource
+1:11:23 AM [32mGET[39m /css/global_style.css
+1:11:23 AM [32mGET[39m /css/navbar_style.css
+1:11:23 AM [32mGET[39m /css/accounte_style.css
+1:11:23 AM [32mGET[39m /css/login_signUp_style.css
+1:11:23 AM [32mGET[39m /css/resource.css
+1:11:23 AM [32mGET[39m /css/home.css
+1:11:23 AM [32mGET[39m /app.js
+1:11:23 AM [32mGET[39m /Assets/img/icons/Logo.svg
+1:11:23 AM [32mGET[39m /templates/edit_resource.html
+1:11:23 AM [32mGET[39m /pageScripts//edit_resource.mjs?versionThu%20Mar%2014%202024%2001:11:23%20GMT+0100%20(sentraleuropeisk%20normaltid)
+1:11:23 AM [32mGET[39m /modules/methods.mjs
+1:11:23 AM [32mGET[39m /modules/errorHandling.mjs
+1:11:23 AM [32mGET[39m /resource
+1:11:23 AM [32mGET[39m /user/all
+1:11:24 AM [31mDELETE[39m /resource/61
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5432/ResourcesAppDB
+####################
