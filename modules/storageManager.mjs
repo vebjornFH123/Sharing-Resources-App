@@ -82,7 +82,6 @@ class DBManager {
 
     try {
       await client.connect();
-      console.log(data);
       const columnNames = Object.keys(data);
       const placeholders = columnNames
         .map((_, index) => `$${index + 1}`)

@@ -3,7 +3,7 @@ import errorHandler from "../../modules/errorHandling.mjs";
 
 const resourceList = document.getElementById("resourceList");
 
-getData("/resource/userId/233")
+getData("/resource/userId/1")
   .then((respon) => {
     if (respon.ok) {
       return respon.json();

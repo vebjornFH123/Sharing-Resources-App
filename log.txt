@@ -52301,3 +52301,42 @@ Database connection  postgresql://resourcesappdb_user:pEtWtfrMfmdGtIQhRDo5TaK1wE
 5:42:44 PM [32mGET[39m /modules/userAuth.mjs
 5:43:03 PM [33mPOST[39m /user/signUp
 5:44:35 PM [33mPOST[39m /user/signUp
+####################
+Server enviorment local
+Database connection  postgres://resourcesappdb_user:pEtWtfrMfmdGtIQhRDo5TaK1wEgZTtJb@dpg-cnosbfnjbltc73fkomog-a.ohio-postgres.render.com/resourcesappdb
+####################
+5:50:10 PM [32mGET[39m /edit_resource
+5:50:10 PM [32mGET[39m /css/global_style.css
+5:50:10 PM [32mGET[39m /css/navbar_style.css
+5:50:10 PM [32mGET[39m /css/accounte_style.css
+5:50:10 PM [32mGET[39m /css/login_signUp_style.css
+5:50:10 PM [32mGET[39m /css/home.css
+5:50:10 PM [32mGET[39m /css/resource.css
+5:50:10 PM [32mGET[39m /app.js
+5:50:10 PM [32mGET[39m /Assets/img/icons/Logo.svg
+5:50:10 PM [32mGET[39m /templates/edit_resource.html
+5:50:10 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionFri%20Mar%2015%202024%2017:50:10%20GMT+0100%20(sentraleuropeisk%20normaltid)
+5:50:11 PM [32mGET[39m /modules/methods.mjs
+5:50:11 PM [32mGET[39m /modules/errorHandling.mjs
+5:50:11 PM [32mGET[39m /resource
+5:50:11 PM [32mGET[39m /user/all
+5:50:11 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+5:51:31 PM [33mPOST[39m /resource/add
+####################
+Server enviorment local
+Database connection  postgres://resourcesappdb_user:pEtWtfrMfmdGtIQhRDo5TaK1wEgZTtJb@dpg-cnosbfnjbltc73fkomog-a.ohio-postgres.render.com/resourcesappdb
+####################
+####################
+Server enviorment local
+Database connection  postgres://resourcesappdb_user:pEtWtfrMfmdGtIQhRDo5TaK1wEgZTtJb@dpg-cnosbfnjbltc73fkomog-a.ohio-postgres.render.com/resourcesappdb
+####################
+5:56:14 PM [33mPOST[39m /resource/add
+5:57:20 PM [33mPOST[39m /resource/add
+####################
+Server enviorment local
+Database connection  postgres://resourcesappdb_user:pEtWtfrMfmdGtIQhRDo5TaK1wEgZTtJb@dpg-cnosbfnjbltc73fkomog-a.ohio-postgres.render.com/resourcesappdb
+####################
+####################
+####################
+Server enviorment local
+Database connection  postgres://resourcesappdb_user:pEtWtfrMfmdGtIQhRDo5TaK1wEgZTtJb@dpg-cnosbfnjbltc73fkomog-a.ohio-postgres.render.com/resourcesappdb
