@@ -121,12 +121,11 @@ class DBManager {
       let output;
       if (tableName === "Users") {
         if (key === undefined) {
-          console.log("hdfdjksfihdsjkfoipdshu", key);
           output = await client.query(
             `Select ${select} from "public"."${tableName}"`
           );
         } else {
-          console.log("fkshdufihdsjhopifds", values);
+          console.log("fkshdufihdsjhopifds", values, select, tableName, key);
           output = await client.query(
             `Select ${select} from "public"."${tableName}" WHERE ${key} = $1;`,
             values

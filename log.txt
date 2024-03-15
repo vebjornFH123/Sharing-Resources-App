@@ -52070,3 +52070,234 @@ Database connection  postgresql://localhost:5432/ResourcesAppDB
 1:15:44 PM [32mGET[39m /resource/userId/233
 1:15:44 PM [32mGET[39m /Assets/img/icons/Logo-blue.svg
 1:15:44 PM [32mGET[39m /Assets/img/icons/arrow-right.svg
+####################
+Server enviorment local
+Database connection  postgresql://resourcesappdb_user:pEtWtfrMfmdGtIQhRDo5TaK1wEgZTtJb@dpg-cnosbfnjbltc73fkomog-a.ohio-postgres.render.com/resourcesappdb
+####################
+5:29:19 PM [32mGET[39m /map
+5:29:19 PM [32mGET[39m /css/global_style.css
+5:29:19 PM [32mGET[39m /css/login_signUp_style.css
+5:29:19 PM [32mGET[39m /app.js
+5:29:19 PM [32mGET[39m /css/navbar_style.css
+5:29:19 PM [32mGET[39m /css/accounte_style.css
+5:29:19 PM [32mGET[39m /Assets/img/icons/Logo.svg
+5:29:19 PM [32mGET[39m /css/home.css
+5:29:20 PM [32mGET[39m /css/resource.css
+5:29:20 PM [32mGET[39m /templates/map.html
+5:29:20 PM [32mGET[39m /pageScripts//map.mjs?versionFri%20Mar%2015%202024%2017:29:20%20GMT+0100%20(sentraleuropeisk%20normaltid)
+5:29:20 PM [32mGET[39m /modules/methods.mjs
+5:29:20 PM [32mGET[39m /resource/userId/233
+5:29:26 PM [32mGET[39m /
+5:29:26 PM [32mGET[39m /css/global_style.css
+5:29:26 PM [32mGET[39m /css/navbar_style.css
+5:29:26 PM [32mGET[39m /css/accounte_style.css
+5:29:26 PM [32mGET[39m /css/login_signUp_style.css
+5:29:26 PM [32mGET[39m /css/home.css
+5:29:26 PM [32mGET[39m /css/resource.css
+5:29:26 PM [32mGET[39m /Assets/img/icons/Logo.svg
+5:29:26 PM [32mGET[39m /app.js
+5:29:26 PM [32mGET[39m /
+5:29:26 PM [32mGET[39m /css/global_style.css
+5:29:26 PM [32mGET[39m /css/navbar_style.css
+5:29:26 PM [32mGET[39m /css/accounte_style.css
+5:29:26 PM [32mGET[39m /css/login_signUp_style.css
+5:29:26 PM [32mGET[39m /Assets/img/icons/Logo.svg
+5:29:26 PM [32mGET[39m /css/home.css
+5:29:26 PM [32mGET[39m /app.js
+5:29:26 PM [32mGET[39m /css/resource.css
+5:29:26 PM [32mGET[39m /templates/home.html
+5:29:26 PM [32mGET[39m /pageScripts/home.mjs?versionFri%20Mar%2015%202024%2017:29:26%20GMT+0100%20(sentraleuropeisk%20normaltid)
+5:29:26 PM [32mGET[39m /modules/methods.mjs
+5:29:26 PM [32mGET[39m /modules/errorHandling.mjs
+5:29:30 PM [32mGET[39m /templates/account.html
+5:29:30 PM [32mGET[39m /pageScripts//account.mjs?versionFri%20Mar%2015%202024%2017:29:30%20GMT+0100%20(sentraleuropeisk%20normaltid)
+5:29:30 PM [32mGET[39m /modules/userAuth.mjs
+5:29:37 PM [32mGET[39m /edit_resource
+5:29:37 PM [32mGET[39m /css/global_style.css
+5:29:37 PM [32mGET[39m /css/accounte_style.css
+5:29:37 PM [32mGET[39m /css/navbar_style.css
+5:29:37 PM [32mGET[39m /css/login_signUp_style.css
+5:29:37 PM [32mGET[39m /css/home.css
+5:29:37 PM [32mGET[39m /css/resource.css
+5:29:37 PM [32mGET[39m /app.js
+5:29:37 PM [32mGET[39m /Assets/img/icons/Logo.svg
+5:29:38 PM [32mGET[39m /edit_resource
+5:29:38 PM [32mGET[39m /css/global_style.css
+5:29:38 PM [32mGET[39m /css/navbar_style.css
+5:29:38 PM [32mGET[39m /css/accounte_style.css
+5:29:38 PM [32mGET[39m /css/resource.css
+5:29:38 PM [32mGET[39m /css/login_signUp_style.css
+5:29:38 PM [32mGET[39m /css/home.css
+5:29:38 PM [32mGET[39m /Assets/img/icons/Logo.svg
+5:29:38 PM [32mGET[39m /app.js
+5:29:38 PM [32mGET[39m /templates/edit_resource.html
+5:29:38 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionFri%20Mar%2015%202024%2017:29:38%20GMT+0100%20(sentraleuropeisk%20normaltid)
+5:29:38 PM [32mGET[39m /modules/methods.mjs
+5:29:38 PM [32mGET[39m /modules/errorHandling.mjs
+5:29:38 PM [32mGET[39m /resource
+5:29:38 PM [32mGET[39m /user/all
+5:29:38 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+5:29:46 PM [32mGET[39m /resource/userId/233
+5:29:58 PM [32mGET[39m /css/global_style.css
+5:29:58 PM [32mGET[39m /css/navbar_style.css
+5:29:58 PM [32mGET[39m /css/accounte_style.css
+5:29:58 PM [32mGET[39m /css/login_signUp_style.css
+5:29:58 PM [32mGET[39m /css/home.css
+5:29:58 PM [32mGET[39m /css/resource.css
+5:30:13 PM [33mPOST[39m /resource/add
+5:30:14 PM [33mPOST[39m /resource/add
+5:30:15 PM [33mPOST[39m /resource/add
+5:30:17 PM [33mPOST[39m /resource/add
+####################
+Server enviorment local
+Database connection  postgresql://resourcesappdb_user:pEtWtfrMfmdGtIQhRDo5TaK1wEgZTtJb@dpg-cnosbfnjbltc73fkomog-a.ohio-postgres.render.com/resourcesappdb
+####################
+5:30:56 PM [32mGET[39m /edit_resource
+5:30:56 PM [32mGET[39m /css/global_style.css
+5:30:56 PM [32mGET[39m /css/accounte_style.css
+5:30:56 PM [32mGET[39m /css/navbar_style.css
+5:30:56 PM [32mGET[39m /css/login_signUp_style.css
+5:30:56 PM [32mGET[39m /css/resource.css
+5:30:56 PM [32mGET[39m /app.js
+5:30:56 PM [32mGET[39m /css/home.css
+5:30:56 PM [32mGET[39m /Assets/img/icons/Logo.svg
+5:30:56 PM [32mGET[39m /templates/edit_resource.html
+5:30:56 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionFri%20Mar%2015%202024%2017:30:56%20GMT+0100%20(sentraleuropeisk%20normaltid)
+5:30:56 PM [32mGET[39m /modules/methods.mjs
+5:30:56 PM [32mGET[39m /modules/errorHandling.mjs
+5:30:56 PM [32mGET[39m /resource
+5:30:56 PM [32mGET[39m /user/all
+5:30:56 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+####################
+Server enviorment local
+Database connection  postgresql://resourcesappdb_user:pEtWtfrMfmdGtIQhRDo5TaK1wEgZTtJb@dpg-cnosbfnjbltc73fkomog-a.ohio-postgres.render.com/resourcesappdb
+####################
+5:31:16 PM [32mGET[39m /edit_resource
+5:31:17 PM [32mGET[39m /css/global_style.css
+5:31:17 PM [32mGET[39m /css/accounte_style.css
+5:31:17 PM [32mGET[39m /css/navbar_style.css
+5:31:17 PM [32mGET[39m /css/login_signUp_style.css
+5:31:17 PM [32mGET[39m /app.js
+5:31:17 PM [32mGET[39m /css/home.css
+5:31:17 PM [32mGET[39m /css/resource.css
+5:31:17 PM [32mGET[39m /Assets/img/icons/Logo.svg
+5:31:17 PM [32mGET[39m /templates/edit_resource.html
+5:31:17 PM [32mGET[39m /pageScripts//edit_resource.mjs?versionFri%20Mar%2015%202024%2017:31:17%20GMT+0100%20(sentraleuropeisk%20normaltid)
+5:31:17 PM [32mGET[39m /modules/methods.mjs
+5:31:17 PM [32mGET[39m /modules/errorHandling.mjs
+5:31:17 PM [32mGET[39m /resource
+5:31:17 PM [32mGET[39m /user/all
+5:31:17 PM [32mGET[39m /Assets/img/icons/exit-black-icon.svg
+####################
+Server enviorment local
+Database connection  postgresql://resourcesappdb_user:pEtWtfrMfmdGtIQhRDo5TaK1wEgZTtJb@dpg-cnosbfnjbltc73fkomog-a.ohio-postgres.render.com/resourcesappdb
+####################
+5:33:33 PM [32mGET[39m /templates/account.html
+5:33:33 PM [32mGET[39m /pageScripts//account.mjs?versionFri%20Mar%2015%202024%2017:33:33%20GMT+0100%20(sentraleuropeisk%20normaltid)
+5:33:33 PM [32mGET[39m /modules/userAuth.mjs
+5:33:41 PM [32mGET[39m /login
+5:33:41 PM [32mGET[39m /css/global_style.css
+5:33:41 PM [32mGET[39m /css/navbar_style.css
+5:33:41 PM [32mGET[39m /css/accounte_style.css
+5:33:41 PM [32mGET[39m /app.js
+5:33:41 PM [32mGET[39m /css/login_signUp_style.css
+5:33:41 PM [32mGET[39m /Assets/img/icons/Logo.svg
+5:33:41 PM [32mGET[39m /css/home.css
+5:33:41 PM [32mGET[39m /css/resource.css
+5:33:41 PM [32mGET[39m /templates/login.html
+5:33:41 PM [32mGET[39m /pageScripts//login.mjs?versionFri%20Mar%2015%202024%2017:33:41%20GMT+0100%20(sentraleuropeisk%20normaltid)
+5:33:41 PM [32mGET[39m /Assets/img//icons/Logo.svg
+5:33:41 PM [32mGET[39m /modules/methods.mjs
+5:33:41 PM [32mGET[39m /modules/userAuth.mjs
+5:33:41 PM [32mGET[39m /modules/errorHandling.mjs
+5:34:36 PM [32mGET[39m /signUp.html
+5:34:39 PM [32mGET[39m /signUp.html
+5:34:42 PM [32mGET[39m /signUp
+5:34:42 PM [32mGET[39m /css/global_style.css
+5:34:42 PM [32mGET[39m /css/navbar_style.css
+5:34:42 PM [32mGET[39m /css/accounte_style.css
+5:34:42 PM [32mGET[39m /app.js
+5:34:42 PM [32mGET[39m /css/login_signUp_style.css
+5:34:42 PM [32mGET[39m /css/home.css
+5:34:42 PM [32mGET[39m /css/resource.css
+5:34:42 PM [32mGET[39m /Assets/img/icons/Logo.svg
+5:34:42 PM [32mGET[39m /templates/signUp.html
+5:34:42 PM [32mGET[39m /Assets/img//icons/Logo.svg
+5:34:42 PM [32mGET[39m /pageScripts//signUp.mjs?versionFri%20Mar%2015%202024%2017:34:42%20GMT+0100%20(sentraleuropeisk%20normaltid)
+5:34:42 PM [32mGET[39m /modules/userAuth.mjs
+5:34:42 PM [32mGET[39m /modules/methods.mjs
+5:34:42 PM [32mGET[39m /modules/errorHandling.mjs
+5:34:55 PM [33mPOST[39m /user/signUp
+####################
+Database connection  postgresql://resourcesappdb_user:pEtWtfrMfmdGtIQhRDo5TaK1wEgZTtJb@dpg-cnosbfnjbltc73fkomog-a.ohio-postgres.render.com/resourcesappdb
+####################
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://resourcesappdb_user:pEtWtfrMfmdGtIQhRDo5TaK1wEgZTtJb@dpg-cnosbfnjbltc73fkomog-a.ohio-postgres.render.com/resourcesappdb
+####################
+5:36:42 PM [33mPOST[39m /user/signUp
+####################
+Server enviorment local
+Database connection  postgresql://resourcesappdb_user:pEtWtfrMfmdGtIQhRDo5TaK1wEgZTtJb@dpg-cnosbfnjbltc73fkomog-a.ohio-postgres.render.com/resourcesappdb
+####################
+####################
+Database connection  postgresql://resourcesappdb_user:pEtWtfrMfmdGtIQhRDo5TaK1wEgZTtJb@dpg-cnosbfnjbltc73fkomog-a.ohio-postgres.render.com/resourcesappdb
+####################
+Server enviorment local
+5:38:06 PM [33mPOST[39m /user/signUp
+####################
+Server enviorment local
+Database connection  postgresql://resourcesappdb_user:pEtWtfrMfmdGtIQhRDo5TaK1wEgZTtJb@dpg-cnosbfnjbltc73fkomog-a.ohio-postgres.render.com/resourcesappdb
+####################
+####################
+Server enviorment local
+Database connection  postgresql://resourcesappdb_user:pEtWtfrMfmdGtIQhRDo5TaK1wEgZTtJb@dpg-cnosbfnjbltc73fkomog-a.ohio-postgres.render.com/resourcesappdb
+####################
+####################
+Server enviorment local
+Database connection  postgresql://resourcesappdb_user:pEtWtfrMfmdGtIQhRDo5TaK1wEgZTtJb@dpg-cnosbfnjbltc73fkomog-a.ohio-postgres.render.com/resourcesappdb
+####################
+####################
+Database connection  postgresql://resourcesappdb_user:pEtWtfrMfmdGtIQhRDo5TaK1wEgZTtJb@dpg-cnosbfnjbltc73fkomog-a.ohio-postgres.render.com/resourcesappdb
+Server enviorment local
+####################
+5:41:34 PM [33mPOST[39m /user/signUp
+####################
+Server enviorment local
+Database connection  postgresql://resourcesappdb_user:pEtWtfrMfmdGtIQhRDo5TaK1wEgZTtJb@dpg-cnosbfnjbltc73fkomog-a.ohio-postgres.render.com/resourcesappdb
+####################
+5:41:41 PM [33mPOST[39m /user/signUp
+####################
+Server enviorment local
+Database connection  postgresql://resourcesappdb_user:pEtWtfrMfmdGtIQhRDo5TaK1wEgZTtJb@dpg-cnosbfnjbltc73fkomog-a.ohio-postgres.render.com/resourcesappdb
+####################
+####################
+Server enviorment local
+####################
+Database connection  postgresql://resourcesappdb_user:pEtWtfrMfmdGtIQhRDo5TaK1wEgZTtJb@dpg-cnosbfnjbltc73fkomog-a.ohio-postgres.render.com/resourcesappdb
+####################
+Server enviorment local
+Database connection  postgresql://resourcesappdb_user:pEtWtfrMfmdGtIQhRDo5TaK1wEgZTtJb@dpg-cnosbfnjbltc73fkomog-a.ohio-postgres.render.com/resourcesappdb
+####################
+####################
+Server enviorment local
+Database connection  postgresql://resourcesappdb_user:pEtWtfrMfmdGtIQhRDo5TaK1wEgZTtJb@dpg-cnosbfnjbltc73fkomog-a.ohio-postgres.render.com/resourcesappdb
+####################
+5:42:44 PM [32mGET[39m /signUp
+5:42:44 PM [32mGET[39m /css/global_style.css
+5:42:44 PM [32mGET[39m /css/accounte_style.css
+5:42:44 PM [32mGET[39m /css/login_signUp_style.css
+5:42:44 PM [32mGET[39m /css/navbar_style.css
+5:42:44 PM [32mGET[39m /Assets/img/icons/Logo.svg
+5:42:44 PM [32mGET[39m /css/home.css
+5:42:44 PM [32mGET[39m /css/resource.css
+5:42:44 PM [32mGET[39m /app.js
+5:42:44 PM [32mGET[39m /templates/signUp.html
+5:42:44 PM [32mGET[39m /Assets/img//icons/Logo.svg
+5:42:44 PM [32mGET[39m /pageScripts//signUp.mjs?versionFri%20Mar%2015%202024%2017:42:44%20GMT+0100%20(sentraleuropeisk%20normaltid)
+5:42:44 PM [32mGET[39m /modules/methods.mjs
+5:42:44 PM [32mGET[39m /modules/errorHandling.mjs
+5:42:44 PM [32mGET[39m /modules/userAuth.mjs
+5:43:03 PM [33mPOST[39m /user/signUp
+5:44:35 PM [33mPOST[39m /user/signUp

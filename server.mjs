@@ -25,10 +25,7 @@ server.use("/user", USER_API);
 server.use("/resource", RESOURCE_API);
 // A get request handler example)
 server.get("/", (req, res, next) => {
-  res
-    .status(200)
-    .send(JSON.stringify({ msg: "These are not the droids...." }))
-    .end();
+  res.sendFile("index.html", { root: "public" });
 });
 
 // Define a route to serve the index.html file
@@ -43,9 +40,9 @@ server.get("/login", (req, res) => {
   res.sendFile("index.html", { root: "public" });
 });
 
-server.get("/signUp", (req, res) => {
-  res.sendFile("index.html", { root: "public" });
-});
+// server.get("/", (req, res) => {
+//   res.sendFile("index.html", { root: "public" });
+// });
 server.get("/my_resource", (req, res) => {
   res.sendFile("index.html", { root: "public" });
 });

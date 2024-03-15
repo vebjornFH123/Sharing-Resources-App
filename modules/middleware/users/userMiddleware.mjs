@@ -5,7 +5,7 @@ async function checkIfUserExists(req, res, next) {
   let user = new User();
   user.email = req.body.email;
   console.log(user.email);
-  user = await user.getUser("email");
+  user = await user.getUser("email", "*");
   if (user.length === 0) {
     req.exists = false;
   } else {
