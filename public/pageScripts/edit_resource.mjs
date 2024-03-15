@@ -2,8 +2,13 @@ import { postTo, getData, deleteData } from "../../modules/methods.mjs";
 import errorHandler from "../../modules/errorHandling.mjs";
 
 const saveChangesBtn = document.getElementById("saveChangesBtn");
-const nameInput = document.getElementById("name");
+const nameInput = document.getElementById("nameInput");
 const descriptionInput = document.querySelector(".description-input");
+const keyInput = document.getElementById("keyInput");
+const typeInput = document.getElementById("typeInput");
+const countryInput = document.getElementById("countryInput");
+const addressInput = document.getElementById("addressInput");
+const zipCodeInput = document.getElementById("zipCodeInput");
 const imageUpload = document.getElementById("imageUpload");
 
 const selectUser = document.getElementById("selectUser");
@@ -95,10 +100,12 @@ getData("/user/all")
     const users = JSON.parse(data);
     console.log(users);
     users.forEach((user) => {
-      const optionElement = document.createElement("option");
-      optionElement.textContent = user.email;
-      optionElement.value = [user.id, user.email];
-      selectUser.appendChild(optionElement);
+      if (user.email !== null) {
+        const optionElement = document.createElement("option");
+        optionElement.textContent = user.email;
+        optionElement.value = [user.id, user.email];
+        selectUser.appendChild(optionElement);
+      }
     });
   })
   .catch((error) => {
@@ -111,11 +118,16 @@ saveChangesBtn.onclick = async (e) => {
 
   const resourceData = new FormData();
   resourceData.append("name", nameInput.value);
+  resourceData.append("resourceType", typeInput.value);
+  resourceData.append("country", countryInput.value);
+  resourceData.append("zipCode", zipCodeInput.value);
+  resourceData.append("address", addressInput.value);
   resourceData.append("description", descriptionInput.value);
+  resourceData.append("key", keyInput.value);
   for (let i = 0; i < images.length; i++) {
     resourceData.append("resourceImages", images[i]);
   }
-  console.log(users);
+
   resourceData.append("usersInfo", JSON.stringify(users));
   postTo(`/resource/add`, resourceData)
     .then((respon) => {

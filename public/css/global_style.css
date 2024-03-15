@@ -45,14 +45,12 @@ h4 {
 
 input {
   border: none;
-  border-bottom: 4px solid #3255ee;
+  border-bottom: 2px solid #3255ee;
   border-top: 1.5px solid #2443cc;
   border-left: 1.5px solid #2443cc;
   border-right: 1.5px solid #2443cc;
   background-color: rgb(255, 255, 255);
-
-  font-size: 20px;
-  color: #000000;
+  font-size: 1rem;
   border-radius: 30px;
   padding-left: 10px;
   padding: 10px;
@@ -61,7 +59,7 @@ input {
 input:focus {
   outline: none;
   filter: brightness(0.975);
-  border-bottom-width: 6px;
+  border-bottom-width: 2.5px;
 }
 
 /* --- Globale input endring!!!!!!!!!!!!!!!!!!!!!!!!!!--- */
@@ -90,8 +88,8 @@ textarea {
   color: #000000;
   padding: 6px 0px 0px 4px;
   font-family: sans-serif;
-  max-width: 400px;
-  max-height: 100px;
+  max-width: 95%;
+  max-height: 80px;
 }
 
 form {

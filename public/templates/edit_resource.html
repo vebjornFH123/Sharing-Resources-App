@@ -1,4 +1,5 @@
 <div class="resource-main-cont">
+  <div style="display: flex; gap: 20px; flex-direction: column;">
   <div class="resource-cont">
     <div class="input-rap">
       <input
@@ -9,9 +10,31 @@
         multiple />
     </div>
     <div class="resource-details">
+      <div style="display: flex; flex-direction: row; gap: 10px;">
+      <div style="display: flex; flex-direction: column;">
       <h2>Name</h2>
-      <input id="name" type="text" placeholder="name" value="" />
-      <div style="height: 30px"></div>
+      <input id="nameInput" type="text" placeholder="name" value="" />
+      </div>
+      <div style="display: flex; flex-direction: column;">
+        <h2>Resource type</h2>
+        <input id="typeInput" type="text" placeholder="type" value="" />
+        </div>  
+      </div>
+      <div style="height: 20px"></div>
+      <div style="display: flex; flex-direction: row; gap: 10px;">
+        <div style="display: flex; flex-direction: column;">
+        <h2>Country</h2>
+        <input id="countryInput" type="text" placeholder="country" value="" />
+        </div>
+        <div style="display: flex; flex-direction: column;">
+          <h2>Zip code</h2>
+          <input id="zipCodeInput" type="text" placeholder="zip code" value="" />
+          </div>  
+        </div>
+        <div style="height: 10px"></div>
+        <h2>Address</h2>
+        <input id="addressInput" type="text" placeholder="address" value="" />
+      <div style="height: 20px"></div>
       <h2>Description</h2>
       <textarea
         class="description-input"
@@ -20,6 +43,8 @@
         cols="50"
         maxlength="200">
       </textarea>
+      <h2>Key</h2>
+      <input id="keyInput" type="text" placeholder="key" value="" />
       <h2>User Access</h2>
       <div
         style="
@@ -34,20 +59,21 @@
           </div>
           <div id="displayUsers"></div>   
         </div>
-        <div
-          style="
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-          ">
-          <div id="errorHandlerCont" class="error-handler"></div>
-          <button id="saveChangesBtn" class="form-button">Save Changes</button>
-          <button id="deleteResourceBtn" class="link-button">
-            Delete resource
-          </button>
-        </div>
       </div>
     </div>
+    <div
+    style="
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    ">
+    <div id="errorHandlerCont" class="error-handler"></div>
+    <button id="saveChangesBtn" class="form-button">Save Changes</button>
+    <button id="deleteResourceBtn" class="link-button">
+      Delete resource
+    </button>
+  </div>
+  </div>
   </div>
 </div>

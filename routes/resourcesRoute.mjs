@@ -14,10 +14,10 @@ const RESOURCE_API = express.Router();
 
 RESOURCE_API.use(express.json()); // This makes it so that express parses all incoming payloads as JSON for this route.
 
-RESOURCE_API.get("/", async (req, res, next) => {
+RESOURCE_API.get("/:type/:id", async (req, res, next) => {
   let resource = new Resource();
-  resource.id = 10;
-  resource = await resource.get("id", "*");
+  resource.id = req.params.id;
+  resource = await resource.get(req.params.type, "*");
   if (resource) {
     res
       .status(HTTPCodes.SuccesfullRespons.Ok)
@@ -30,12 +30,25 @@ RESOURCE_API.post(
   "/add",
   imageManger("resourceImages"),
   async (req, res, next) => {
-    const { name, description } = req.body;
+    const { name, resourceType, country, zipCode, address, description, key } =
+      req.body;
+    console.log(req.body);
     const usersInfo = JSON.parse(req.body.usersInfo);
-    if (name != "" && description != "" && usersInfo.length > 0) {
+    if (
+      name != "" &&
+      resourceType != "" &&
+      key != "" &&
+      description != "" &&
+      usersInfo.length > 0
+    ) {
       let resource = new Resource();
       resource.name = name;
       resource.description = description;
+      resource.type = resourceType;
+      resource.key = key;
+      resource.address = address;
+      resource.country = country;
+      resource.zipcode = zipCode;
       resource = await resource.save();
       if (resource.id) {
         console.log(usersInfo);
@@ -81,7 +94,7 @@ RESOURCE_API.post("/update", async (req, res, next) => {});
 RESOURCE_API.delete("/:id", async (req, res) => {
   /// TODO: Delete user.
   const resource = new Resource(); //TODO: Actual user
-  resource.id = req.params.id;
+  resource.id = 80;
   const deleteUser = await resource.delete();
 
   console.log(deleteUser);

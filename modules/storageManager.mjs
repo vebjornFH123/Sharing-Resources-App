@@ -1,5 +1,6 @@
 import pg from "pg";
 import SuperLogger from "./SuperLogger.mjs";
+import { query } from "express";
 
 /// TODO: is the structure / design of the DBManager as good as it could be?
 
@@ -111,10 +112,8 @@ class DBManager {
     return data;
   }
 
-  async getData(tableName, select, key, data) {
+  async getData(tableName, select, key, data, query) {
     const client = new pg.Client(this.#credentials);
-    console.log(data);
-
     const columnNames = data === undefined ? null : Object.keys(data);
     const values = data === undefined ? null : Object.values(data);
     try {
@@ -134,15 +133,10 @@ class DBManager {
           );
         }
       } else {
-        output = await client.query(
-          `SELECT r.id AS resource_id, r.name, r.description, array_agg(ri.img_data) AS images
-          FROM "Resources" r
-          JOIN "Resources_images" ri ON r.id = ri.resource_id
-          WHERE r.id = $1
-          GROUP BY r.id, r.name, r.description`,
-          values
-        );
+        console.log("fkshdufihdsjhopifds", values);
+        output = await client.query(query, values);
       }
+      console.log("fkshdufihdsjhopifds", output);
       return output.rows;
     } catch (error) {
       console.error(error);

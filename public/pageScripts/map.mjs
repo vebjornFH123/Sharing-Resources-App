@@ -1,26 +1,45 @@
-mapboxgl.accessToken =
+import { getData } from "../../modules/methods.mjs";
+const accessToken =
   "pk.eyJ1IjoidmhhdWdob2x0OTkiLCJhIjoiY2xyNmNwcnVvMGZqMjJucGFrd2tiOXFpZiJ9.Jc-HFhZbZ7lhQZQblRsPUw";
+
+mapboxgl.accessToken = accessToken;
 const map = new mapboxgl.Map({
   container: "map", // container ID
   style: "mapbox://styles/mapbox/streets-v12", // style URL
-  center: [-74.5, 40], // starting position [lng, lat]
-  zoom: 9, // starting zoom
+  center: [8.468946, 51.507351], // starting position [lng, lat]
+  zoom: 0,
 });
-// Create a DOM element for the custom marker
-const customMarkerElement = document.createElement("div");
-customMarkerElement.className = "custom-marker"; // Assign a class name for styling
 
-// Create an img element
-const imgElement = document.createElement("img");
-imgElement.src = "../Assets/img/icons/Logo.svg"; // Set the source of the image
-imgElement.classList = "custom-marker-img";
+async function addMarkers(resource) {
+  try {
+    const addressPosition = `https://api.mapbox.com/geocoding/v5/mapbox.places/${resource.country} ${resource.address} ${resource.zipcode}.json?access_token=${accessToken}`;
+    const response = await getData(addressPosition);
 
-// Append the img element to the customMarkerElement
-customMarkerElement.appendChild(imgElement);
+    if (response.ok) {
+      const data = await response.json();
+      const markerPosition = data.features[0].center;
+      console.log(markerPosition);
+      const marker = new mapboxgl.Marker().setLngLat(markerPosition).addTo(map);
+    }
+  } catch (err) {
+    console.log(err);
+  }
+}
 
-const marker2 = new mapboxgl.Marker({
-  element: customMarkerElement,
-  rotation: -45,
-})
-  .setLngLat([12.65147, 55.608166])
-  .addTo(map);
+getData("/resource/userId/233")
+  .then((respon) => {
+    if (respon.ok) {
+      return respon.json();
+    }
+  })
+  .then(async (data) => {
+    const resources = JSON.parse(data);
+    await Promise.all(
+      resources.map(async (resource) => {
+        await addMarkers(resource);
+      })
+    );
+  })
+  .catch((err) => {
+    console.log(err);
+  });

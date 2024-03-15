@@ -6,6 +6,11 @@ class Resource {
     this.id;
     this.name;
     this.description;
+    this.type;
+    this.key;
+    this.address;
+    this.country;
+    this.zipCode;
   }
 
   async save() {
@@ -24,7 +29,55 @@ class Resource {
   }
 
   async get(key, select) {
-    return await DBManager.getData("Resources", select, key, this);
+    let query;
+    if (key === "userId") {
+      query = `SELECT 
+          r.id AS resource_id, 
+          r.name, 
+          r.description, 
+          r.type,
+          r.key,
+          r.address,
+          r.country,
+          r.zipcode,
+          array_agg(ri.img_data) AS images
+      FROM 
+          "Resources" r
+      LEFT JOIN 
+          "Resources_images" ri ON r.id = ri.resource_id
+      WHERE 
+          r.id IN (
+              SELECT 
+                  ra."resourceId"
+              FROM 
+                  "Resource_access" ra
+              WHERE 
+                  ra."userId" = $1
+          )
+      GROUP BY 
+          r.id, r.name, r.description;`;
+    } else if (key === "resourceId") {
+      console.log(key);
+      query = `SELECT 
+      r.id, 
+      r.name, 
+      r.description, 
+      r.type,
+      r.key,
+      r.address,
+      r.country,
+      r.zipcode,
+      array_agg(ri.img_data) AS images
+  FROM 
+      "Resources" r
+  LEFT JOIN 
+      "Resources_images" ri ON r.id = ri.resource_id
+  WHERE 
+      r.id = $1
+  GROUP BY 
+      r.id, r.name, r.description;`;
+    }
+    return await DBManager.getData("Resources", select, key, this, query);
   }
 }
 

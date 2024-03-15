@@ -8,33 +8,47 @@
 }
 
 #resource {
-  background-color: #f1f1f1;
+  background-color: white;
+  border-radius: 40px;
+  filter: drop-shadow(2px 2px 4px #686868);
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 10px;
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
   width: 500px;
   cursor: pointer;
 }
 
+#resource h3 {
+  font-weight: 200;
+  font-size: 1.3rem;
+}
+
+#resource span,
+p {
+  font-weight: 100;
+  margin: 0;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .img {
-  height: 70px;
+  height: 110px;
 }
 
 .btn {
   margin-left: auto;
   cursor: pointer;
-  background-color: #f1f1f1;
+  background-color: #ffffff;
   border: none;
-}
-
-.info h3 {
-  font-size: 1.3rem;
-}
-.info p {
-  font-size: 0.8rem;
 }
 
 #add-resource-btn {
