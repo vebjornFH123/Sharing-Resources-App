@@ -1,9 +1,12 @@
-import { getData } from "../../modules/methods.mjs";
+import { postTo, dataOptions } from "../../modules/methods.mjs";
 import errorHandler from "../../modules/errorHandling.mjs";
+import { storage, options } from "../modules/storage.mjs";
+import { navigateInApp, routeOptions } from "../app.js";
 
 const resourceImg = document.querySelector(".resource-image");
 const prevImgBtn = document.querySelector(".prev-btn");
 const nextImgBtn = document.querySelector(".next-btn");
+const editResource = document.getElementById("editResource");
 
 const nameText = document.getElementById("nameText");
 const addressText = document.getElementById("addressText");
@@ -25,23 +28,45 @@ function showSlides(images, index) {
 function plusSlides(images, n) {
   showSlides(images, (slideIndex += n));
 }
+const userToken = storage(options.localStorage, options.getItem, "userToken");
 
-getData("/resource/resourceId/82")
-  .then((respon) => {
-    if (respon.ok) {
-      return respon.json();
+const resourceId = storage(
+  options.sessionStorage,
+  options.getItem,
+  "resourceId"
+);
+
+const resourceInfo = {
+  token: userToken.token,
+  type: "resourceId",
+  id: resourceId,
+};
+
+postTo(`/resource/get`, resourceInfo, dataOptions.json)
+  .then((res) => {
+    if (res.ok) {
+      return res.json();
     }
   })
   .then((data) => {
     const resourceData = JSON.parse(data)[0];
-    resourceData.images.forEach((img) => {
-      const bufferImgData = new Uint8Array(img.data);
-      const blobData = new Blob([bufferImgData], {
-        type: "image/jpeg",
+    if (resourceData.is_admin === true) {
+      editResource.style = "display: block";
+    } else {
+      editResource.style = "display: none";
+    }
+    if (resourceData.images[0] === null || resourceData.images.length === 0) {
+      imageUrls.push("../Assets/img/icons/Logo-blue.svg");
+    } else {
+      resourceData.images.forEach((img) => {
+        const bufferImgData = new Uint8Array(img.data);
+        const blobData = new Blob([bufferImgData], {
+          type: "image/jpeg",
+        });
+        const imageURL = URL.createObjectURL(blobData);
+        imageUrls.push(imageURL);
       });
-      const imageURL = URL.createObjectURL(blobData);
-      imageUrls.push(imageURL);
-    });
+    }
     nameText.innerText = resourceData.name;
     addressText.innerText = `${resourceData.address}, ${resourceData.zipcode}`;
     descriptionText.innerText = resourceData.description;
@@ -57,6 +82,10 @@ getData("/resource/resourceId/82")
   .catch((error) => {
     errorHandler(errorHandlerCont, error);
   });
+
+editResource.addEventListener("click", () => {
+  navigateInApp(routeOptions.resourceEdit);
+});
 
 const daysTag = document.querySelector(".days"),
   currentDate = document.querySelector(".current-date"),

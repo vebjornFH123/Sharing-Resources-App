@@ -23,32 +23,12 @@ server.use(express.static("public"));
 server.use("/user", USER_API);
 
 server.use("/resource", RESOURCE_API);
+
 // A get request handler example)
-server.get("/", (req, res, next) => {
+server.get("/*", (req, res, next) => {
   res.sendFile("index.html", { root: "public" });
 });
 
-// Define a route to serve the index.html file
-server.get("/map", (req, res) => {
-  res.sendFile("index.html", { root: "public" });
-});
-server.get("/account", (req, res) => {
-  res.sendFile("index.html", { root: "public" });
-});
-
-server.get("/login", (req, res) => {
-  res.sendFile("index.html", { root: "public" });
-});
-
-// server.get("/", (req, res) => {
-//   res.sendFile("index.html", { root: "public" });
-// });
-server.get("/my_resource", (req, res) => {
-  res.sendFile("index.html", { root: "public" });
-});
-server.get("/edit_resource", (req, res) => {
-  res.sendFile("index.html", { root: "public" });
-});
 // Start the server
 server.listen(server.get("port"), function () {
   console.log("server running", server.get("port"));

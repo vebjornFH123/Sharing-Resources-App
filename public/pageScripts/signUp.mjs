@@ -1,6 +1,8 @@
 import { postTo } from "../../modules/methods.mjs";
 import errorHandler from "../../modules/errorHandling.mjs";
+import { storage, options } from "../modules/storage.mjs";
 import { createBasicAuthString } from "../../modules/userAuth.mjs";
+import { navigateInApp, routeOptions } from "../app.js";
 
 const createUserButton = document.getElementById("createUserButton");
 const errorHandlerCont = document.getElementById("errorHandlerCont");
@@ -24,9 +26,13 @@ createUserButton.onclick = async (e) => {
       }
     })
     .then((data) => {
-      console.log(data);
-      localStorage.setItem("userData", data);
-      // window.location.href = "index.html";  go to next page
+      storage(
+        options.localStorage,
+        options.setItem,
+        "userToken",
+        JSON.stringify(data)
+      );
+      navigateInApp(routeOptions.home);
     })
     .catch((error) => {
       errorHandler(errorHandlerCont, error);

@@ -1,17 +1,20 @@
 import crypto from "crypto";
 import User from "../../../model/user.mjs";
+import { HTTPCodes } from "../../httpConstants.mjs";
+import StatusCodes from "../../statusConstants.mjs";
 
 async function checkIfUserExists(req, res, next) {
   let user = new User();
   user.email = req.body.email;
-  console.log(user.email);
   user = await user.getUser("email", "*");
   if (user.length === 0) {
-    req.exists = false;
+    next();
   } else {
-    req.exists = true;
+    res
+      .status(HTTPCodes.ClientSideErrorResponse.Conflict)
+      .send(StatusCodes.userErrorResponse.userExists)
+      .end();
   }
-  next();
 }
 
 function createHashPassword(authString) {

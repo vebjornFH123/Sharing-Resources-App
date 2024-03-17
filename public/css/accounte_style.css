@@ -78,12 +78,6 @@
   color: #050063;
 }
 
-.error-handler {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .form-button {
   background-color: #2c8c85;
   color: white;

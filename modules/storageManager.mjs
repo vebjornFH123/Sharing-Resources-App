@@ -16,32 +16,30 @@ class DBManager {
 
   async updateUser(user) {
     const client = new pg.Client(this.#credentials);
+    let output; // Declare output variable outside try block
 
     try {
       await client.connect();
-      let output;
 
       if (user.profilepic === null) {
         output = await client.query(
-          'Update "public"."Users" set "name" = $1, "email" = $2, "pswhash" = $3 where id = $3;',
-          [user.name, user.email, user.pswHash, user.id]
+          'UPDATE "public"."Users" SET "name" = $1, "email" = $2, "pswhash" = $3 WHERE id = $4;',
+          [user.name, user.email, user.pswhash, user.id]
         );
       } else {
         output = await client.query(
-          'Update "public"."Users" set "name" = $1, "email" = $2, "pswhash" = $3 "profilepic" = $4 where id = $5;',
-          [user.name, user.email, user.pswHash, user.profilepic, user.id]
+          'UPDATE "public"."Users" SET "name" = $1, "email" = $2, "pswhash" = $3, "profilepic" = $4 WHERE id = $5;',
+          [user.name, user.email, user.pswhash, user.profilepic, user.id]
         );
       }
-
-      // Client.Query returns an object of type pg.Result (https://node-postgres.com/apis/result)
-      // Of special intrest is the rows and rowCount properties of this object.
-
-      //TODO Did we update the user?
     } catch (error) {
-      //TODO : Error handling?? Remember that this is a module seperate from your server
+      //TODO : Error handling?? Remember that this is a module separate from your server
+      console.error(error);
     } finally {
       client.end(); // Always disconnect from the database.
     }
+
+    console.log("after update", output.rows);
 
     return user;
   }
@@ -124,17 +122,15 @@ class DBManager {
             `Select ${select} from "public"."${tableName}"`
           );
         } else {
-          console.log("fkshdufihdsjhopifds", values, select, tableName, key);
           output = await client.query(
             `Select ${select} from "public"."${tableName}" WHERE ${key} = $1;`,
             values
           );
         }
       } else {
-        console.log("fkshdufihdsjhopifds", values);
         output = await client.query(query, values);
+        console.log("TEST123", values);
       }
-      console.log("fkshdufihdsjhopifds", output);
       return output.rows;
     } catch (error) {
       console.error(error);

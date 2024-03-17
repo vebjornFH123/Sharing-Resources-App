@@ -1,15 +1,27 @@
-/* Basic styling for the navbar */
-
-#navbar {
-  z-index: 1000;
+#mapBtn,
+#homeBtn,
+#accountBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  background-color: transparent;
+  border: none;
+  font-size: 1.1rem;
+  color: white;
+  font-weight: 300;
+  cursor: pointer;
+  width: 120px; /* Set a fixed width for each button */
+  text-align: center; /* Center the button text */
 }
 
 .navbar {
   z-index: 1000;
   position: fixed;
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
   align-items: center;
+  justify-content: center; /* Center items horizontally */
   background-color: #1f3d99;
   color: white;
   width: 100vw;
@@ -22,6 +34,8 @@
   margin: 0;
   padding: 0;
   display: flex;
+  align-items: center; /* Center items vertically */
+  gap: 20px; /* Adjust as needed */
 }
 
 .navbar-item {
@@ -53,34 +67,33 @@
   margin-top: -5px; /* Adjust this value as needed */
 }
 
+#profilepicNav {
+  height: 40px;
+  border-radius: 50%;
+  border: white solid 1px;
+}
+
 /* Media query for mobile responsiveness */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
     position: fixed;
-    bottom: 0;
+    bottom: 0px;
     left: 0;
     width: 100%;
+    justify-content: space-between; /* Space items evenly */
   }
 
   .navbar-list {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center; /* Center items horizontally */
     width: 100%;
   }
 
   .navbar-item {
     margin: 0;
   }
+
   .link-button {
     margin-bottom: 60px;
-  }
-
-  .logo .wrapper {
-    margin-top: -55px; /* Adjust this value as needed */
-  }
-  .logo img {
-    border-top-right-radius: 100px;
-    border-top-left-radius: 100px;
   }
 }

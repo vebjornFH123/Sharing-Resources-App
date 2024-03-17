@@ -1,31 +1,47 @@
-import { getData } from "../../modules/methods.mjs";
+import { postTo, dataOptions } from "../../modules/methods.mjs";
 import errorHandler from "../../modules/errorHandling.mjs";
+import { storage, options } from "../modules/storage.mjs";
+import { navigateInApp, routeOptions } from "../app.js";
 
 const resourceList = document.getElementById("resourceList");
+const addResourceBtn = document.getElementById("addResourceBtn");
 
-getData("/resource/userId/1")
-  .then((respon) => {
-    if (respon.ok) {
-      return respon.json();
+const userToken = storage(options.localStorage, options.getItem, "userToken");
+
+const userInfo = {
+  token: userToken.token,
+  type: "userId",
+};
+
+postTo(`/resource/get`, userInfo, dataOptions.json)
+  .then((res) => {
+    if (res.ok) {
+      return res.json();
     }
   })
   .then((data) => {
     const resources = JSON.parse(data);
-    resources.forEach((resource) => {
-      let imageURL;
-      console.log(resource);
-      if (resource.images[0] !== null) {
-        const bufferImgData = new Uint8Array(resource.images[0].data);
-        const blobData = new Blob([bufferImgData], {
-          type: "image/jpeg",
-        });
-        imageURL = URL.createObjectURL(blobData);
-      } else {
-        imageURL = "../Assets/img/icons/Logo-blue.svg";
-      }
-      const card = document.createElement("div");
-      card.id = resource.id;
-      card.innerHTML = `
+    console.log(resources);
+    if (resources)
+      resources.forEach((resource) => {
+        let imageURL;
+        if (resource.images[0] !== null) {
+          const bufferImgData = new Uint8Array(resource.images[0].data);
+          const blobData = new Blob([bufferImgData], {
+            type: "image/jpeg",
+          });
+          imageURL = URL.createObjectURL(blobData);
+        } else {
+          imageURL = "../Assets/img/icons/Logo-blue.svg";
+        }
+        const card = document.createElement("div");
+        card.className = "resource-card";
+        card.id = `${resource.id}`;
+
+        card.innerHTML = `
+        <div id="label" style="background-color: ${
+          resource.is_admin ? "#8be6ac" : "#8bd4e6"
+        }">${resource.is_admin ? "Admin" : "Bruker"}</div>
               <img class="img" src="${imageURL}" alt="${resource.name}" />
               <div class="info">
               <h3>${resource.name}</h3>
@@ -38,15 +54,29 @@ getData("/resource/userId/1")
                   <span>Description</span>
                   <p>${resource.description}</p>
                   </div>
-
                 </div>
               </div>
               <button class="btn"><img src="../Assets/img/icons/arrow-right.svg" alt="" /></button>
           `;
-      card.id = "resource";
-      resourceList.appendChild(card);
+        resourceList.appendChild(card);
+      });
+
+    const resourceCard = document.querySelector(".resource-card");
+    resourceCard.addEventListener("click", (e) => {
+      const resourceId = e.currentTarget.id;
+      storage(
+        options.sessionStorage,
+        options.setItem,
+        "resourceId",
+        resourceId
+      );
+      navigateInApp(routeOptions.resource);
     });
   })
   .catch((error) => {
     errorHandler(errorHandlerCont, error);
   });
+
+addResourceBtn.addEventListener("click", () => {
+  navigateInApp(routeOptions.resourceAdd);
+});

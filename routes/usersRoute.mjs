@@ -1,12 +1,15 @@
 import express, { json } from "express";
 import User from "../model/user.mjs";
 import { HTTPCodes } from "../modules/httpConstants.mjs";
+import StatusCodes from "../modules/statusConstants.mjs";
 import SuperLogger from "../modules/SuperLogger.mjs";
 import imageManger from "../modules/fileManger.mjs";
 import {
   checkIfUserExists,
   createHashPassword,
 } from "../modules/middleware/users/userMiddleware.mjs";
+import createToken from "../modules/middleware/users/createToken.mjs";
+import validateToken from "../modules/middleware/users/validateToken.mjs";
 
 const USER_API = express.Router();
 
@@ -15,13 +18,15 @@ USER_API.use(express.json()); // This makes it so that express parses all incomi
 USER_API.get("/all", async (req, res, next) => {
   let user = new User();
   user = await user.getUser(undefined, "email, id");
-  if (user) {
-    console.log(user);
-    res.status(HTTPCodes.SuccesfullRespons.Ok).json(JSON.stringify(user)).end();
+  if (!user) {
+    res
+      .status(HTTPCodes.ClientSideErrorResponse.Conflict)
+      .send(StatusCodes.userErrorResponse.failedToGetAllUsers)
+      .end();
   } else {
     res
-      .status(HTTPCodes.ClientSideErrorRespons.Conflict)
-      .send("Incorrect username or password.")
+      .status(HTTPCodes.SuccessfulResponse.Ok)
+      .json(JSON.stringify(user))
       .end();
   }
 });
@@ -31,116 +36,128 @@ USER_API.post(
   imageManger("profilePicture"),
   checkIfUserExists,
   async (req, res, next) => {
-    // Recomend reading up https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#syntax
-    // https://www.freecodecamp.org/news/javascript-object-destructuring-spread-operator-rest-parameter/
     const { name, email, authString } = req.body;
     if (name != "" && email != "" && authString != "") {
       let user = new User();
       user.name = name;
       user.email = email;
-      user.profilepic = req.reducedImages[0];
+      user.profilepic =
+        req.reducedImages === null ? null : req.reducedImages[0];
       user.pswhash = createHashPassword(authString);
-      if (req.exists === false) {
-        user = await user.save();
+      user = await user.save();
+      if (user.length === 0) {
         res
-          .status(HTTPCodes.SuccesfullRespons.Ok)
-          .json(JSON.stringify(user))
+          .status(HTTPCodes.ClientSideErrorResponse.Conflict)
+          .send(StatusCodes.userErrorResponse.incorrectLogin)
           .end();
       } else {
-        res
-          .status(HTTPCodes.ClientSideErrorRespons.Conflict)
-          .send("Email already exists.")
-          .end();
+        req.user = user;
+        next();
       }
     } else {
       res
-        .status(HTTPCodes.ClientSideErrorRespons.BadRequest)
-        .send("Mangler data felt")
+        .status(HTTPCodes.ClientSideErrorResponse.BadRequest)
+        .send(StatusCodes.inputErrorResponse.missingInput)
         .end();
     }
-  }
+  },
+  createToken
 );
 
-USER_API.post("/logIn", async (req, res, next) => {
-  // Recomend reading up https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#syntax
-  // https://www.freecodecamp.org/news/javascript-object-destructuring-spread-operator-rest-parameter/
-  const { email, authString } = req.body;
-  if (email != "" && authString != "") {
-    let user = new User();
-    user.pswhash = createHashPassword(authString);
-    user = await user.getUser("pswHash", "*");
-    if (user) {
-      res
-        .status(HTTPCodes.SuccesfullRespons.Ok)
-        .json(JSON.stringify(user))
-        .end();
+USER_API.post(
+  "/logIn",
+  async (req, res, next) => {
+    const { email, authString } = req.body;
+    if (email != "" && authString != "") {
+      let user = new User();
+      user.pswhash = createHashPassword(authString);
+      user = await user.getUser("pswHash", "email, id");
+      if (user.length === 0) {
+        res
+          .status(HTTPCodes.ClientSideErrorResponse.Conflict)
+          .send(StatusCodes.userErrorResponse.incorrectLogin)
+          .end();
+      } else {
+        req.user = user[0];
+        next();
+      }
     } else {
       res
-        .status(HTTPCodes.ClientSideErrorRespons.Conflict)
-        .send("Incorrect username or password.")
+        .status(HTTPCodes.ClientSideErrorResponse.BadRequest)
+        .send(StatusCodes.inputErrorResponse.missingInput)
         .end();
     }
-  } else {
-    res
-      .status(HTTPCodes.ClientSideErrorRespons.BadRequest)
-      .send("Mangler data felt")
-      .end();
-  }
-});
+  },
+  createToken
+);
 
 USER_API.post(
   "/update",
   imageManger("profilePicture"),
+  validateToken,
   async (req, res, next) => {
-    const { name, email, authString, id } = req.body;
-    console.log(req.reducedImage);
-    if (name != "" && email != "" && authString != "") {
+    const { name, email, authString, password } = req.body;
+    if (name != "" && email != "" && authString != "" && password != "") {
       let user = new User();
       user.name = name;
       user.email = email;
-      user.profilepic = req.reducedImages[0];
+      user.profilepic =
+        req.reducedImages === null ? null : req.reducedImages[0];
       user.pswhash = createHashPassword(authString);
-      user.id = id;
-      if (!req.exists) {
-        user = await user.save();
+      user.id = req.userId;
+      user = await user.save();
+      if (user.length === 0) {
         res
-          .status(HTTPCodes.SuccesfullRespons.Ok)
-          .json(JSON.stringify(user))
+          .status(HTTPCodes.ClientSideErrorResponse.Conflict)
+          .send(StatusCodes.userErrorResponse.userNotUpdated)
           .end();
       } else {
+        console.log("delete", user);
         res
-          .status(HTTPCodes.ClientSideErrorRespons.Conflict)
-          .send("Email already exists.")
+          .status(HTTPCodes.SuccessfulResponse.Ok)
+          .send(StatusCodes.userSuccessfulResponse.userUpdated)
           .end();
       }
     } else {
       res
-        .status(HTTPCodes.ClientSideErrorRespons.BadRequest)
-        .send("Mangler data felt")
+        .status(HTTPCodes.ClientSideErrorResponse.BadRequest)
+        .send(StatusCodes.inputErrorResponse.missingInput)
         .end();
     }
   }
 );
 
-USER_API.delete("/:id", async (req, res) => {
-  /// TODO: Delete user.
-  const user = new User(); //TODO: Actual user
+USER_API.post("/get", validateToken, async (req, res, next) => {
+  let user = new User();
+  user.id = req.userId;
+  console.log(req.body.get);
+  user = await user.getUser("id", req.body.get);
+  if (!user) {
+    res
+      .status(HTTPCodes.ClientSideErrorResponse.Conflict)
+      .send(StatusCodes.userErrorResponse.userNotFound)
+      .end();
+  }
+  res.status(HTTPCodes.SuccessfulResponse.Ok).json(user).end();
+});
+
+USER_API.delete("/deleteUser", validateToken, async (req, res) => {
+  const user = new User();
   user.name = null;
   user.email = null;
   user.profilepic = null;
   user.pswhash = null;
-  user.id = req.params.id;
+  user.id = req.userId;
   const deleteUser = await user.delete();
-
   if (deleteUser === 1) {
     res
-      .status(HTTPCodes.SuccesfullRespons.Ok)
-      .send("Account deleted successfully")
+      .status(HTTPCodes.SuccessfulResponse.Ok)
+      .send(StatusCodes.userSuccessfulResponse.successfulDelete)
       .end();
   } else {
     res
-      .status(HTTPCodes.ClientSideErrorRespons.Conflict)
-      .send("Failed to delete user")
+      .status(HTTPCodes.ClientSideErrorResponse.Conflict)
+      .send(StatusCodes.userErrorResponse.failedToDeleteUsers)
       .end();
   }
 });

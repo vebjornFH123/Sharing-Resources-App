@@ -1,56 +1,89 @@
-// Function to handle routing
-const route = (e) => {
-  e = e || window.event;
-  e.preventDefault();
-  const path = e.target.href.replace(window.location.origin, ""); // Extract path from href
-  window.history.replaceState({}, "", path);
-  generatePage(path);
+import MapView from "./viewControllers/mapView.mjs";
+import HomeView from "./viewControllers/homeView.mjs";
+import AccountView from "./viewControllers/accountView.mjs";
+import ResourceView from "./viewControllers/resourceView.mjs";
+import ResourceAddView from "./viewControllers/resourceAddView.mjs";
+import ResourceEditView from "./viewControllers/resourceEditView.mjs";
+import SignUpView from "./viewControllers/signUpView.mjs";
+
+import LoginView from "./viewControllers/loginView.mjs";
+
+function navigateInApp(url) {
+  history.pushState(null, null, url);
+  router();
+  window.location.reload(true);
+}
+
+const routeOptions = {
+  home: "/",
+  map: "/map",
+  account: "/account",
+  resource: "/resource",
+  resourceEdit: "/resource_edit",
+  resourceAdd: "/resource_add",
+  signUp: "/sign_up",
+  login: "/login",
 };
 
-// Function to generate page content based on path
-async function generatePage(path) {
-  if (path == "/") {
-    await insertTemplatesFrom(`./templates/home.html`); // Load templates from external file
-    removeScript(); // Remove existing script
-    loadScript("home"); // Load new script
-  } else {
-    await insertTemplatesFrom(`./templates${path}.html`); // Load templates from external file
-    removeScript(); // Remove existing script
-    loadScript(path); // Load new script
+async function router() {
+  const routes = [
+    { path: "/", view: HomeView },
+    { path: "/map", view: MapView },
+    { path: "/account", view: AccountView },
+    { path: "/resource", view: ResourceView },
+    { path: "/resource_add", view: ResourceAddView },
+    { path: "/resource_edit", view: ResourceEditView },
+    { path: "/sign_up", view: SignUpView },
+    { path: "/login", view: LoginView },
+  ];
+
+  const checkRoutesMatches = routes.map((route) => {
+    return {
+      route: route,
+      isMatch: location.pathname === route.path,
+    };
+  });
+
+  let match = checkRoutesMatches.find(
+    (checkRoutesMatch) => checkRoutesMatch.isMatch
+  );
+
+  if (!match) {
+    match = {
+      route: routes[0], // TODO: make a page for not found;
+      isMatch: true,
+    };
   }
+
+  const view = new match.route.view();
+
+  view.checkUserToken();
+
+  const mainApp = document.getElementById("mainApp");
+  mainApp.innerHTML = await view.getTemplate();
+
+  await view.loadScript();
+
+  console.log(document.getElementById("mainApp"));
 }
 
-// Function to load templates from an external HTML file and insert them into the document
-async function insertTemplatesFrom(source) {
-  const templates = await fetch(source).then((response) => response.text());
-  document.querySelector("main").innerHTML = templates; // Insert templates into main element
-}
+window.addEventListener("popstate", router);
 
-// Function to dynamically load a script
-function loadScript(scriptPath) {
-  let script = document.createElement("script");
-  script.src = `../pageScripts/${scriptPath}.mjs?version${new Date()}`;
-  script.setAttribute("id", "dynamicScript"); // Set an ID for the script
-  script.type = "module";
-  console.log(script);
-  document.head.appendChild(script);
-}
+const homeBtn = document.getElementById("homeBtn");
+const mapBtn = document.getElementById("mapBtn");
+const accountBtn = document.getElementById("accountBtn");
 
-// Function to remove the dynamically loaded script
-function removeScript() {
-  let script = document.getElementById("dynamicScript");
-  if (script) {
-    script.parentNode.removeChild(script);
-  }
-}
-
-window.onpopstate = route;
-window.onload = () => {
-  generatePage(window.location.pathname);
-};
-
-window.addEventListener("popstate", () => {
-  generatePage(window.location.pathname);
+document.addEventListener("DOMContentLoaded", () => {
+  homeBtn.addEventListener("click", (e) => {
+    navigateInApp(routeOptions.home);
+  });
+  mapBtn.addEventListener("click", (e) => {
+    navigateInApp(routeOptions.map);
+  });
+  accountBtn.addEventListener("click", (e) => {
+    navigateInApp(routeOptions.account);
+  });
+  router();
 });
-// Assign route function to window object for global access
-window.route = route;
+
+export { navigateInApp, routeOptions };

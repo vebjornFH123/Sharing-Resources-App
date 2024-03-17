@@ -1,7 +1,13 @@
-import { postTo, getData, deleteData } from "../../modules/methods.mjs";
-import errorHandler from "../../modules/errorHandling.mjs";
+import { postTo, getData, deleteData } from "../modules/methods.mjs";
+import errorHandler from "../modules/errorHandling.mjs";
+import successHandling from "../modules/successHandling.mjs";
+import { navigateInApp, routeOptions } from "../app.js";
+import { storage, options } from "../modules/storage.mjs";
 
-const saveChangesBtn = document.getElementById("saveChangesBtn");
+const successHandlerCont = document.getElementById("successHandlerCont");
+const errorHandlerCont = document.getElementById("errorHandlerCont");
+const addBtn = document.getElementById("addBtn");
+const discardResourceBtn = document.getElementById("discardResourceBtn");
 const nameInput = document.getElementById("nameInput");
 const descriptionInput = document.querySelector(".description-input");
 const keyInput = document.getElementById("keyInput");
@@ -10,14 +16,12 @@ const countryInput = document.getElementById("countryInput");
 const addressInput = document.getElementById("addressInput");
 const zipCodeInput = document.getElementById("zipCodeInput");
 const imageUpload = document.getElementById("imageUpload");
-
 const selectUser = document.getElementById("selectUser");
-
 const addAdminUsersBtn = document.getElementById("addAdminUsersBtn");
 const addUsersBtn = document.getElementById("addUsersBtn");
-const deleteResourceBtn = document.getElementById("deleteResourceBtn");
-
 const displayUsers = document.getElementById("displayUsers");
+
+const userToken = storage(options.localStorage, options.getItem, "userToken");
 
 const users = [];
 
@@ -77,23 +81,10 @@ function displayCard(usersArray, cont) {
   });
 }
 
-getData("/resource")
-  .then((respon) => {
-    if (respon.ok) {
-      return respon.json();
-    }
-  })
-  .then((data) => {
-    const resourceData = JSON.parse(data);
-  })
-  .catch((error) => {
-    errorHandler(errorHandlerCont, error);
-  });
-
 getData("/user/all")
-  .then((respon) => {
-    if (respon.ok) {
-      return respon.json();
+  .then((res) => {
+    if (res.ok) {
+      return res.json();
     }
   })
   .then((data) => {
@@ -112,9 +103,8 @@ getData("/user/all")
     errorHandler(errorHandlerCont, error);
   });
 
-saveChangesBtn.onclick = async (e) => {
+addBtn.addEventListener("click", async (e) => {
   const images = imageUpload.files;
-  console.log(images);
 
   const resourceData = new FormData();
   resourceData.append("name", nameInput.value);
@@ -127,29 +117,23 @@ saveChangesBtn.onclick = async (e) => {
   for (let i = 0; i < images.length; i++) {
     resourceData.append("resourceImages", images[i]);
   }
-
   resourceData.append("usersInfo", JSON.stringify(users));
+  resourceData.append("token", userToken.token);
+
   postTo(`/resource/add`, resourceData)
-    .then((respon) => {
-      if (respon.ok) {
-        return respon.json();
+    .then((res) => {
+      if (res.ok) {
+        return res.text();
       }
     })
-    .then((data) => {
-      console.log(data);
-      localStorage.setItem("userData", data);
+    .then((message) => {
+      successHandling(successHandlerCont, message, "block");
     })
     .catch((error) => {
       errorHandler(errorHandlerCont, error);
     });
-};
+});
 
-deleteResourceBtn.onclick = async (e) => {
-  deleteData(`/resource/61`)
-    .then((respon) => {
-      console.log(respon);
-    })
-    .catch((error) => {
-      errorHandler(errorHandlerCont, error);
-    });
-};
+discardResourceBtn.addEventListener("click", () => {
+  navigateInApp(routeOptions.home);
+});

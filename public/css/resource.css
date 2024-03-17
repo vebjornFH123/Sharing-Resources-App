@@ -1,7 +1,7 @@
 /* Container for product image and details */
 .resource-main-cont {
   display: flex;
-  padding-top: 120px;
+  padding-top: 20px;
   padding-bottom: 40px;
   justify-content: center;
   align-items: center;
@@ -148,7 +148,8 @@ select {
 #addUsersBtn {
   background-color: #8bd4e6;
 }
-#saveChangesBtn {
+#saveChangesBtn,
+#addBtn {
   max-width: 400px;
   margin-bottom: 7px;
 }

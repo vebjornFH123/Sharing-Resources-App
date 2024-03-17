@@ -149,3 +149,18 @@ form {
 .custom-marker-img {
   transform: rotate(45deg);
 }
+
+.error-handler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#goHomeBtn {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  border-bottom: solid 1px #ffffff;
+  width: fit-content;
+  cursor: pointer;
+}

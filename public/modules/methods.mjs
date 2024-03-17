@@ -1,8 +1,11 @@
+const dataOptions = {
+  json: "JSON",
+};
+
 async function postTo(url, data, dataType) {
-  console.log(dataType == "JSON" ? JSON.stringify(data) : data);
   let headers = {};
 
-  if (dataType === "JSON") {
+  if (dataType === dataOptions.json) {
     headers = {
       "Content-Type": "application/json",
     };
@@ -12,7 +15,7 @@ async function postTo(url, data, dataType) {
 
   const header = {
     method: "POST",
-    body: dataType == "JSON" ? JSON.stringify(data) : data,
+    body: dataType == dataOptions.json ? JSON.stringify(data) : data,
     headers: headers,
   };
   const respon = await fetch(url, header);
@@ -39,18 +42,23 @@ async function getData(url) {
   return respon;
 }
 
-async function deleteData(url) {
+async function deleteData(url, data) {
   const header = {
     method: "DELETE",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
   };
-  const respon = await fetch(url, header);
 
-  if (!respon.ok) {
-    const errorResponse = await respon.text();
+  const response = await fetch(url, header);
 
+  if (!response.ok) {
+    const errorResponse = await response.text();
     throw new Error(errorResponse);
   }
-  return respon.text();
+
+  return response.text();
 }
 
-export { postTo, deleteData, getData };
+export { postTo, deleteData, getData, dataOptions };

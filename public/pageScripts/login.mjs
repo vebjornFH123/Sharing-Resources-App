@@ -1,6 +1,8 @@
-import { postTo } from "../../modules/methods.mjs";
-import errorHandler from "../../modules/errorHandling.mjs";
-import { createBasicAuthString } from "../../modules/userAuth.mjs";
+import { postTo } from "../modules/methods.mjs";
+import errorHandler from "../modules/errorHandling.mjs";
+import { createBasicAuthString } from "../modules/userAuth.mjs";
+import { storage, options } from "../modules/storage.mjs";
+import { navigateInApp, routeOptions } from "../app.js";
 
 const loginButton = document.getElementById("loginButton");
 const errorHandlerCont = document.getElementById("errorHandlerCont");
@@ -20,8 +22,13 @@ loginButton.onclick = async (e) => {
       }
     })
     .then((data) => {
-      console.log(data);
-      localStorage.setItem("userData", data);
+      storage(
+        options.localStorage,
+        options.setItem,
+        "userToken",
+        JSON.stringify(data)
+      );
+      navigateInApp(routeOptions.home);
     })
     .catch((error) => {
       errorHandler(errorHandlerCont, error);
@@ -31,5 +38,5 @@ loginButton.onclick = async (e) => {
 // go to sign up page
 const signInUserBtn = document.getElementById("signInUserBtn");
 signInUserBtn.onclick = (e) => {
-  window.location.href = "signUp.html";
+  navigateInApp(routeOptions.signUp);
 };

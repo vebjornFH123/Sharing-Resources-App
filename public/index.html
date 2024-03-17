@@ -20,20 +20,19 @@
     <!--Navbar-->
     <nav class="navbar">
       <button id="mapBtn" class="navbar-link">
-        <a href="/map" onclick="route()">Map</a>
+        <img src="./Assets/img/icons/map-icon.svg" alt="" />Map
       </button>
-      <button onclick="route()" id="homeBtn" class="navbar-link logo">
+      <button id="homeBtn" class="navbar-link logo">
         <div class="wrapper">
-          <img src="../Assets/img/icons/Logo.svg" alt="" />
+          <img src="./Assets/img/icons/Logo.svg" alt="" />
         </div>
       </button>
-      <button id="accountBtn" class="navbar-item">
-        <a href="/account" onclick="route()">Account</a>
-      </button>
+      <button id="accountBtn" class="navbar-item"></button>
+      <script type="module" src="./navbar.js"></script>
     </nav>
     <!--Navbar-->
     <!--Main-->
-    <main></main>
+    <main id="mainApp"></main>
     <script type="module" src="./app.js"></script>
     <!--Main-->
   </body>
