@@ -1,6 +1,12 @@
-import { postTo, getData, deleteData } from "../modules/methods.mjs";
+import {
+  postTo,
+  getData,
+  deleteData,
+  dataOptions,
+} from "../modules/methods.mjs";
 import errorHandler from "../modules/errorHandling.mjs";
 import successHandling from "../modules/successHandling.mjs";
+import warningPopup from "../modules/warningPopup.mjs";
 import { navigateInApp, routeOptions } from "../app.js";
 import { storage, options } from "../modules/storage.mjs";
 
@@ -81,14 +87,20 @@ function displayCard(usersArray, cont) {
   });
 }
 
-getData("/user/all")
+const userInfo = {
+  token: userToken.token,
+  get: "id, email",
+  key: "*",
+};
+
+postTo("/user/get", userInfo, dataOptions.json)
   .then((res) => {
     if (res.ok) {
       return res.json();
     }
   })
   .then((data) => {
-    const users = JSON.parse(data);
+    const users = data;
     console.log(users);
     users.forEach((user) => {
       if (user.email !== null) {
@@ -135,5 +147,9 @@ addBtn.addEventListener("click", async (e) => {
 });
 
 discardResourceBtn.addEventListener("click", () => {
-  navigateInApp(routeOptions.home);
+  warningPopup().then((response) => {
+    if (response) {
+      navigateInApp(routeOptions.home);
+    }
+  });
 });

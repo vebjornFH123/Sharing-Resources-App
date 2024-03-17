@@ -8,12 +8,11 @@ class ResourceAccess {
     this.isAdmin;
   }
 
-  async save() {
-    /// TODO: What happens if the DBManager fails to complete its task?
-    if (this.id == null) {
+  async save(type) {
+    if (type === "add") {
       return await DBManager.create("Resource_access", this);
-    } else {
-      return await DBManager.updateUser(this);
+    } else if (type === "update") {
+      return await DBManager.update("Resource_access", this);
     }
   }
 }

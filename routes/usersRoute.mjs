@@ -15,22 +15,6 @@ const USER_API = express.Router();
 
 USER_API.use(express.json()); // This makes it so that express parses all incoming payloads as JSON for this route.
 
-USER_API.get("/all", async (req, res, next) => {
-  let user = new User();
-  user = await user.getUser(undefined, "email, id");
-  if (!user) {
-    res
-      .status(HTTPCodes.ClientSideErrorResponse.Conflict)
-      .send(StatusCodes.userErrorResponse.failedToGetAllUsers)
-      .end();
-  } else {
-    res
-      .status(HTTPCodes.SuccessfulResponse.Ok)
-      .json(JSON.stringify(user))
-      .end();
-  }
-});
-
 USER_API.post(
   "/signUp",
   imageManger("profilePicture"),
@@ -106,16 +90,16 @@ USER_API.post(
       user.pswhash = createHashPassword(authString);
       user.id = req.userId;
       user = await user.save();
-      if (user.length === 0) {
-        res
-          .status(HTTPCodes.ClientSideErrorResponse.Conflict)
-          .send(StatusCodes.userErrorResponse.userNotUpdated)
-          .end();
-      } else {
-        console.log("delete", user);
+      console.log(user);
+      if (user === 1) {
         res
           .status(HTTPCodes.SuccessfulResponse.Ok)
           .send(StatusCodes.userSuccessfulResponse.userUpdated)
+          .end();
+      } else {
+        res
+          .status(HTTPCodes.ClientSideErrorResponse.Conflict)
+          .send(StatusCodes.userErrorResponse.userNotUpdated)
           .end();
       }
     } else {
@@ -130,8 +114,11 @@ USER_API.post(
 USER_API.post("/get", validateToken, async (req, res, next) => {
   let user = new User();
   user.id = req.userId;
-  console.log(req.body.get);
-  user = await user.getUser("id", req.body.get);
+  if (req.body.key === "*") {
+    user = await user.getUser(undefined, req.body.get);
+  } else {
+    user = await user.getUser("id", req.body.get);
+  }
   if (!user) {
     res
       .status(HTTPCodes.ClientSideErrorResponse.Conflict)

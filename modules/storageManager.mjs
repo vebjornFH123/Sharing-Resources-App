@@ -14,34 +14,35 @@ class DBManager {
     };
   }
 
-  async updateUser(user) {
+  async update(tableName, data) {
     const client = new pg.Client(this.#credentials);
-    let output; // Declare output variable outside try block
-
+    console.log(data);
     try {
       await client.connect();
-
-      if (user.profilepic === null) {
-        output = await client.query(
-          'UPDATE "public"."Users" SET "name" = $1, "email" = $2, "pswhash" = $3 WHERE id = $4;',
-          [user.name, user.email, user.pswhash, user.id]
-        );
-      } else {
-        output = await client.query(
-          'UPDATE "public"."Users" SET "name" = $1, "email" = $2, "pswhash" = $3, "profilepic" = $4 WHERE id = $5;',
-          [user.name, user.email, user.pswhash, user.profilepic, user.id]
-        );
+      console.log(data);
+      if (data.profilepic === null) {
+        delete data.profilepic;
       }
+      const columnNames = Object.keys(data).slice(0, -1);
+      const values = Object.values(data);
+      const placeholders = columnNames
+        .map((_, index) => `$${index + 1}`)
+        .join(", ");
+      console.log(values, placeholders, values.length);
+      const updateQuery = `
+        UPDATE "public"."${tableName}"
+        SET ${columnNames
+          .map((column, index) => `"${column}" = $${index + 1}`)
+          .join(", ")} WHERE id = $${values.length};
+    `;
+      const output = await client.query(updateQuery, values);
+      return output.rowCount;
     } catch (error) {
       //TODO : Error handling?? Remember that this is a module separate from your server
       console.error(error);
     } finally {
       client.end(); // Always disconnect from the database.
     }
-
-    console.log("after update", output.rows);
-
-    return user;
   }
 
   async delete(tableName, data, deleteType) {
@@ -111,26 +112,31 @@ class DBManager {
 
   async getData(tableName, select, key, data, query) {
     const client = new pg.Client(this.#credentials);
-    const columnNames = data === undefined ? null : Object.keys(data);
-    const values = data === undefined ? null : Object.values(data);
+    console.log("data", data);
     try {
       await client.connect();
+      const columnNames = data === undefined ? null : Object.keys(data);
+      const values = data === undefined ? null : Object.values(data);
+      console.log(columnNames, values, key);
       let output;
-      if (tableName === "Users") {
+      if (tableName === "Users" || tableName === "Resource_access") {
         if (key === undefined) {
           output = await client.query(
             `Select ${select} from "public"."${tableName}"`
           );
         } else {
+          console.log("heiheihei", key);
           output = await client.query(
             `Select ${select} from "public"."${tableName}" WHERE ${key} = $1;`,
             values
           );
+          console.log("hei", values);
         }
       } else {
         output = await client.query(query, values);
-        console.log("TEST123", values);
       }
+      console.log("TEST123", output.rows);
+
       return output.rows;
     } catch (error) {
       console.error(error);

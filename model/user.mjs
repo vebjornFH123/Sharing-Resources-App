@@ -15,7 +15,7 @@ class User {
     if (this.id == null) {
       return await DBManager.create("Users", this);
     } else {
-      return await DBManager.updateUser(this);
+      return await DBManager.update("Users", this);
     }
   }
 

@@ -44,7 +44,7 @@ postTo(`/resource/get`, userInfo, dataOptions.json)
         }">${resource.is_admin ? "Admin" : "Bruker"}</div>
               <img class="img" src="${imageURL}" alt="${resource.name}" />
               <div class="info">
-              <h3>${resource.name}</h3>
+              <h3>${resource.name} <span id="type" >${resource.type}</span></h3>
               <div style="display: flex; flex-direction: column; gap: 5px">
               <div>
                   <span>Address</span>
@@ -61,16 +61,18 @@ postTo(`/resource/get`, userInfo, dataOptions.json)
         resourceList.appendChild(card);
       });
 
-    const resourceCard = document.querySelector(".resource-card");
-    resourceCard.addEventListener("click", (e) => {
-      const resourceId = e.currentTarget.id;
-      storage(
-        options.sessionStorage,
-        options.setItem,
-        "resourceId",
-        resourceId
-      );
-      navigateInApp(routeOptions.resource);
+    const resourceCards = document.querySelectorAll(".resource-card");
+    resourceCards.forEach((card) => {
+      card.addEventListener("click", (e) => {
+        const resourceId = e.currentTarget.id;
+        storage(
+          options.sessionStorage,
+          options.setItem,
+          "resourceId",
+          resourceId
+        );
+        navigateInApp(routeOptions.resource);
+      });
     });
   })
   .catch((error) => {

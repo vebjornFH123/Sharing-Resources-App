@@ -16,15 +16,6 @@ class ResourceImage {
       return await DBManager.updateUser(this);
     }
   }
-
-  async delete() {
-    /// TODO: What happens if the DBManager fails to complete its task?
-    return await DBManager.deleteUser(this);
-  }
-
-  async get(key) {
-    return await DBManager.getData("Resources_images", key, this);
-  }
 }
 
 export default ResourceImage;

@@ -1,6 +1,12 @@
-import { postTo, getData, deleteData } from "../modules/methods.mjs";
+import {
+  postTo,
+  getData,
+  deleteData,
+  dataOptions,
+} from "../modules/methods.mjs";
 import errorHandler from "../modules/errorHandling.mjs";
 import successHandling from "../modules/successHandling.mjs";
+import warningPopup from "../modules/warningPopup.mjs";
 import { navigateInApp, routeOptions } from "../app.js";
 import { storage, options } from "../modules/storage.mjs";
 
@@ -21,18 +27,101 @@ const addAdminUsersBtn = document.getElementById("addAdminUsersBtn");
 const addUsersBtn = document.getElementById("addUsersBtn");
 const displayUsers = document.getElementById("displayUsers");
 
+const userAccess = [];
+
 const userToken = storage(options.localStorage, options.getItem, "userToken");
 
-const users = [];
+const resourceId = storage(
+  options.sessionStorage,
+  options.getItem,
+  "resourceId"
+);
+
+const resourceInfo = {
+  token: userToken.token,
+  type: "resourceId",
+  id: resourceId,
+};
+
+const existingUserAccess = [];
+
+postTo(`/resource/get`, resourceInfo, dataOptions.json)
+  .then((res) => {
+    if (res.ok) {
+      return res.json();
+    }
+  })
+  .then((data) => {
+    const resourceData = JSON.parse(data)[0];
+    console.log(resourceData);
+    nameInput.value = resourceData.name;
+    typeInput.value = resourceData.type;
+    addressInput.value = resourceData.address;
+    countryInput.value = resourceData.country;
+    zipCodeInput.value = resourceData.zipcode;
+    descriptionInput.value = resourceData.description;
+    keyInput.value = resourceData.key;
+
+    resourceData.user_ids.forEach((userId) => {
+      resourceData.is_admins.forEach((admin) => {
+        console.log(userId);
+        existingUserAccess.push({ id: userId, admin: admin });
+      });
+    });
+
+    const userInfo = {
+      token: userToken.token,
+      get: "id, email",
+      key: "*",
+    };
+
+    postTo("/user/get", userInfo, dataOptions.json)
+      .then((res) => {
+        if (res.ok) {
+          return res.json();
+        }
+      })
+      .then((data) => {
+        console.log(data);
+        const users = data;
+        const foundUsers = existingUserAccess.map((existingUser) =>
+          users.find((user) => user.id === existingUser.id)
+        );
+        foundUsers.forEach((user) => {
+          existingUserAccess.forEach((access) => {
+            user.isAdmin = access.admin;
+          });
+          const addUser = [];
+          addUser.push(user);
+          displayCard(addUser, displayUsers);
+          userAccess.push(user);
+        });
+        users.forEach((user) => {
+          if (user.email !== null) {
+            const optionElement = document.createElement("option");
+            optionElement.textContent = user.email;
+            optionElement.value = [user.id, user.email];
+            selectUser.appendChild(optionElement);
+          }
+        });
+      })
+      .catch((err) => {
+        errorHandler(errorHandlerCont, err);
+      });
+  })
+  .catch((err) => {
+    errorHandler(errorHandlerCont, err);
+  });
 
 addAdminUsersBtn.addEventListener("click", () => {
-  addUser(users, displayUsers, true);
+  addUser(userAccess, displayUsers, true);
 });
 addUsersBtn.addEventListener("click", () => {
-  addUser(users, displayUsers, false);
+  addUser(userAccess, displayUsers, false);
 });
 
 function addUser(usersArray, cont, admin) {
+  console.log(usersArray);
   const selectValues = selectUser.value.split(",");
   const values = {
     id: selectValues[0],
@@ -51,7 +140,6 @@ function addUser(usersArray, cont, admin) {
 function removeUser(usersArray, cont, id) {
   const index = usersArray.findIndex((user) => user.id === id);
   console.log(index);
-  // If the user is found, remove it from the array
   if (index !== -1) {
     usersArray.splice(index, 1);
     displayCard(usersArray, cont);
@@ -60,7 +148,6 @@ function removeUser(usersArray, cont, id) {
 
 function displayCard(usersArray, cont) {
   cont.innerHTML = "";
-  console.log(usersArray);
   usersArray.forEach((user) => {
     const htmlCard = `<div class="card" style="background-color:${
       user.isAdmin === true ? "#8be6ac" : "#8bd4e6"
@@ -81,31 +168,8 @@ function displayCard(usersArray, cont) {
   });
 }
 
-getData("/user/all")
-  .then((res) => {
-    if (res.ok) {
-      return res.json();
-    }
-  })
-  .then((data) => {
-    const users = JSON.parse(data);
-    console.log(users);
-    users.forEach((user) => {
-      if (user.email !== null) {
-        const optionElement = document.createElement("option");
-        optionElement.textContent = user.email;
-        optionElement.value = [user.id, user.email];
-        selectUser.appendChild(optionElement);
-      }
-    });
-  })
-  .catch((error) => {
-    errorHandler(errorHandlerCont, error);
-  });
-
 saveChangesBtn.addEventListener("click", async (e) => {
   const images = imageUpload.files;
-
   const resourceData = new FormData();
   resourceData.append("name", nameInput.value);
   resourceData.append("resourceType", typeInput.value);
@@ -117,10 +181,12 @@ saveChangesBtn.addEventListener("click", async (e) => {
   for (let i = 0; i < images.length; i++) {
     resourceData.append("resourceImages", images[i]);
   }
-  resourceData.append("usersInfo", JSON.stringify(users));
+  console.log("userAccess", userAccess);
+  resourceData.append("usersInfo", JSON.stringify(userAccess));
   resourceData.append("token", userToken.token);
+  resourceData.append("id", resourceId);
 
-  postTo(`/resource/add`, resourceData)
+  postTo(`/resource/update`, resourceData)
     .then((res) => {
       if (res.ok) {
         return res.text();
@@ -129,11 +195,15 @@ saveChangesBtn.addEventListener("click", async (e) => {
     .then((message) => {
       successHandling(successHandlerCont, message, "block");
     })
-    .catch((error) => {
-      errorHandler(errorHandlerCont, error);
+    .catch((err) => {
+      errorHandler(errorHandlerCont, err);
     });
 });
 
 deleteResourceBtn.addEventListener("click", () => {
-  navigateInApp(routeOptions.home);
+  warningPopup().then((response) => {
+    if (response) {
+      navigateInApp(routeOptions.home);
+    }
+  });
 });

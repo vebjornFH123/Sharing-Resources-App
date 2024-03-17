@@ -51,7 +51,6 @@ RESOURCE_API.post(
       email: req.userEmail,
       isAdmin: true,
     });
-    console.log(usersInfo);
     if (
       name != "" &&
       resourceType != "" &&
@@ -74,8 +73,16 @@ RESOURCE_API.post(
           resourceAccess.userId = userInfo.id;
           resourceAccess.resourceId = resource.id;
           resourceAccess.isAdmin = userInfo.isAdmin;
-          resourceAccess = await resourceAccess.save();
+          resourceAccess = await resourceAccess.save("add");
         });
+        let image = new ResourceImage();
+        if (req.reducedImages !== null) {
+          req.reducedImages.forEach(async (data) => {
+            image.img_data = data;
+            image.resource_id = resource.id;
+            image = await image.save();
+          });
+        }
         res
           .status(HTTPCodes.SuccessfulResponse.Ok)
           .send(StatusCodes.resourceSuccessfulResponse.resourceAdd)
@@ -95,63 +102,78 @@ RESOURCE_API.post(
   }
 );
 
-RESOURCE_API.post("/update", async (req, res, next) => {
-  const { name, resourceType, country, zipCode, address, description, key } =
-    req.body;
-  const usersInfo = JSON.parse(req.body.usersInfo);
-  if (
-    name != "" &&
-    resourceType != "" &&
-    key != "" &&
-    description != "" &&
-    usersInfo.length > 0
-  ) {
-    let resource = new Resource();
-    resource.name = name;
-    resource.description = description;
-    resource.type = resourceType;
-    resource.key = key;
-    resource.address = address;
-    resource.country = country;
-    resource.zipcode = zipCode;
-    resource = await resource.save();
-    if (resource.id) {
-      console.log(usersInfo);
-      usersInfo.forEach(async (userInfo) => {
-        console.log(userInfo);
-        let resourceAccess = new ResourceAccess();
-        resourceAccess.userId = userInfo.id;
-        resourceAccess.resourceId = resource.id;
-        resourceAccess.isAdmin = userInfo.isAdmin;
-        resourceAccess = await resourceAccess.save();
-        console.log(resourceAccess);
-      });
-      if (req.reducedImages !== null) {
-        resource.images = req.reducedImages;
-        req.reducedImages.forEach(async (img) => {
-          let image = new ResourceImage();
-          image.img_data = img;
-          image.resource_id = resource.id;
-          image = await image.save();
+RESOURCE_API.post(
+  "/update",
+  imageManger("resourceImages"),
+  validateToken,
+  async (req, res, next) => {
+    const {
+      name,
+      resourceType,
+      country,
+      zipCode,
+      address,
+      description,
+      key,
+      id,
+    } = req.body;
+    const usersInfo = JSON.parse(req.body.usersInfo);
+    usersInfo.push({
+      id: req.userId,
+      email: req.userEmail,
+      isAdmin: true,
+    });
+    if (
+      name != "" &&
+      resourceType != "" &&
+      key != "" &&
+      description != "" &&
+      usersInfo.length > 0
+    ) {
+      let resource = new Resource();
+      resource.name = name;
+      resource.description = description;
+      resource.type = resourceType;
+      resource.key = key;
+      resource.address = address;
+      resource.country = country;
+      resource.zipcode = zipCode;
+      resource.id = id;
+      resource = await resource.save();
+      if (resource === 1) {
+        usersInfo.forEach(async (userInfo) => {
+          let resourceAccess = new ResourceAccess();
+          resourceAccess.userId = userInfo.id;
+          resourceAccess.isAdmin = userInfo.isAdmin;
+          resourceAccess.resourceId = id;
+          resourceAccess = await resourceAccess.save("update");
         });
+        let image = new ResourceImage();
+        if (req.reducedImages !== null) {
+          req.reducedImages.forEach(async (data) => {
+            image.img_data = data;
+            image.resource_id = id;
+            image = await image.save();
+          });
+        }
+        res
+          .status(HTTPCodes.SuccessfulResponse.Ok)
+          .send(StatusCodes.resourceSuccessfulResponse.resourceAdd)
+          .end();
+      } else {
+        res
+          .status(HTTPCodes.ClientSideErrorResponse.BadRequest)
+          .send("Failed to create resource")
+          .end();
       }
-      res
-        .status(HTTPCodes.SuccessfulResponse.Ok)
-        .json(JSON.stringify(resource))
-        .end();
     } else {
       res
         .status(HTTPCodes.ClientSideErrorResponse.BadRequest)
-        .send("Failed to create resource")
+        .send("Mangler data felt")
         .end();
     }
-  } else {
-    res
-      .status(HTTPCodes.ClientSideErrorResponse.BadRequest)
-      .send("Mangler data felt")
-      .end();
   }
-});
+);
 
 RESOURCE_API.delete("/:id", async (req, res) => {
   /// TODO: Delete user.

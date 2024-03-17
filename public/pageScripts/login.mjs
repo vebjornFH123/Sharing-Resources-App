@@ -16,9 +16,9 @@ loginButton.onclick = async (e) => {
   const userData = { email, authString };
 
   postTo("/user/logIn", userData, "JSON")
-    .then((response) => {
-      if (response.ok) {
-        return response.json();
+    .then((res) => {
+      if (res.ok) {
+        return res.json();
       }
     })
     .then((data) => {

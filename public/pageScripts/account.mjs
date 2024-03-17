@@ -1,6 +1,8 @@
-import { postTo, deleteData, dataOptions } from "../../modules/methods.mjs";
-import errorHandler from "../../modules/errorHandling.mjs";
-import { createBasicAuthString } from "../../modules/userAuth.mjs";
+import { postTo, deleteData, dataOptions } from "../modules/methods.mjs";
+import errorHandler from "../modules/errorHandling.mjs";
+import successHandling from "../modules/successHandling.mjs";
+import warningPopup from "../modules/warningPopup.mjs";
+import { createBasicAuthString } from "../modules/userAuth.mjs";
 import { storage, options } from "../modules/storage.mjs";
 import { navigateInApp, routeOptions } from "../app.js";
 
@@ -8,6 +10,7 @@ const saveChangesBtn = document.getElementById("saveChangesBtn");
 const deleteAccountBtn = document.getElementById("deleteAccountBtn");
 const logoutBtn = document.getElementById("logoutBtn");
 const errorHandlerCont = document.getElementById("errorHandlerCont");
+const successHandlerCont = document.getElementById("successHandlerCont");
 
 // inputs
 const username = document.getElementById("username");
@@ -34,7 +37,6 @@ postTo("/user/get", userInfo, dataOptions.json)
   })
   .then((data) => {
     const user = data[0];
-
     usernameHeader.innerText = user.name;
     username.value = user.name;
     email.value = user.email;
@@ -56,16 +58,21 @@ postTo("/user/get", userInfo, dataOptions.json)
   });
 
 deleteAccountBtn.addEventListener("click", async (e) => {
-  deleteData(`/user/deleteUser`, userToken)
-    .then((res) => {
-      if (res === "Account deleted successfully") {
-        storage(options.localStorage, options.removeItem, "userToken");
-        navigateInApp(routeOptions.login);
-      }
-    })
-    .catch((error) => {
-      errorHandler(errorHandlerCont, error);
-    });
+  // Example usage
+  warningPopup().then((response) => {
+    if (response) {
+      deleteData(`/user/deleteUser`, userToken)
+        .then((res) => {
+          if (res === "Account deleted successfully") {
+            storage(options.localStorage, options.removeItem, "userToken");
+            navigateInApp(routeOptions.login);
+          }
+        })
+        .catch((error) => {
+          errorHandler(errorHandlerCont, error);
+        });
+    }
+  });
 });
 
 saveChangesBtn.addEventListener("click", async (e) => {
@@ -81,7 +88,9 @@ saveChangesBtn.addEventListener("click", async (e) => {
   postTo(`/user/update`, userData)
     .then((res) => {
       if (res.ok) {
-        return res.json();
+        res.text().then((message) => {
+          successHandling(successHandlerCont, message, "none");
+        });
       }
     })
     .catch((err) => {
