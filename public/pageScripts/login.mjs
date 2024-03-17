@@ -35,7 +35,6 @@ loginButton.onclick = async (e) => {
     });
 };
 
-// go to sign up page
 const signInUserBtn = document.getElementById("signInUserBtn");
 signInUserBtn.onclick = (e) => {
   navigateInApp(routeOptions.signUp);

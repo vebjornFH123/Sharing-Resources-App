@@ -21,7 +21,6 @@ postTo(`/resource/get`, userInfo, dataOptions.json)
   })
   .then((data) => {
     const resources = JSON.parse(data);
-    console.log(resources);
     if (resources)
       resources.forEach((resource) => {
         let imageURL;

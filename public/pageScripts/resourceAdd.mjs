@@ -56,8 +56,6 @@ function addUser(usersArray, cont, admin) {
 
 function removeUser(usersArray, cont, id) {
   const index = usersArray.findIndex((user) => user.id === id);
-  console.log(index);
-  // If the user is found, remove it from the array
   if (index !== -1) {
     usersArray.splice(index, 1);
     displayCard(usersArray, cont);
@@ -66,7 +64,6 @@ function removeUser(usersArray, cont, id) {
 
 function displayCard(usersArray, cont) {
   cont.innerHTML = "";
-  console.log(usersArray);
   usersArray.forEach((user) => {
     const htmlCard = `<div class="card" style="background-color:${
       user.isAdmin === true ? "#8be6ac" : "#8bd4e6"
@@ -101,7 +98,6 @@ postTo("/user/get", userInfo, dataOptions.json)
   })
   .then((data) => {
     const users = data;
-    console.log(users);
     users.forEach((user) => {
       if (user.email !== null) {
         const optionElement = document.createElement("option");

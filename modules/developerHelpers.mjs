@@ -27,7 +27,6 @@ export default function printDeveloperStartupInportantInformationMSG() {
         chalk.red("Runing setup for database"),
         SuperLogger.LOGGING_LEVELS.CRTICAL
       );
-      // TODO: Code that would set up our database with tbls etc..
     }
   }
 

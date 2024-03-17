@@ -11,7 +11,7 @@
   color: white;
   font-weight: 300;
   cursor: pointer;
-  width: 120px; /* Set a fixed width for each button */
+  width: 200px; /* Set a fixed width for each button */
   text-align: center; /* Center the button text */
 }
 

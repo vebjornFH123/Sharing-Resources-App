@@ -53,7 +53,6 @@ postTo(`/resource/get`, resourceInfo, dataOptions.json)
   })
   .then((data) => {
     const resourceData = JSON.parse(data)[0];
-    console.log(resourceData);
     nameInput.value = resourceData.name;
     typeInput.value = resourceData.type;
     addressInput.value = resourceData.address;
@@ -64,7 +63,6 @@ postTo(`/resource/get`, resourceInfo, dataOptions.json)
 
     resourceData.user_ids.forEach((userId) => {
       resourceData.is_admins.forEach((admin) => {
-        console.log(userId);
         existingUserAccess.push({ id: userId, admin: admin });
       });
     });
@@ -82,7 +80,6 @@ postTo(`/resource/get`, resourceInfo, dataOptions.json)
         }
       })
       .then((data) => {
-        console.log(data);
         const users = data;
         const foundUsers = existingUserAccess.map((existingUser) =>
           users.find((user) => user.id === existingUser.id)
@@ -121,7 +118,6 @@ addUsersBtn.addEventListener("click", () => {
 });
 
 function addUser(usersArray, cont, admin) {
-  console.log(usersArray);
   const selectValues = selectUser.value.split(",");
   const values = {
     id: selectValues[0],
@@ -139,7 +135,6 @@ function addUser(usersArray, cont, admin) {
 
 function removeUser(usersArray, cont, id) {
   const index = usersArray.findIndex((user) => user.id === id);
-  console.log(index);
   if (index !== -1) {
     usersArray.splice(index, 1);
     displayCard(usersArray, cont);
@@ -181,7 +176,6 @@ saveChangesBtn.addEventListener("click", async (e) => {
   for (let i = 0; i < images.length; i++) {
     resourceData.append("resourceImages", images[i]);
   }
-  console.log("userAccess", userAccess);
   resourceData.append("usersInfo", JSON.stringify(userAccess));
   resourceData.append("token", userToken.token);
   resourceData.append("id", resourceId);
@@ -203,6 +197,21 @@ saveChangesBtn.addEventListener("click", async (e) => {
 deleteResourceBtn.addEventListener("click", () => {
   warningPopup().then((response) => {
     if (response) {
+      const deleteResourceInfo = {
+        token: userToken.token,
+        id: resourceId,
+      };
+
+      deleteData(`/resource/deleteResource`, deleteResourceInfo)
+        .then((res) => {
+          if (res === "Resource deleted successfully") {
+            storage(options.localStorage, options.removeItem, "userToken");
+            navigateInApp(routeOptions.login);
+          }
+        })
+        .catch((error) => {
+          errorHandler(errorHandlerCont, error);
+        });
       navigateInApp(routeOptions.home);
     }
   });

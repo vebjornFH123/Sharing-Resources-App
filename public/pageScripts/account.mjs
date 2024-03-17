@@ -11,17 +11,12 @@ const deleteAccountBtn = document.getElementById("deleteAccountBtn");
 const logoutBtn = document.getElementById("logoutBtn");
 const errorHandlerCont = document.getElementById("errorHandlerCont");
 const successHandlerCont = document.getElementById("successHandlerCont");
-
-// inputs
 const username = document.getElementById("username");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
 const profilePicture = document.getElementById("profilePicture");
-
 const usernameHeader = document.getElementById("usernameHeader");
 const profileImage = document.getElementById("profileImage");
-
-//get userData from localStorage
 const userToken = storage(options.localStorage, options.getItem, "userToken");
 
 const userInfo = {
@@ -58,7 +53,6 @@ postTo("/user/get", userInfo, dataOptions.json)
   });
 
 deleteAccountBtn.addEventListener("click", async (e) => {
-  // Example usage
   warningPopup().then((response) => {
     if (response) {
       deleteData(`/user/deleteUser`, userToken)

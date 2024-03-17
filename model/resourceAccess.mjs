@@ -9,10 +9,16 @@ class ResourceAccess {
   }
 
   async save(type) {
-    if (type === "add") {
-      return await DBManager.create("Resource_access", this);
-    } else if (type === "update") {
-      return await DBManager.update("Resource_access", this);
+    try {
+      if (type === "add") {
+        return await DBManager.create("Resource_access", this);
+      } else if (type === "update") {
+        return await DBManager.update("Resource_access", this);
+      }
+    } catch (err) {
+      console.log("Error occurred while saving/adding ResourceAccess:", err);
+
+      throw err;
     }
   }
 }

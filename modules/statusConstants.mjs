@@ -1,6 +1,3 @@
-// The point of this class is increasing readability and maintainability of the rest of the code.
-// It should be extended and refactord as needed.
-
 class StatusCodes {
   static userErrorResponse = {
     userExists: "User already exists",
@@ -21,6 +18,9 @@ class StatusCodes {
 
   static resourceErrorResponse = {
     noResourcesInDataBase: "You have no resources, please add a resource!",
+    failedToCreateResource: "Failed to create resource",
+    failedToUpdateResource: "Failed to update resource",
+    failedToDeleteResource: "Failed to delete resource",
   };
   static userSuccessfulResponse = {
     successfulLogin: "login successfully",
@@ -32,6 +32,8 @@ class StatusCodes {
 
   static resourceSuccessfulResponse = {
     resourceAdd: "Resource add successful",
+    resourceUpdated: "Resource updated successful",
+    resourceDeleted: "Resource deleted successfully",
   };
 }
 

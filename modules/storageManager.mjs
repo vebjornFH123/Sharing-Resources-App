@@ -2,8 +2,6 @@ import pg from "pg";
 import SuperLogger from "./SuperLogger.mjs";
 import { query } from "express";
 
-/// TODO: is the structure / design of the DBManager as good as it could be?
-
 class DBManager {
   #credentials = {};
 
@@ -16,10 +14,8 @@ class DBManager {
 
   async update(tableName, data) {
     const client = new pg.Client(this.#credentials);
-    console.log(data);
     try {
       await client.connect();
-      console.log(data);
       if (data.profilepic === null) {
         delete data.profilepic;
       }
@@ -28,7 +24,6 @@ class DBManager {
       const placeholders = columnNames
         .map((_, index) => `$${index + 1}`)
         .join(", ");
-      console.log(values, placeholders, values.length);
       const updateQuery = `
         UPDATE "public"."${tableName}"
         SET ${columnNames
@@ -37,11 +32,11 @@ class DBManager {
     `;
       const output = await client.query(updateQuery, values);
       return output.rowCount;
-    } catch (error) {
-      //TODO : Error handling?? Remember that this is a module separate from your server
-      console.error(error);
+    } catch (err) {
+      console.log(`Error occurred while updating data in ${tableName}:`, err);
+      throw err;
     } finally {
-      client.end(); // Always disconnect from the database.
+      client.end();
     }
   }
 
@@ -66,11 +61,11 @@ class DBManager {
         );
       }
       return output.rowCount;
-    } catch (error) {
-      //TODO : Error handling?? Remember that this is a module seperate from your server
-      console.log("yes", error);
+    } catch (err) {
+      console.log(`Error occurred while updating data in ${tableName}:`, err);
+      throw err;
     } finally {
-      client.end(); // Always disconnect from the database.
+      client.end();
     }
 
     return data;
@@ -97,14 +92,13 @@ class DBManager {
         values
       );
       if (output.rows.length == 1) {
-        // We stored the user in the DB.
         data.id = output.rows[0].id;
       }
-    } catch (error) {
-      console.error(error);
-      //TODO : Error handling?? Remember that this is a module seperate from your server
+    } catch (err) {
+      console.log(`Error occurred while updating data in ${tableName}:`, err);
+      throw err;
     } finally {
-      client.end(); // Always disconnect from the database.
+      client.end();
     }
 
     return data;
@@ -112,12 +106,10 @@ class DBManager {
 
   async getData(tableName, select, key, data, query) {
     const client = new pg.Client(this.#credentials);
-    console.log("data", data);
     try {
       await client.connect();
       const columnNames = data === undefined ? null : Object.keys(data);
       const values = data === undefined ? null : Object.values(data);
-      console.log(columnNames, values, key);
       let output;
       if (tableName === "Users" || tableName === "Resource_access") {
         if (key === undefined) {
@@ -125,42 +117,31 @@ class DBManager {
             `Select ${select} from "public"."${tableName}"`
           );
         } else {
-          console.log("heiheihei", key);
           output = await client.query(
             `Select ${select} from "public"."${tableName}" WHERE ${key} = $1;`,
             values
           );
-          console.log("hei", values);
         }
       } else {
         output = await client.query(query, values);
       }
-      console.log("TEST123", output.rows);
-
       return output.rows;
-    } catch (error) {
-      console.error(error);
+    } catch (err) {
+      console.log(`Error occurred while updating data in ${tableName}:`, err);
+      throw err;
     } finally {
-      client.end(); // Always disconnect from the database
+      client.end();
     }
   }
 }
 
-// The following is thre examples of how to get the db connection string from the enviorment variables.
-// They accomplish the same thing but in different ways.
-// It is a judgment call which one is the best. But go for the one you understand the best.
-
-// 1:
 let connectionString =
   process.env.ENVIORMENT == "local"
     ? process.env.DB_CONNECTIONSTRING_LOCAL
     : process.env.DB_CONNECTIONSTRING_PROD;
 
-// We are using an enviorment variable to get the db credentials
 if (connectionString == undefined) {
   throw "You forgot the db connection string";
 }
 
 export default new DBManager(connectionString);
-
-//

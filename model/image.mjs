@@ -8,12 +8,15 @@ class ResourceImage {
   }
 
   async save() {
-    /// TODO: What happens if the DBManager fails to complete its task?
-    // We know that if a user object dos not have the ID, then it cant be in the DB.
-    if (this.id == null) {
-      return await DBManager.create("Resources_images", this);
-    } else {
-      return await DBManager.updateUser(this);
+    try {
+      if (this.id == null) {
+        return await DBManager.create("Resources_images", this);
+      } else {
+        return await DBManager.update("Resources_images", this);
+      }
+    } catch (err) {
+      console.log("Error occurred while saving ResourceImage:", err);
+      throw err;
     }
   }
 }

@@ -10,22 +10,34 @@ class User {
   }
 
   async save() {
-    /// TODO: What happens if the DBManager fails to complete its task?
-    // We know that if a user object dos not have the ID, then it cant be in the DB.
-    if (this.id == null) {
-      return await DBManager.create("Users", this);
-    } else {
-      return await DBManager.update("Users", this);
+    try {
+      if (this.id == null) {
+        return await DBManager.create("Users", this);
+      } else {
+        return await DBManager.update("Users", this);
+      }
+    } catch (err) {
+      console.log("Error occurred while saving/adding User:", err);
+      throw err;
     }
   }
 
   async delete() {
-    /// TODO: What happens if the DBManager fails to complete its task?
-    return await DBManager.delete("Users", this, null);
+    try {
+      return await DBManager.delete("Users", this, null);
+    } catch (err) {
+      console.log("Error occurred while deleting User:", err);
+      throw err;
+    }
   }
 
   async getUser(key, select) {
-    return await DBManager.getData("Users", select, key, this);
+    try {
+      return await DBManager.getData("Users", select, key, this);
+    } catch (err) {
+      console.log("Error occurred while getting User:", err);
+      throw err;
+    }
   }
 }
 

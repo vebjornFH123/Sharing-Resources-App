@@ -5,6 +5,7 @@ import ResourceView from "./viewControllers/resourceView.mjs";
 import ResourceAddView from "./viewControllers/resourceAddView.mjs";
 import ResourceEditView from "./viewControllers/resourceEditView.mjs";
 import SignUpView from "./viewControllers/signUpView.mjs";
+import NotFound from "./viewControllers/notFound.mjs";
 
 import LoginView from "./viewControllers/loginView.mjs";
 
@@ -27,6 +28,7 @@ const routeOptions = {
 
 async function router() {
   const routes = [
+    { path: "/notFound", view: NotFound },
     { path: "/", view: HomeView },
     { path: "/map", view: MapView },
     { path: "/account", view: AccountView },
@@ -53,6 +55,7 @@ async function router() {
       route: routes[0], // TODO: make a page for not found;
       isMatch: true,
     };
+    document.querySelector(".navbar").style = "display: none";
   }
 
   const view = new match.route.view();
@@ -63,8 +66,6 @@ async function router() {
   mainApp.innerHTML = await view.getTemplate();
 
   await view.loadScript();
-
-  console.log(document.getElementById("mainApp"));
 }
 
 window.addEventListener("popstate", router);

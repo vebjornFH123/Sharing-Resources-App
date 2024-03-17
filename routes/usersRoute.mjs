@@ -3,7 +3,7 @@ import User from "../model/user.mjs";
 import { HTTPCodes } from "../modules/httpConstants.mjs";
 import StatusCodes from "../modules/statusConstants.mjs";
 import SuperLogger from "../modules/SuperLogger.mjs";
-import imageManger from "../modules/fileManger.mjs";
+import imageManger from "../modules/middleware/fileManger.mjs";
 import {
   checkIfUserExists,
   createHashPassword,
@@ -13,35 +13,43 @@ import validateToken from "../modules/middleware/users/validateToken.mjs";
 
 const USER_API = express.Router();
 
-USER_API.use(express.json()); // This makes it so that express parses all incoming payloads as JSON for this route.
+USER_API.use(express.json());
 
 USER_API.post(
   "/signUp",
   imageManger("profilePicture"),
   checkIfUserExists,
   async (req, res, next) => {
-    const { name, email, authString } = req.body;
-    if (name != "" && email != "" && authString != "") {
-      let user = new User();
-      user.name = name;
-      user.email = email;
-      user.profilepic =
-        req.reducedImages === null ? null : req.reducedImages[0];
-      user.pswhash = createHashPassword(authString);
-      user = await user.save();
-      if (user.length === 0) {
-        res
-          .status(HTTPCodes.ClientSideErrorResponse.Conflict)
-          .send(StatusCodes.userErrorResponse.incorrectLogin)
-          .end();
+    try {
+      const { name, email, authString } = req.body;
+      if (name != "" && email != "" && authString != "") {
+        let user = new User();
+        user.name = name;
+        user.email = email;
+        user.profilepic =
+          req.reducedImages === null ? null : req.reducedImages[0];
+        user.pswhash = createHashPassword(authString);
+        user = await user.save();
+        if (user.length === 0) {
+          res
+            .status(HTTPCodes.ClientSideErrorResponse.Conflict)
+            .send(StatusCodes.userErrorResponse.incorrectLogin)
+            .end();
+        } else {
+          req.user = user;
+          next();
+        }
       } else {
-        req.user = user;
-        next();
+        res
+          .status(HTTPCodes.ClientSideErrorResponse.BadRequest)
+          .send(StatusCodes.inputErrorResponse.missingInput)
+          .end();
       }
-    } else {
+    } catch (err) {
+      console.log("Error occurred while signUp:", err);
       res
-        .status(HTTPCodes.ClientSideErrorResponse.BadRequest)
-        .send(StatusCodes.inputErrorResponse.missingInput)
+        .status(HTTPCodes.ServerSideErrorResponse.InternalServerError)
+        .send("Server cant sign you up right now try again later")
         .end();
     }
   },
@@ -51,24 +59,32 @@ USER_API.post(
 USER_API.post(
   "/logIn",
   async (req, res, next) => {
-    const { email, authString } = req.body;
-    if (email != "" && authString != "") {
-      let user = new User();
-      user.pswhash = createHashPassword(authString);
-      user = await user.getUser("pswHash", "email, id");
-      if (user.length === 0) {
-        res
-          .status(HTTPCodes.ClientSideErrorResponse.Conflict)
-          .send(StatusCodes.userErrorResponse.incorrectLogin)
-          .end();
+    try {
+      const { email, authString } = req.body;
+      if (email != "" && authString != "") {
+        let user = new User();
+        user.pswhash = createHashPassword(authString);
+        user = await user.getUser("pswHash", "email, id");
+        if (user.length === 0) {
+          res
+            .status(HTTPCodes.ClientSideErrorResponse.Conflict)
+            .send(StatusCodes.userErrorResponse.incorrectLogin)
+            .end();
+        } else {
+          req.user = user[0];
+          next();
+        }
       } else {
-        req.user = user[0];
-        next();
+        res
+          .status(HTTPCodes.ClientSideErrorResponse.BadRequest)
+          .send(StatusCodes.inputErrorResponse.missingInput)
+          .end();
       }
-    } else {
+    } catch (err) {
+      console.log("Error occurred while signUp:", err);
       res
-        .status(HTTPCodes.ClientSideErrorResponse.BadRequest)
-        .send(StatusCodes.inputErrorResponse.missingInput)
+        .status(HTTPCodes.ServerSideErrorResponse.InternalServerError)
+        .send("Server cant sign you in right now try again later")
         .end();
     }
   },
@@ -80,32 +96,39 @@ USER_API.post(
   imageManger("profilePicture"),
   validateToken,
   async (req, res, next) => {
-    const { name, email, authString, password } = req.body;
-    if (name != "" && email != "" && authString != "" && password != "") {
-      let user = new User();
-      user.name = name;
-      user.email = email;
-      user.profilepic =
-        req.reducedImages === null ? null : req.reducedImages[0];
-      user.pswhash = createHashPassword(authString);
-      user.id = req.userId;
-      user = await user.save();
-      console.log(user);
-      if (user === 1) {
-        res
-          .status(HTTPCodes.SuccessfulResponse.Ok)
-          .send(StatusCodes.userSuccessfulResponse.userUpdated)
-          .end();
+    try {
+      const { name, email, authString, password } = req.body;
+      if (name != "" && email != "" && authString != "" && password != "") {
+        let user = new User();
+        user.name = name;
+        user.email = email;
+        user.profilepic =
+          req.reducedImages === null ? null : req.reducedImages[0];
+        user.pswhash = createHashPassword(authString);
+        user.id = req.userId;
+        user = await user.save();
+        if (user === 1) {
+          res
+            .status(HTTPCodes.SuccessfulResponse.Ok)
+            .send(StatusCodes.userSuccessfulResponse.userUpdated)
+            .end();
+        } else {
+          res
+            .status(HTTPCodes.ClientSideErrorResponse.Conflict)
+            .send(StatusCodes.userErrorResponse.userNotUpdated)
+            .end();
+        }
       } else {
         res
-          .status(HTTPCodes.ClientSideErrorResponse.Conflict)
-          .send(StatusCodes.userErrorResponse.userNotUpdated)
+          .status(HTTPCodes.ClientSideErrorResponse.BadRequest)
+          .send(StatusCodes.inputErrorResponse.missingInput)
           .end();
       }
-    } else {
+    } catch (err) {
+      console.log("Error occurred while signUp:", err);
       res
-        .status(HTTPCodes.ClientSideErrorResponse.BadRequest)
-        .send(StatusCodes.inputErrorResponse.missingInput)
+        .status(HTTPCodes.ServerSideErrorResponse.InternalServerError)
+        .send("Server cant update user info right now try again later")
         .end();
     }
   }
@@ -129,22 +152,30 @@ USER_API.post("/get", validateToken, async (req, res, next) => {
 });
 
 USER_API.delete("/deleteUser", validateToken, async (req, res) => {
-  const user = new User();
-  user.name = null;
-  user.email = null;
-  user.profilepic = null;
-  user.pswhash = null;
-  user.id = req.userId;
-  const deleteUser = await user.delete();
-  if (deleteUser === 1) {
+  try {
+    const user = new User();
+    user.name = null;
+    user.email = null;
+    user.profilepic = null;
+    user.pswhash = null;
+    user.id = req.userId;
+    const deleteUser = await user.delete();
+    if (deleteUser === 1) {
+      res
+        .status(HTTPCodes.SuccessfulResponse.Ok)
+        .send(StatusCodes.userSuccessfulResponse.successfulDelete)
+        .end();
+    } else {
+      res
+        .status(HTTPCodes.ClientSideErrorResponse.Conflict)
+        .send(StatusCodes.userErrorResponse.failedToDeleteUsers)
+        .end();
+    }
+  } catch (err) {
+    console.log("Error occurred while signUp:", err);
     res
-      .status(HTTPCodes.SuccessfulResponse.Ok)
-      .send(StatusCodes.userSuccessfulResponse.successfulDelete)
-      .end();
-  } else {
-    res
-      .status(HTTPCodes.ClientSideErrorResponse.Conflict)
-      .send(StatusCodes.userErrorResponse.failedToDeleteUsers)
+      .status(HTTPCodes.ServerSideErrorResponse.InternalServerError)
+      .send("Server cant delete user right now try again later")
       .end();
   }
 });

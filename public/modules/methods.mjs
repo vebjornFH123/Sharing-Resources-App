@@ -9,8 +9,6 @@ async function postTo(url, data, dataType) {
     headers = {
       "Content-Type": "application/json",
     };
-  } else {
-    // No need to set Content-Type for FormData, it will be set automatically
   }
 
   const header = {

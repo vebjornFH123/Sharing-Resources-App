@@ -21,7 +21,6 @@ function errorHandler(cont, err) {
       </div>
     `;
 
-  // Add the popup window HTML to the document body
   cont.insertAdjacentHTML("beforeend", popupHTML);
 }
 
