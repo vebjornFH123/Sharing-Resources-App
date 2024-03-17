@@ -10,7 +10,6 @@ function checkConnection(req, res, next) {
         const error = new Error("No internet connection");
         error.status = HTTPCodes.ServerErrorResponse.ServiceUnavailable;
         next(error);
-        console.log(error);
       } else {
         next();
       }

@@ -74,6 +74,8 @@ class DBManager {
   async create(tableName, data) {
     const client = new pg.Client(this.#credentials);
 
+    console.log(data);
+
     try {
       await client.connect();
       const columnNames = Object.keys(data);
@@ -81,13 +83,15 @@ class DBManager {
         .map((_, index) => `$${index + 1}`)
         .join(", ");
       const values = Object.values(data);
+      console.log(values);
+      console.log(placeholders);
       const output = await client.query(
         `
         INSERT INTO "${tableName}" (${columnNames
           .map((column) => `"${column}"`)
           .join(", ")})
         VALUES (${placeholders})
-        RETURNING id
+        RETURNING id 
       `,
         values
       );

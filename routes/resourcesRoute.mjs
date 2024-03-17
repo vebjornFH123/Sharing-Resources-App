@@ -89,9 +89,9 @@ RESOURCE_API.post(
             resourceAccess.isAdmin = userInfo.isAdmin;
             resourceAccess = await resourceAccess.save("add");
           });
-          let image = new ResourceImage();
           if (req.reducedImages !== null) {
             req.reducedImages.forEach(async (data) => {
+              let image = new ResourceImage();
               image.img_data = data;
               image.resource_id = resource.id;
               image = await image.save();
