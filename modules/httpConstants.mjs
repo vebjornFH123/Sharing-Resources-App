@@ -17,6 +17,7 @@ class HTTPCodes {
   static ServerErrorResponse = {
     InternalError: 500,
     NotImplemented: 501,
+    ServiceUnavailable: 503,
   };
 }
 

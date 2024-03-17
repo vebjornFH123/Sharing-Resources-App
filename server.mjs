@@ -4,32 +4,29 @@ import USER_API from "./routes/usersRoute.mjs";
 import RESOURCE_API from "./routes/resourcesRoute.mjs";
 import SuperLogger from "./modules/SuperLogger.mjs";
 import printDeveloperStartupInportantInformationMSG from "./modules/developerHelpers.mjs";
+import checkConnection from "./modules/middleware/checkInternet.mjs";
 import path from "path";
 printDeveloperStartupInportantInformationMSG();
 
-// Creating an instance of the server
 const server = express();
-// Selecting a port for the server to use.
 const port = process.env.PORT || 8080;
 server.set("port", port);
 
-// Enable logging for server
-const logger = new SuperLogger();
-server.use(logger.createAutoHTTPRequestLogger()); // Will logg all http method requests
+server.use(checkConnection);
 
-// Defining a folder that will contain static files.
+const logger = new SuperLogger();
+server.use(logger.createAutoHTTPRequestLogger());
+
 server.use(express.static("public"));
-// Telling the server to use the USER_API (all urls that uses this code will have to have the /user after the base address)
+
 server.use("/user", USER_API);
 
 server.use("/resource", RESOURCE_API);
 
-// A get request handler example)
 server.get("/*", (req, res, next) => {
   res.sendFile("index.html", { root: "public" });
 });
 
-// Start the server
 server.listen(server.get("port"), function () {
   console.log("server running", server.get("port"));
 });
