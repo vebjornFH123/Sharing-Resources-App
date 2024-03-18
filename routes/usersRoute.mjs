@@ -94,6 +94,7 @@ USER_API.post(
 USER_API.post(
   "/update",
   imageManger("profilePicture"),
+  checkIfUserExists,
   validateToken,
   async (req, res, next) => {
     try {
