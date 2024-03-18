@@ -18,11 +18,7 @@ function imageManger(fileType) {
       let unsupportedFileTypeEncountered = false;
       await Promise.all(
         req.files.map(async (img) => {
-          if (
-            img.mimetype == "image/jpg" ||
-            img.mimetype == "image/jpeg" ||
-            img.mimetype == "image/png"
-          ) {
+          if (img.mimetype == "image/jpg" || img.mimetype == "image/jpeg" || img.mimetype == "image/png") {
             let reducedImageBuffer;
             if (fileType === "profilePicture") {
               reducedImageBuffer = await sharp(img.buffer)
@@ -50,11 +46,7 @@ function imageManger(fileType) {
         })
       );
       if (unsupportedFileTypeEncountered) {
-        return res
-          .status(400)
-          .send(
-            "Please select a valid file type. Supported formats include JPG, JPEG, or PNG"
-          );
+        return res.status(400).send("Please select a valid file type. Supported formats include JPG, JPEG, or PNG");
       }
       if (req.files.length === 0) {
         req.reducedImages = null;

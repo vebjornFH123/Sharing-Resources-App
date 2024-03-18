@@ -8,11 +8,7 @@ class HomeView {
   constructor() {}
 
   checkUserToken() {
-    const userToken = storage(
-      options.localStorage,
-      options.getItem,
-      "userToken"
-    );
+    const userToken = storage(options.localStorage, options.getItem, "userToken");
     if (userToken === null) {
       navigateInApp(routeOptions.login);
     }

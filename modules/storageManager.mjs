@@ -21,14 +21,10 @@ class DBManager {
       }
       const columnNames = Object.keys(data).slice(0, -1);
       const values = Object.values(data);
-      const placeholders = columnNames
-        .map((_, index) => `$${index + 1}`)
-        .join(", ");
+      const placeholders = columnNames.map((_, index) => `$${index + 1}`).join(", ");
       const updateQuery = `
         UPDATE "public"."${tableName}"
-        SET ${columnNames
-          .map((column, index) => `"${column}" = $${index + 1}`)
-          .join(", ")} WHERE id = $${values.length};
+        SET ${columnNames.map((column, index) => `"${column}" = $${index + 1}`).join(", ")} WHERE id = $${values.length};
     `;
       const output = await client.query(updateQuery, values);
       return output.rowCount;
@@ -48,17 +44,9 @@ class DBManager {
       const values = Object.values(data);
       let output;
       if (deleteType === null) {
-        output = await client.query(
-          `UPDATE "public"."${tableName}" SET ${columnNames
-            .map((column, index) => `"${column}" = $${index + 1}`)
-            .join(", ")} WHERE id = $${columnNames.length + 1}`,
-          values
-        );
+        output = await client.query(`UPDATE "public"."${tableName}" SET ${columnNames.map((column, index) => `"${column}" = $${index + 1}`).join(", ")} WHERE id = $${columnNames.length + 1}`, values);
       } else {
-        output = await client.query(
-          `DELETE FROM "${tableName}" WHERE id = $1;`,
-          [data.id]
-        );
+        output = await client.query(`DELETE FROM "${tableName}" WHERE id = $1;`, [data.id]);
       }
       return output.rowCount;
     } catch (err) {
@@ -79,17 +67,13 @@ class DBManager {
     try {
       await client.connect();
       const columnNames = Object.keys(data);
-      const placeholders = columnNames
-        .map((_, index) => `$${index + 1}`)
-        .join(", ");
+      const placeholders = columnNames.map((_, index) => `$${index + 1}`).join(", ");
       const values = Object.values(data);
       console.log(values);
       console.log(placeholders);
       const output = await client.query(
         `
-        INSERT INTO "${tableName}" (${columnNames
-          .map((column) => `"${column}"`)
-          .join(", ")})
+        INSERT INTO "${tableName}" (${columnNames.map((column) => `"${column}"`).join(", ")})
         VALUES (${placeholders})
         RETURNING id 
       `,
@@ -117,14 +101,9 @@ class DBManager {
       let output;
       if (tableName === "Users" || tableName === "Resource_access") {
         if (key === undefined) {
-          output = await client.query(
-            `Select ${select} from "public"."${tableName}"`
-          );
+          output = await client.query(`Select ${select} from "public"."${tableName}"`);
         } else {
-          output = await client.query(
-            `Select ${select} from "public"."${tableName}" WHERE ${key} = $1;`,
-            values
-          );
+          output = await client.query(`Select ${select} from "public"."${tableName}" WHERE ${key} = $1;`, values);
         }
       } else {
         output = await client.query(query, values);
@@ -139,10 +118,7 @@ class DBManager {
   }
 }
 
-let connectionString =
-  process.env.ENVIORMENT == "local"
-    ? process.env.DB_CONNECTIONSTRING_LOCAL
-    : process.env.DB_CONNECTIONSTRING_PROD;
+let connectionString = process.env.ENVIORMENT == "local" ? process.env.DB_CONNECTIONSTRING_LOCAL : process.env.DB_CONNECTIONSTRING_PROD;
 
 if (connectionString == undefined) {
   throw "You forgot the db connection string";

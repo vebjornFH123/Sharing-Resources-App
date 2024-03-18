@@ -13,15 +13,9 @@ async function validateToken(req, res, next) {
     next();
   } catch (error) {
     if (error.name === "TokenExpiredError") {
-      res
-        .status(HTTPCodes.ClientSideErrorResponse.Conflict)
-        .send(StatusCodes.userErrorResponse.tokenExpired)
-        .end();
+      res.status(HTTPCodes.ClientSideErrorResponse.Conflict).send(StatusCodes.userErrorResponse.tokenExpired).end();
     } else {
-      res
-        .status(HTTPCodes.ClientSideErrorResponse.Conflict)
-        .send(StatusCodes.userErrorResponse.invalidToken)
-        .end();
+      res.status(HTTPCodes.ClientSideErrorResponse.Conflict).send(StatusCodes.userErrorResponse.invalidToken).end();
     }
   }
 }

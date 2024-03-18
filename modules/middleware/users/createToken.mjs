@@ -12,10 +12,7 @@ async function createToken(req, res, next) {
     });
     res.status(HTTPCodes.SuccessfulResponse.Ok).json({ token }).end();
   } catch (error) {
-    res
-      .status(HTTPCodes.SuccessfulResponse.InternalError)
-      .send(StatusCodes.userErrorResponse.failedToLogin)
-      .end();
+    res.status(HTTPCodes.SuccessfulResponse.InternalError).send(StatusCodes.userErrorResponse.failedToLogin).end();
   }
 }
 

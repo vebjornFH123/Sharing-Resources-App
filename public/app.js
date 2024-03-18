@@ -46,13 +46,11 @@ async function router() {
     };
   });
 
-  let match = checkRoutesMatches.find(
-    (checkRoutesMatch) => checkRoutesMatch.isMatch
-  );
+  let match = checkRoutesMatches.find((checkRoutesMatch) => checkRoutesMatch.isMatch);
 
   if (!match) {
     match = {
-      route: routes[0], // TODO: make a page for not found;
+      route: routes[0],
       isMatch: true,
     };
     document.querySelector(".navbar").style = "display: none";

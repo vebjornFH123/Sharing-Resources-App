@@ -10,10 +10,7 @@ async function checkIfUserExists(req, res, next) {
   if (user.length === 0) {
     next();
   } else {
-    res
-      .status(HTTPCodes.ClientSideErrorResponse.Conflict)
-      .send(StatusCodes.userErrorResponse.userExists)
-      .end();
+    res.status(HTTPCodes.ClientSideErrorResponse.Conflict).send(StatusCodes.userErrorResponse.userExists).end();
   }
 }
 

@@ -7,11 +7,7 @@ class LoginView {
   constructor() {}
 
   checkUserToken() {
-    const userToken = storage(
-      options.localStorage,
-      options.getItem,
-      "userToken"
-    );
+    const userToken = storage(options.localStorage, options.getItem, "userToken");
     console.log(userToken);
     if (userToken !== null) {
       navigateInApp(routeOptions.account);
